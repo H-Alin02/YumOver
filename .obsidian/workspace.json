@@ -1,0 +1,196 @@
+{
+  "main": {
+    "id": "eb581d86f21415c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "607bc4d1a7a79717",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fdb486d69b41c1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/00_Fondamenti_Teorici/Roadmap_Studio.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Roadmap_Studio"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e3443157fce089b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "84afc517ce2f2f8f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0cf9b867a354f5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Esplora risorse"
+            }
+          },
+          {
+            "id": "fe87689958e3659c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Ricerca"
+            }
+          },
+          {
+            "id": "dad085c06ed02457",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Segnalibri"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6a0ca209d47001d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bbdd680b46bd298",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0cd4156a4421ca13",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/Indice_Corso_Software_Engineering.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Riferimenti a Indice_Corso_Software_Engineering"
+            }
+          },
+          {
+            "id": "234b84eb3a699767",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/Indice_Corso_Software_Engineering.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Collegamenti in uscita da Indice_Corso_Software_Engineering"
+            }
+          },
+          {
+            "id": "f8ddd0e1508dd2c5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etichette"
+            }
+          },
+          {
+            "id": "016e1ff37db21f65",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Tutte le proprietà"
+            }
+          },
+          {
+            "id": "b218a2e91d17269a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/Indice_Corso_Software_Engineering.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Struttura di Indice_Corso_Software_Engineering"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "bases:Crea nuova Base": false
+    }
+  },
+  "active": "4fdb486d69b41c1e",
+  "lastOpenFiles": [
+    "docs/Indice_Corso_Software_Engineering.md",
+    "docs/00_Fondamenti_Teorici/Roadmap_Studio.md",
+    "docs/00_Fondamenti_Teorici/Lezioni_Software_Engineering.md",
+    "docs/Gemini_Generated_Image_51hsmx51hsmx51hs.png",
+    "docs/02_System_Design_e_Architettura/Architettura_Sistema.md",
+    "docs/02_System_Design_e_Architettura/Knowledge_Base_Riepilogo.md",
+    "docs/01_Idea_e_Requisiti/Lezione_2_SDLC_e_Prossimi_Passi.md"
+  ]
+}
