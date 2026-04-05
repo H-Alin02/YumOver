@@ -1,60 +1,93 @@
-# Lezione 3: Data Modeling in ambiente NoSQL
-*Progetto: FridgeSavvy*
+# Lezione 3: Introduzione Accademica a JSON e Database NoSQL
 
-Questa lezione risponde alla tua ottima domanda: *"Devo andare a ripassare come si crea uno schema relazionale?"*
-La risposta breve è: **Assolutamente no!** Ed è qui che entra in gioco l'ingegneria e la scelta architetturale che hai fatto.
-
-Nella Fase 1 hai scelto di utilizzare un Database **NoSQL** (es. MongoDB o Firebase Firestore). Questa scelta cambia radicalmente il modo in cui pensiamo ai dati.
+Questo capitolo esplora le fondamenta del salvataggio dei dati sul web moderno. Prima di modellare le entità del progetto FridgeSavvy, è necessario comprendere rigorosamente il formato di trasmissione JSON e l'architettura dei database Non Relazionali (NoSQL).
 
 ---
 
-## 1. Relazionale (SQL) vs Documentale (NoSQL)
+## 1. Il Formato JSON (JavaScript Object Notation)
 
-A beneficio accademico, ricordiamo la differenza:
+Il JSON è, a livello globale, lo standard *de facto* per la trasmissione dei dati su Internet grazie alle API REST. Non è un linguaggio di programmazione, ma un **formato di testo leggero**, indipendente dal linguaggio (Python, Node, Java, C++ sanno tutti leggerlo), facilmente comprensibile per un umano e decifrabile istantaneamente da una macchina.
 
-*   **Il mondo Relazionale (SQL):** I dati vivono in Tabelle (come fogli Excel rigidi). Per collegare i dati si usano i concetti di *Chiave Primaria* e *Chiave Esterna* (Foreign Key). Se aggiungi una colonna a una riga, devi aggiungerla a tutte le righe. Richiede la progettazione del famoso Schema E-R (Entità-Relazione).
-*   **Il mondo Documentale (NoSQL):** I dati vivono in **Documenti indipendenti** strutturati in formato **JSON** (JavaScript Object Notation). Non ci sono tabelle, ma "Collezioni" (scatole che contengono documenti). Uno schema NoSQL è **flessibile** ("Schema-less"): un documento Ingrediente può avere la foto, un altro documento Ingrediente no, e il database non darà alcun errore.
+### 1.1 La Sintassi del JSON
+Un JSON è strutturato su due strutture universali:
+*   Una collezione di coppie **Chiave/Valore** (Key-Value pairs), che in informatica prende il nome di Oggetto (`Object`), Dizionario o Hash Map. Si racchiude tra parentesi graffe `{ }`.
+*   Una lista ordinata di valori, che prende il nome di **Array** o Vettore. Si racchiude tra parentesi quadre `[ ]`.
 
-Dato che useremo Node.js e React Native (che parlano nativamente in JavaScript), il formato JSON è la lingua madre dell'interno sistema.
-
----
-
-## 2. Quali entità (dati) avremo in FridgeSavvy?
-A livello logico di Business, il nostro dominio è composto dalle seguenti macro-entità concettuali:
-1.  **User (L'Utente):** Dati di accesso, email, nome.
-2.  **Family/Group:** L'aggregatore logico. Più Utenti fanno parte di un Gruppo che condivide lo stesso frigorifero.
-3.  **Pantry (La Dispensa):** Una lista virtuale collegata a una Famiglia.
-4.  **Ingredient (L'Ingrediente):** Il singolo elemento letto dallo scontrino o inserito a mano.
-5.  **Recipe (La Ricetta):** Il risultato generato dall'AI, con titolo, passaggi e ingredienti richiesti.
-6.  **Poll (Il Sondaggio):** L'istanza "Cosa mangiamo stasera" dove gli Utenti votano una variante di Ricetta.
-
----
-
-## 3. L'Esercizio: Modellare l'oggetto "Ingrediente"
-Come si definisce lo "schema" (la struttura) nel mondo NoSQL? Non si disegnano diagrammi complessi, ma si progetta la struttura dell'oggetto JSON.
-
-Ecco la risposta all'esercizio sul Data Model dell'Ingrediente. Immaginiamo come il nostro Backend (Node.js) riceverà l'Ingrediente estratto dal Microservizio Python (AI_Worker), e come lo salverà nel Database:
+### 1.2 Esempio Accademico Fuori dal Progetto: "Lo Studente Universitario"
+Immaginiamo di dover trasmettere o salvare le informazioni di uno studente.
 
 ```json
 {
-  "_id": "ing_123456789",
-  "name": "Latte Parzialmente Scremato",
-  "category": "Latticini",
-  "quantity": 1.5,
-  "unit_of_measure": "litri",
-  "expiration_date": "2026-04-10T00:00:00.000Z",
-  "scanned_from_receipt_id": "rec_987654",
-  "added_at": "2026-04-01T10:00:00.000Z",
-  "family_id": "fam_xyz123"
+  "matricola": "100234B",
+  "nome": "Mario",
+  "cognome": "Rossi",
+  "eta": 22,
+  "is_in_corso": true,
+  "voti": [28, 30, 24, 27],
+  "indirizzo": {
+    "via": "Via Roma",
+    "civico": 15,
+    "citta": "Milano",
+    "cap": "20100"
+  },
+  "esami_futuri": null
 }
 ```
 
-### Analisi del Modello (I campi essenziali):
-*   `_id`: Ogni oggetto nel database deve avere un identificatore univoco (Spesso generato in automatico).
-*   `name`: Obbligatorio. Stringa di testo.
-*   `category`: Utile per raggruppare i dati nell'interfaccia (es. Frutta, Latticini, Carne).
-*   `quantity` e `unit_of_measure`: Fondamentali per far calcolare all'AI se c'è abbastanza ingrediente per la ricetta. (Avere *1.5 litri* è diverso da avere *1 litri* testuale. Si separano Numero e Unità).
-*   `expiration_date`: Una data formattata (ISO 8601). Essenziale per la funzione "Svuota Frigo" (Pellicano/Just in Time).
-*   `family_id`: Fondamentale per la sicurezza. Questo ingrediente appartiene al frigo della famiglia X, non può essere visto dagli altri utenti.
+**Analisi Accademica del file JSON:**
+1.  Le *"Chiavi"* (i nomi dei campi, a sinistra dei due punti) devono **rigorosamente** essere stringhe delimitate da doppie virgolette `" "`.
+2.  I *"Valori"* possono essere di diversi tipi (Tipi di dato primitivi):
+    *   **Stringa** (`"Mario"`).
+    *   **Numero** (`22`, senza virgolette).
+    *   **Booleano** (`true` o `false`, senza virgolette).
+    *   **Oggetto Annidato** (`indirizzo` è un JSON dentro a un JSON).
+    *   **Array** (`voti` contiene una lista di numeri dentro le quadre).
+    *   **Null** (`null`, indica l'assenza voluta di un valore).
 
-Questo è un esempio concreto di Data Modeling "Moderno". Come vedi non devi ripassare SQL, devi solo abituarti a pensare in *"Oggetti JSON"*.
+---
+
+## 2. Paradigmi di Database: SQL vs NoSQL
+
+I database sono il livello di persistenza dove salviamo perennemente le informazioni dei nostri utenti. Esistono due grandi filosofie.
+
+### 2.1 Database Relazionali (SQL - Structured Query Language)
+I DB relazionali classici (MySQL, PostgreSQL) sono rigidamente basati su **Tabelle**, simili a fogli Excel.
+*   Ogni Tabella ha delle **Colonne** rigide predefinite (es. Tabella Studenti: id, nome, cognome).
+*   Ogni nuovo Studente è una **Riga**. 
+*   *Vantaggio:* Garanzia di consistenza totale dei dati (se proverai a inserire una data di nascita in una colonna "voto", il DB si rifiuterà e andrà in crash per proteggere i dati).
+*   *Svantaggio:* Sono rigidi (Schema-rigido). Se improvvisamente l'università decidesse di dover salvare un indirizzo extra per alcuni studenti, dovresti bloccare il DB, modificare fisicamente l'architettura della tabella aggiungendo la colonna e riavviare il tutto.
+
+### 2.2 Database Non Relazionali (NoSQL) a Documenti
+I database "Document-oriented" (come MongoDB o Firestore) non usano le tabelle, ma usano le **Collezioni**, che a loro volta contengono i **Documenti**.
+*   **Un Documento** non è altro che un gigantesco oggetto in formato JSON (o tecnicamente BSON - Binary JSON, ma all'utente appare come un normalissimo `{...}`).
+*   Risiedono nel regno dello **Schema-less** (senza schema fisso o con validazioni deboli/flessibili).
+
+#### Esempio Architetturale NoSQL:
+Immaginiamo una *Collezione* NoSQL chiamata `Automobili`. Questa collezione contiene 2 Documenti (JSON interi).
+
+**Documento 1:**
+```json
+{
+  "_id": "car_001",
+  "marca": "Fiat",
+  "modello": "Panda",
+  "elettrica": false
+}
+```
+
+**Documento 2:**
+```json
+{
+  "_id": "car_002",
+  "marca": "Tesla",
+  "modello": "Model 3",
+  "elettrica": true,
+  "software_version": "v11.0",
+  "radar_disponibili": ["frontale", "laterale"]
+}
+```
+
+**Il superpotere del NoSQL:**
+Hai notato cosa è appena successo? Nel Documento 2 abbiamo inserito chiavi (`software_version` e `radar_disponibili`) che nel Documento 1 **non esistono affatto**.
+In un Database SQL (Relazionale), questo causerebbe un tragico errore di sistema a meno di aver previsto prima la creazione delle colonne.
+In MongoDB/Firestore (NoSQL), possiamo ficcare pezzi di natura disomogenea nella stessa collezione. Questa **Flessibilità Estrema** è essenziale e ci salverà la vita su "FridgeSavvy", poiché non tutte le ricette o non tutti gli scontrini fotografati avranno mai esattamente la stessa struttura fissa di campi!

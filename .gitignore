@@ -1,0 +1,18 @@
+# Dipendenze
+node_modules/
+__pycache__/
+venv/
+env/
+.env
+
+# File di sistema operativo
+.DS_Store
+Thumbs.db
+
+# Log e file temporanei
+*.log
+/tmp/
+
+# Cartelle specifiche IDE
+.vscode/
+.idea/
