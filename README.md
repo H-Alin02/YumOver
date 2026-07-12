@@ -91,26 +91,6 @@ Il progetto è in **Fase 3 (Detailed Design)**. Non c'è ancora codice implement
 
 ---
 
-## 🤝 Come Contribuire
-
-Questo progetto usa **GitHub Flow** per la collaborazione:
-
-```bash
-# 1. Crea un branch dal main
-git checkout -b feat/nome-feature
-
-# 2. Lavora sul branch
-git add .
-git commit -m "feat: descrizione"
-
-# 3. Pusha e apri una Pull Request
-git push origin feat/nome-feature
-```
-
-Tutte le modifiche passano da **Pull Request** con review prima del merge in `main`.
-
----
-
 ## 🧠 Obiettivi di Apprendimento
 
 Cosa sto imparando costruendo FridgeSavvy:
