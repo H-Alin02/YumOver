@@ -3,9 +3,8 @@
 
 # 🧊 FridgeSavvy → Food Coach
 
-### Dal problema dello spreco alimentare a un'app educativa — imparando l'ingegneria del software passo dopo passo.
+### Imparare l'ingegneria del software costruendo un'app contro lo spreco alimentare.
 
-[![Status](https://img.shields.io/badge/Stato-Design%20Completato%20(SDLC%203)-blueviolet)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Python%20%7C%20MongoDB-339933)]()
 
@@ -13,53 +12,95 @@
 
 ---
 
-## 📖 Cos'è FridgeSavvy?
+## Cos'è FridgeSavvy?
 
-FridgeSavvy è **due cose in una**:
+FridgeSavvy sono due cose, e vale la pena distinguerle.
 
-1. **Food Coach** — un'app educativa che aiuta a ridurre lo spreco alimentare insegnando a pianificare la spesa, conservare il cibo, cucinare gli avanzi e prendere consapevolezza dell'impatto economico e ambientale. Filosofia anti-Tinder: l'app ha successo quando l'utente non ha più bisogno dell'app.
-2. **Un percorso di apprendimento** costruito come un vero ciclo SDLC aziendale — dalla teoria al deploy — per imparare sviluppo full-stack, architetture di sistema, AI integration e molto altro.
+**Food Coach** è un'app che prova ad affrontare lo spreco alimentare in modo diverso. Invece di darti solo ricette con gli avanzi (che è quello che fanno tutte), cerca di insegnarti a sprecare meno a monte: come fare la spesa, come conservare, come cucinare quello che hai. La filosofia è un po' anticommerciale: se l'app funziona bene, col tempo non ne avrai più bisogno. È una delle ragioni per cui ho voluto costruirla.
 
-> *"Il miglior modo per imparare è costruire qualcosa di reale."*
-
----
-
-## 🎯 Obiettivo
-
-Eliminare lo spreco alimentare domestico **alla radice**: educando le persone a pianificare, conservare e cucinare meglio.
-- Inserisci gli ingredienti che hai → ricevi 3 ricette adattate con AI
-- L'app ti insegna a fare la spesa in modo intelligente
-- Impatto tracciato: € risparmiati, pasti salvati
-- Filosofia educativa: l'app lavora per rendersi superflua
+**Un percorso di apprendimento.** Ogni pezzo di questo progetto è aperto, codice, decisioni, errori. Lo sto costruendo mentre imparo, seguendo un ciclo SDLC vero, dalla teoria al deploy. Serve a chiunque voglia vedere come si passa da un'idea a un prodotto senza saltare i passaggi.
 
 ---
 
-## 🛠 Stack Tecnologico
+## Obiettivo
+
+Insegnare a sprecare meno cibo. Non attraverso un tracciatore o una lista della spesa obbligatoria, ma provando a cambiare il modo in cui le persone pensano al cibo che comprano e cucinano.
+
+L'app fa tre cose:
+- Ricevi 3 ricette adattate agli ingredienti che hai, senza liste infinite
+- Traccia l'impatto: quanti pasti hai salvato, quanti soldi.
+- Piano: aggiungere pianificazione settimanale, conservazione, challenge (ma prima deve funzionare la parte base)
+
+---
+
+## Stack tecnologico
 
 | Layer | Tecnologia | Perché |
-|-------|-----------|--------|
-| Layer | Tecnologia | Perché |
-|---|---|---|---|
-| **Backend Gateway** | Node.js + Express | API REST, orchestratore |
-| **AI Worker** | Python + FastAPI | Recommendation engine (RAG) |
-| **Database** | MongoDB Atlas | NoSQL per dati eterogenei |
+|---|---|---|
+| **Gateway** | Node.js + Express | API REST, orchestrazione |
+| **AI Worker** | Python + FastAPI | Recommendation engine RAG |
+| **Database** | MongoDB Atlas | Dati strutturati |
 | **Vector DB** | ChromaDB | Embedding per similarity search |
 | **LLM** | Gemini API (free tier) | Refinement ricette |
-| **Frontend futuro** | React Native | Cross-platform mobile |
+| **Frontend (futuro)** | React Native | Cross-platform mobile |
 
-### Pipeline AI (RAG — NO fine-tuning)
+### Architettura
 
+```mermaid
+graph TB
+    subgraph Client["Utente"]
+        WB[Browser Web MVP]
+        RN["React Native (futuro)"]
+    end
+
+    subgraph Backend["Backend"]
+        NG["Node.js + Express<br/>Gateway API"]
+        MF["MongoDB Atlas<br/>Dati strutturati"]
+    end
+
+    subgraph AI["AI Worker"]
+        PY["Python + FastAPI<br/>RAG Pipeline"]
+        CD["ChromaDB<br/>Embedding vettoriali"]
+        GM["Gemini API<br/>LLM Refinement"]
+    end
+
+    WB --> NG
+    RN -.-> NG
+    NG --> MF
+    NG --> PY
+    PY --> CD
+    PY --> GM
 ```
-Input ingredienti ➔ Embedding search (ChromaDB) ➔ Gemini refinement ➔ 3 ricette adattate
+
+La pipeline e' semplice: embedding search su ChromaDB recupera le ricette piu' vicine, Gemini le adatta agli ingredienti che hai. Niente fine-tuning, niente modelli custom.
+
+Se nessuna ricetta matcha, il sistema prova con una combinazione nuova. Se ancora non basta, chiede all'utente: "Hai anche un uovo? Con quello potrei fare..."
+
+### Flusso richiesta
+
+```mermaid
+sequenceDiagram
+    actor U as Utente
+    participant N as Node.js Gateway
+    participant P as Python AI Worker
+    participant C as ChromaDB
+    participant G as Gemini API
+    participant M as MongoDB
+
+    U->>N: POST /api/recipes/suggest ("pasta", "uova", "guanciale")
+    N->>P: HTTP POST /suggest
+    P->>C: Embedding search (top-10 ricette)
+    C-->>P: Ricette retrieve
+    P->>G: Refinement con grounding
+    G-->>P: 3 ricette adattate
+    P-->>N: JSON response
+    N-->>U: { recipes: [...], cached: false }
+    N->>M: Salva impatto utente
 ```
 
-**Fallback creativo:** se nessuna ricetta matcha, il sistema suggerisce combinazioni nuove con disclaimer. Se serve, chiede all'utente "Hai anche un uovo? Con quello potrei fare..."
+## Struttura del Corso (SDLC)
 
----
-
-## 📚 Struttura del Corso (SDLC)
-
-Il progetto segue le 6 fasi del **Software Development Life Cycle** usate in azienda:
+Il progetto segue le 6 fasi del Software Development Life Cycle usate in azienda:
 
 ```
 📘 Cap. 00 — Fondamenti Teorici    ✅ (Agile/Scrum, metodologie)
@@ -77,7 +118,7 @@ Vedi l'[Indice Completo del Corso](docs/Indice_Corso_Software_Engineering.md) e 
 
 ---
 
-## 🚦 Stato Attuale
+## Stato Attuale
 
 Il progetto è in **Fase 4 (Sviluppo)**. Fase 3 (Detailed Design) è completata.
 
@@ -94,7 +135,7 @@ Il progetto è in **Fase 4 (Sviluppo)**. Fase 3 (Detailed Design) è completata.
 
 ---
 
-## 🧠 Obiettivi di Apprendimento
+## Obiettivi di Apprendimento
 
 Cosa sto imparando costruendo Food Coach:
 
@@ -111,12 +152,9 @@ Cosa sto imparando costruendo Food Coach:
 
 ---
 
-## 📄 Licenza
+## Licenza
 
 Distribuito sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori informazioni.
 
 ---
 
-<div align="center">
-  <sub>Costruito con ☕ e determinazione · 2026</sub>
-</div>

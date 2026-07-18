@@ -1,6 +1,6 @@
-# 📚 FridgeSavvy: Documentazione di Software Engineering
+# Progetto-Food-Coach: Documentazione di Software Engineering
 
-> Benvenuto nell'indice generale del progetto FridgeSavvy.  
+> Benvenuto nell'indice generale del progetto Food Coach.  
 > Questa cartella `docs/` e i suoi sottocapitoli contengono il percorso logico, metodologico e ingegneristico che seguiamo per costruire il prodotto. L'ordine dei capitoli **rispetta rigorosamente le fasi dell'SDLC** (Software Development Life Cycle) — lo stesso processo usato nelle aziende tech professionali.
 
 ---
@@ -100,7 +100,7 @@ Conterrà:
 - **Vuoi sapere cosa abbiamo deciso e perché?** → [Knowledge Base](./02_System_Design_e_Architettura/Knowledge_Base_Riepilogo.md)
 - **Vuoi capire come funziona il sistema nel dettaglio?** → [Architettura del Sistema](./02_System_Design_e_Architettura/Architettura_Sistema.md)
 - **Stai guardando una nuova idea o feature?** → [Feature: Riconoscimento Prodotti](./01_Idea_e_Requisiti/Feature_Riconoscimento_Prodotti_Scontrino.md)
-- **Vuoi sapere cosa fare adesso?** → [Kanban Board su GitHub](https://github.com/H-Alin02/Project-FridgeSavvy/projects)
+- **Vuoi sapere cosa fare adesso?** → [Kanban Board su GitHub](https://github.com/H-Alin02/Project-Food-Coach/projects)
 
 ---
 

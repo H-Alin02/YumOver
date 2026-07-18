@@ -78,7 +78,7 @@ GitHub legge quel messaggio, trova il ticket numero 5 e lo **sposta automaticame
 
 ## 3. Come Attivare la tua Kanban Board (Guida Pratica)
 
-Segui questi passi sul tuo repository GitHub (`https://github.com/H-Alin02/Project-FridgeSavvy`):
+Segui questi passi sul tuo repository GitHub (`https://github.com/H-Alin02/Project-Food-Coach`):
 
 1. **Crea il Progetto (la lavagna):**
    - Vai sul tab **Projects** in alto nel repository
