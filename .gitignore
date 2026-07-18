@@ -16,3 +16,8 @@ Thumbs.db
 # Cartelle specifiche IDE
 .vscode/
 .idea/
+.obsidian/
+
+#Svilippo
+.claude/
+CLAUDE.md
