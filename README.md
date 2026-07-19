@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <div align="center">
 
-# 🧊 FridgeSavvy → Food Coach
+# 🧊 Project Food Coach
 
 ### Learning software engineering by building an app against food waste.
 
@@ -12,9 +12,9 @@
 
 ---
 
-## What is FridgeSavvy?
+## What is Project Food Coach?
 
-FridgeSavvy is two things, and they are not the same.
+Project Food Coach is two things, and they are not the same.
 
 **Food Coach** is an app that tries to tackle food waste differently. Instead of just giving you recipes for leftovers (which is what they all do), it tries to teach you how to waste less upstream: how to shop, how to store, how to cook what you have. The philosophy is a bit anti-commercial: if it works well, over time you won't need it anymore. That is one of the reasons I wanted to build it.
 
@@ -41,20 +41,20 @@ The app does three things:
 | **AI Worker** | Python + FastAPI | RAG recommendation engine |
 | **Database** | MongoDB Atlas | Structured data |
 | **Vector DB** | ChromaDB | Embeddings for similarity search |
-| **LLM** | Gemini API (free tier) | Recipe refinement |
+| **LLM** | Gemini API (MVP) | Recipe refinement |
 | **Frontend (future)** | React Native | Cross-platform mobile |
 
 ### Architecture
 
-<img src="docs/02_System_Design_e_Architettura/ArchitectureDiagram.svg" alt="Food Coach Architecture" width="100%"/>
+<img src="assets/ArchitectureDiagram.svg" alt="Food Coach Architecture" width="100%"/>
 
-The pipeline is simple: embedding search on ChromaDB finds the closest recipes, Gemini adapts them to your ingredients. No fine-tuning, no custom models.
+The pipeline is simple: embedding search on ChromaDB finds the closest recipes, the LLM adapts them to your ingredients. No fine-tuning, no custom models.
 
 If no recipe matches, the system tries a new combination. If that still falls short, it asks: "Do you also have an egg? With that I could make..."
 
 ### Request Flow
 
-<img src="docs/02_System_Design_e_Architettura/FlowDiagram.svg" alt="Request Flow — Recipe Suggestion" width="100%"/>
+<img src="assets/FlowDiagram.svg" alt="Request Flow — Recipe Suggestion" width="100%"/>
 
 ## Course Structure (SDLC)
 
