@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Food Coach** è due cose in uno:
+**Project Food Coach** è due cose in uno:
 1. Un'**app educativa anti-spreco** con filosofia anti-Tinder: l'app ha successo quando l'utente non ha più bisogno dell'app. Invece di limitarsi a dare ricette con gli avanzi, insegna a pianificare la spesa, conservare il cibo e cucinare quello che si ha.
 2. Un **percorso di apprendimento strutturato** per il lead developer (Alin) per imparare full-stack software engineering seguendo un ciclo SDLC reale, dalla teoria al deploy.
 
-**Storia:** Il progetto è nato come **FridgeSavvy** (app OCR per scansione scontrini). A Luglio 2026 ha fatto un pivot concettuale a **Food Coach**. L'architettura a microservizi già definita (Node.js + Python + NoSQL) rimane valida e viene riutilizzata.
+**Storia:** Il progetto è nato come **FridgeSavvy** (app OCR per scansione scontrini). A Luglio 2026 ha fatto un pivot concettuale a **Food Coach**, poi rinominato **Project Food Coach**. L'architettura a microservizi già definita (Node.js + Python + NoSQL) rimane valida e viene riutilizzata.
 
 **Current Status:** SDLC Phase 3 — Detailed Design ✅ Completata. **Pronti per Phase 4 — Sviluppo.**
 
