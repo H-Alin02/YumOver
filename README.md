@@ -46,31 +46,7 @@ L'app fa tre cose:
 
 ### Architettura
 
-```mermaid
-graph TB
-    subgraph Client["Utente"]
-        WB[Browser Web MVP]
-        RN["React Native (futuro)"]
-    end
-
-    subgraph Backend["Backend"]
-        NG["Node.js + Express<br/>Gateway API"]
-        MF["MongoDB Atlas<br/>Dati strutturati"]
-    end
-
-    subgraph AI["AI Worker"]
-        PY["Python + FastAPI<br/>RAG Pipeline"]
-        CD["ChromaDB<br/>Embedding vettoriali"]
-        GM["Gemini API<br/>LLM Refinement"]
-    end
-
-    WB --> NG
-    RN -.-> NG
-    NG --> MF
-    NG --> PY
-    PY --> CD
-    PY --> GM
-```
+<img src="docs/02_System_Design_e_Architettura/ArchitectureDiagram.svg" alt="Architettura Food Coach" width="100%"/>
 
 La pipeline e' semplice: embedding search su ChromaDB recupera le ricette piu' vicine, Gemini le adatta agli ingredienti che hai. Niente fine-tuning, niente modelli custom.
 
@@ -78,25 +54,7 @@ Se nessuna ricetta matcha, il sistema prova con una combinazione nuova. Se ancor
 
 ### Flusso richiesta
 
-```mermaid
-sequenceDiagram
-    actor U as Utente
-    participant N as Node.js Gateway
-    participant P as Python AI Worker
-    participant C as ChromaDB
-    participant G as Gemini API
-    participant M as MongoDB
-
-    U->>N: POST /api/recipes/suggest ("pasta", "uova", "guanciale")
-    N->>P: HTTP POST /suggest
-    P->>C: Embedding search (top-10 ricette)
-    C-->>P: Ricette retrieve
-    P->>G: Refinement con grounding
-    G-->>P: 3 ricette adattate
-    P-->>N: JSON response
-    N-->>U: { recipes: [...], cached: false }
-    N->>M: Salva impatto utente
-```
+<img src="docs/02_System_Design_e_Architettura/FlowDiagram.svg" alt="Flusso Richiesta — Suggerimento Ricette" width="100%"/>
 
 ## Struttura del Corso (SDLC)
 
