@@ -3,7 +3,7 @@
 
 # 🧊 FridgeSavvy → Food Coach
 
-### Imparare l'ingegneria del software costruendo un'app contro lo spreco alimentare.
+### Learning software engineering by building an app against food waste.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Python%20%7C%20MongoDB-339933)]()
@@ -12,107 +12,108 @@
 
 ---
 
-## Cos'è FridgeSavvy?
+## What is FridgeSavvy?
 
-FridgeSavvy sono due cose, e vale la pena distinguerle.
+FridgeSavvy is two things, and they are not the same.
 
-**Food Coach** è un'app che prova ad affrontare lo spreco alimentare in modo diverso. Invece di darti solo ricette con gli avanzi (che è quello che fanno tutte), cerca di insegnarti a sprecare meno a monte: come fare la spesa, come conservare, come cucinare quello che hai. La filosofia è un po' anticommerciale: se l'app funziona bene, col tempo non ne avrai più bisogno. È una delle ragioni per cui ho voluto costruirla.
+**Food Coach** is an app that tries to tackle food waste differently. Instead of just giving you recipes for leftovers (which is what they all do), it tries to teach you how to waste less upstream: how to shop, how to store, how to cook what you have. The philosophy is a bit anti-commercial: if it works well, over time you won't need it anymore. That is one of the reasons I wanted to build it.
 
-**Un percorso di apprendimento.** Ogni pezzo di questo progetto è aperto, codice, decisioni, errori. Lo sto costruendo mentre imparo, seguendo un ciclo SDLC vero, dalla teoria al deploy. Serve a chiunque voglia vedere come si passa da un'idea a un prodotto senza saltare i passaggi.
-
----
-
-## Obiettivo
-
-Insegnare a sprecare meno cibo. Non attraverso un tracciatore o una lista della spesa obbligatoria, ma provando a cambiare il modo in cui le persone pensano al cibo che comprano e cucinano.
-
-L'app fa tre cose:
-- Ricevi 3 ricette adattate agli ingredienti che hai, senza liste infinite
-- Traccia l'impatto: quanti pasti hai salvato, quanti soldi.
-- Piano: aggiungere pianificazione settimanale, conservazione, challenge (ma prima deve funzionare la parte base)
+**A learning path.** Every piece of this project is open. The code, the decisions, the mistakes. I am building it while I learn, following a real SDLC cycle from theory to deploy. It is for anyone who wants to see how you go from an idea to a product without skipping steps.
 
 ---
 
-## Stack tecnologico
+## Goal
 
-| Layer | Tecnologia | Perché |
+Teach people to waste less food. Not with a tracker or a mandatory shopping list, but by trying to change how people think about the food they buy and cook.
+
+The app does three things:
+- Get 3 recipes adapted to the ingredients you have. No endless lists.
+- Track impact: meals saved, money saved.
+- Plan: weekly planning, storage tips, challenges down the line. The basics need to work first.
+
+---
+
+## Tech Stack
+
+| Layer | Technology | Why |
 |---|---|---|
-| **Gateway** | Node.js + Express | API REST, orchestrazione |
-| **AI Worker** | Python + FastAPI | Recommendation engine RAG |
-| **Database** | MongoDB Atlas | Dati strutturati |
-| **Vector DB** | ChromaDB | Embedding per similarity search |
-| **LLM** | Gemini API (free tier) | Refinement ricette |
-| **Frontend (futuro)** | React Native | Cross-platform mobile |
+| **Gateway** | Node.js + Express | API REST, orchestration |
+| **AI Worker** | Python + FastAPI | RAG recommendation engine |
+| **Database** | MongoDB Atlas | Structured data |
+| **Vector DB** | ChromaDB | Embeddings for similarity search |
+| **LLM** | Gemini API (free tier) | Recipe refinement |
+| **Frontend (future)** | React Native | Cross-platform mobile |
 
-### Architettura
+### Architecture
 
-<img src="docs/02_System_Design_e_Architettura/ArchitectureDiagram.svg" alt="Architettura Food Coach" width="100%"/>
+<img src="docs/02_System_Design_e_Architettura/ArchitectureDiagram.svg" alt="Food Coach Architecture" width="100%"/>
 
-La pipeline e' semplice: embedding search su ChromaDB recupera le ricette piu' vicine, Gemini le adatta agli ingredienti che hai. Niente fine-tuning, niente modelli custom.
+The pipeline is simple: embedding search on ChromaDB finds the closest recipes, Gemini adapts them to your ingredients. No fine-tuning, no custom models.
 
-Se nessuna ricetta matcha, il sistema prova con una combinazione nuova. Se ancora non basta, chiede all'utente: "Hai anche un uovo? Con quello potrei fare..."
+If no recipe matches, the system tries a new combination. If that still falls short, it asks: "Do you also have an egg? With that I could make..."
 
-### Flusso richiesta
+### Request Flow
 
-<img src="docs/02_System_Design_e_Architettura/FlowDiagram.svg" alt="Flusso Richiesta — Suggerimento Ricette" width="100%"/>
+<img src="docs/02_System_Design_e_Architettura/FlowDiagram.svg" alt="Request Flow — Recipe Suggestion" width="100%"/>
 
-## Struttura del Corso (SDLC)
+## Course Structure (SDLC)
 
-Il progetto segue le 6 fasi del Software Development Life Cycle usate in azienda:
+The project follows the 6 phases of the Software Development Life Cycle used in the industry:
 
 ```
-📘 Cap. 00 — Fondamenti Teorici    ✅ (Agile/Scrum, metodologie)
-📗 Cap. 01 — Idea e Requisiti      ✅ (Feature analysis, brainstorming)
-📙 Cap. 02 — System Design         ✅ (Architettura, microservizi)
-📕 Cap. 03 — Detailed Design       ✅ (Data modeling, API design) ← COMPLETATO
-📓 Cap. 04 — Sviluppo e Codice     🔄 (Sprint 1 — Dataset + Backend)
-📔 Cap. 05 — Testing e Qualità     ⏳
-📒 Cap. 06 — Deploy e CI/CD        ⏳
+📘 Ch. 00 — Theory Foundations    ✅ (Agile/Scrum, methodologies)
+📗 Ch. 01 — Idea & Requirements   ✅ (Feature analysis, brainstorming)
+📙 Ch. 02 — System Design         ✅ (Architecture, microservices)
+📕 Ch. 03 — Detailed Design       ✅ (Data modeling, API design) ← COMPLETED
+📓 Ch. 04 — Development           🔄 (Sprint 1 — Dataset + Backend)
+📔 Ch. 05 — Testing & Quality     ⏳
+📒 Ch. 06 — Deploy & CI/CD        ⏳
 ```
 
-Ogni capitolo contiene documenti teorici, esercizi e risorse YouTube per studiare in autonomia prima di scrivere codice.
+Each chapter includes theory docs, exercises, and YouTube links so you can study on your own before writing code.
 
-Vedi l'[Indice Completo del Corso](docs/Indice_Corso_Software_Engineering.md) e il [Design Doc Food Coach](docs/03_Detailed_Design_e_Modellazione/Food_Coach_Design_Doc.md).
+See the [Full Course Index](docs/Indice_Corso_Software_Engineering.md) and the [Food Coach Design Doc](docs/03_Detailed_Design_e_Modellazione/Food_Coach_Design_Doc.md).
 
 ---
 
-## Stato Attuale
+## Current Status
 
-Il progetto è in **Fase 4 (Sviluppo)**. Fase 3 (Detailed Design) è completata.
+The project is in **Phase 4 (Development)**. Phase 3 (Detailed Design) is done.
 
-- [x] Fondamenti teorici (Agile, Scrum, ruoli)
-- [x] Idea validata e requisiti definiti
-- [x] Architettura a microservizi progettata
-- [x] Tech stack scelto e motivato
-- [x] Data modeling NoSQL
-- [x] API Design REST
-- [x] Design doc revisionato (/plan-eng-review)
-- [ ] Sprint 1 — Dataset ricette + setup monorepo
+- [x] Theory foundations (Agile, Scrum, roles)
+- [x] Idea validated and requirements defined
+- [x] Microservices architecture designed
+- [x] Tech stack chosen and justified
+- [x] NoSQL data modeling
+- [x] REST API design
+- [x] Design doc reviewed (/plan-eng-review)
+- [ ] Sprint 1 — Recipe dataset + monorepo setup
 - [ ] Sprint 2 — AI Core (embedding + RAG pipeline)
 - [ ] Sprint 3 — Backend API (Node.js gateway)
 
 ---
 
-## Obiettivi di Apprendimento
+## Learning Goals
 
-Cosa sto imparando costruendo Food Coach:
+What I am learning by building Food Coach:
 
-- ✅ System Design e architetture a microservizi
-- ✅ API REST con Node.js + Express
-- ✅ Database NoSQL (MongoDB) e modellazione dati
+- ✅ System design and microservices architecture
+- ✅ REST APIs with Node.js + Express
+- ✅ NoSQL databases (MongoDB) and data modeling
 - ✅ RAG pipeline (embedding search + LLM refinement)
-- ✅ Database vettoriali (ChromaDB)
+- ✅ Vector databases (ChromaDB)
 - ✅ AI integration (Gemini API, sentence-transformers)
-- ✅ Python + FastAPI per microservizi AI
-- ✅ DevOps: CI/CD, Docker, deploy cloud
-- ✅ Frontend mobile cross-platform (React Native, futuro)
-- ✅ Git branch strategy e code review
+- ✅ Python + FastAPI for AI microservices
+- ✅ DevOps: CI/CD, Docker, cloud deploy
+- ✅ Cross-platform mobile frontend (React Native, future)
+- ✅ Git branch strategy and code review
 
 ---
 
-## Licenza
+## License
 
-Distribuito sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori informazioni.
+MIT License. See [LICENSE](LICENSE) for more information.
 
 ---
 
+</div>
