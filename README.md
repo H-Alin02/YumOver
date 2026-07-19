@@ -18,7 +18,7 @@ Project Food Coach is two things, and they are not the same.
 
 **Food Coach** is an app that tries to tackle food waste differently. Instead of just giving you recipes for leftovers (which is what they all do), it tries to teach you how to waste less upstream: how to shop, how to store, how to cook what you have. The philosophy is a bit anti-commercial: if it works well, over time you won't need it anymore. That is one of the reasons I wanted to build it.
 
-**A learning path.** Every piece of this project is open. The code, the decisions, the mistakes. I am building it while I learn, following a real SDLC cycle from theory to deploy. It is for anyone who wants to see how you go from an idea to a product without skipping steps.
+**A learning path.** Every piece of this project is open. The code, the decisions, the mistakes. I am building it while I learn, following a real SDLC cycle from theory to deploy.
 
 ---
 
@@ -58,27 +58,23 @@ If no recipe matches, the system tries a new combination. If that still falls sh
 
 ## Course Structure (SDLC)
 
-The project follows the 6 phases of the Software Development Life Cycle used in the industry:
+The project follows the 6 phases of the Software Development Life Cycle:
 
 ```
 📘 Ch. 00 — Theory Foundations    ✅ (Agile/Scrum, methodologies)
 📗 Ch. 01 — Idea & Requirements   ✅ (Feature analysis, brainstorming)
 📙 Ch. 02 — System Design         ✅ (Architecture, microservices)
-📕 Ch. 03 — Detailed Design       ✅ (Data modeling, API design) ← COMPLETED
-📓 Ch. 04 — Development           🔄 (Sprint 1 — Dataset + Backend)
+📕 Ch. 03 — Detailed Design       ✅ (Data modeling, API design)
+📓 Ch. 04 — Development           ⏳ (Not started)
 📔 Ch. 05 — Testing & Quality     ⏳
 📒 Ch. 06 — Deploy & CI/CD        ⏳
 ```
-
-Each chapter includes theory docs, exercises, and YouTube links so you can study on your own before writing code.
-
-See the [Full Course Index](docs/Indice_Corso_Software_Engineering.md) and the [Food Coach Design Doc](docs/03_Detailed_Design_e_Modellazione/Food_Coach_Design_Doc.md).
 
 ---
 
 ## Current Status
 
-The project is in **Phase 4 (Development)**. Phase 3 (Detailed Design) is done.
+Concept phase. The architecture is designed, the tech stack is chosen, the data models are defined. No code has been written yet.
 
 - [x] Theory foundations (Agile, Scrum, roles)
 - [x] Idea validated and requirements defined
@@ -86,7 +82,7 @@ The project is in **Phase 4 (Development)**. Phase 3 (Detailed Design) is done.
 - [x] Tech stack chosen and justified
 - [x] NoSQL data modeling
 - [x] REST API design
-- [x] Design doc reviewed (/plan-eng-review)
+- [x] Design doc reviewed
 - [ ] Sprint 1 — Recipe dataset + monorepo setup
 - [ ] Sprint 2 — AI Core (embedding + RAG pipeline)
 - [ ] Sprint 3 — Backend API (Node.js gateway)
@@ -95,18 +91,18 @@ The project is in **Phase 4 (Development)**. Phase 3 (Detailed Design) is done.
 
 ## Learning Goals
 
-What I am learning by building Food Coach:
+What I plan to learn by building Food Coach:
 
-- ✅ System design and microservices architecture
-- ✅ REST APIs with Node.js + Express
-- ✅ NoSQL databases (MongoDB) and data modeling
-- ✅ RAG pipeline (embedding search + LLM refinement)
-- ✅ Vector databases (ChromaDB)
-- ✅ AI integration (Gemini API, sentence-transformers)
-- ✅ Python + FastAPI for AI microservices
-- ✅ DevOps: CI/CD, Docker, cloud deploy
-- ✅ Cross-platform mobile frontend (React Native, future)
-- ✅ Git branch strategy and code review
+- System design and microservices architecture
+- REST APIs with Node.js + Express
+- NoSQL databases (MongoDB) and data modeling
+- RAG pipeline (embedding search + LLM refinement)
+- Vector databases (ChromaDB)
+- AI integration (Gemini API, sentence-transformers)
+- Python + FastAPI for AI microservices
+- DevOps: CI/CD, Docker, cloud deploy
+- Cross-platform mobile frontend (React Native, future)
+- Git branch strategy and code review
 
 ---
 
