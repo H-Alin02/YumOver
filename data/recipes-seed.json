@@ -1,0 +1,642 @@
+[
+    {
+        "id": 1,
+        "title": "Tiramisù",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Mascarpone",
+                "quantity": "500g",
+                "category": "dairy"
+            },
+            {
+                "name": "Uova Medie",
+                "quantity": "4",
+                "category": "eggs"
+            },
+            {
+                "name": "Savoiardi",
+                "quantity": "250g",
+                "category": "pasta"
+            },
+            {
+                "name": "Zucchero",
+                "quantity": "80g",
+                "category": "sugar"
+            },
+            {
+                "name": "Caffè Moka",
+                "quantity": "4 tazzine",
+                "category": "beverages"
+            },
+            {
+                "name": "Cacao Amaro in polvere",
+                "quantity": "q.b.",
+                "category": "sugar"
+            }
+        ],
+        "instructions": [
+            "Preparare il caffè e lasciarlo raffreddare.",
+            "Separare i tuorli dagli albumi. Montare i tuorli con lo zucchero fino a ottenere un composto chiaro e spumoso.",
+            "Unire il mascarpone al composto di uova e zucchero, amalgamando con una frusta a mano.",
+            "Montare gli albumi a neve con un pizzico di sale e incorporarli delicatamente alla crema di mascarpone.",
+            "Immergere velocemente i savoiardi nel caffè freddo, quindi disporre uno strato sul fondo di una pirofila.",
+            "Stendere uno strato di crema al mascarpone. Ripetere con un secondo strato di savoiardi e crema.",
+            "Spolverizzare con abbondante cacao amaro e far riposare in frigorifero per almeno 1 ora prima di servire."
+        ],
+        "prepTime": 40,
+        "difficulty": "easy",
+        "tags": [
+            "dolce",
+            "senza-cottura",
+            "classico"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Pasta al Forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Pasta Corta",
+                "quantity": "400g",
+                "category": "pasta"
+            },
+            {
+                "name": "Carne Macinata Mista",
+                "quantity": "500g",
+                "category": "meat"
+            },
+            {
+                "name": "Passata di Pomodoro",
+                "quantity": "500ml",
+                "category": "vegetables"
+            },
+            {
+                "name": "Mozzarella",
+                "quantity": "200g",
+                "category": "dairy"
+            },
+            {
+                "name": "Parmigiano Grattugiato",
+                "quantity": "100g",
+                "category": "dairy"
+            },
+            {
+                "name": "Cipolla",
+                "quantity": "1",
+                "category": "vegetables"
+            },
+            {
+                "name": "Carota",
+                "quantity": "1",
+                "category": "vegetables"
+            },
+            {
+                "name": "Sedano",
+                "quantity": "1 costa",
+                "category": "vegetables"
+            },
+            {
+                "name": "Olio d'Oliva",
+                "quantity": "30ml",
+                "category": "condiments"
+            },
+            {
+                "name": "Sale e Pepe",
+                "quantity": "q.b.",
+                "category": "condiments"
+            }
+        ],
+        "instructions": [
+            "Tritare finemente cipolla, carota e sedano. Soffriggere in olio per 5 minuti.",
+            "Aggiungere la carne macinata e rosolare fino a doratura. Versare la passata, salare, pepare e cuocere il sugo a fuoco basso per 30 minuti.",
+            "Cuocere la pasta molto al dente (3 minuti in meno del tempo indicato). Scolarla.",
+            "Mescolare la pasta con il sugo, metà della mozzarella a cubetti e metà del parmigiano.",
+            "Versare in una pirofila imburrata. Coprire con la mozzarella rimasta e il parmigiano.",
+            "Infornare a 180°C per 20 minuti fino a gratinatura. Lasciar riposare 5 minuti prima di servire."
+        ],
+        "prepTime": 60,
+        "difficulty": "easy",
+        "tags": [
+            "primo",
+            "al-forno",
+            "classico"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Pasta alla Carbonara",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Spaghetti",
+                "quantity": "250g",
+                "category": "pasta"
+            },
+            {
+                "name": "Guanciale",
+                "quantity": "250g",
+                "category": "meat"
+            },
+            {
+                "name": "Pecorino Romano",
+                "quantity": "q.b.",
+                "category": "dairy"
+            },
+            {
+                "name": "Pepe Nero",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Sale",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Tuorli d'Uovo",
+                "quantity": "7",
+                "category": "eggs"
+            }
+        ],
+        "instructions": [
+            "Tagliare il guanciale a tocchetti di circa 1 cm e soffriggerlo a fuoco lento in una padella antiaderente fino a doratura. Non aggiungere olio.",
+            "Sbattere i tuorli in una ciotola con pecorino grattugiato e abbondante pepe nero.",
+            "Cuocere gli spaghetti al dente in acqua bollente salata. Scolarli conservando un mestolo di acqua di cottura.",
+            "Versare la pasta calda nella padella col guanciale, togliere dal fuoco.",
+            "Aggiungere immediatamente il composto di tuorli e pecorino, mescolando velocemente. La crema si formerà con il calore della pasta.",
+            "Se necessario, aggiungere un goccio di acqua di cottura per cremosità. Servire subito con pecorino e pepe."
+        ],
+        "prepTime": 25,
+        "difficulty": "medium",
+        "tags": [
+            "primo",
+            "classico",
+            "romana"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Cotoletta alla Milanese",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Costolette di Vitello",
+                "quantity": "4 (alte 2cm)",
+                "category": "meat"
+            },
+            {
+                "name": "Uova",
+                "quantity": "2",
+                "category": "eggs"
+            },
+            {
+                "name": "Pangrattato",
+                "quantity": "q.b.",
+                "category": "pasta"
+            },
+            {
+                "name": "Burro",
+                "quantity": "q.b.",
+                "category": "dairy"
+            },
+            {
+                "name": "Sale fino",
+                "quantity": "q.b.",
+                "category": "condiments"
+            }
+        ],
+        "instructions": [
+            "Praticare dei taglietti sulla pellicola esterna delle costolette per evitare che si arriccino in cottura. Non batterle.",
+            "Sbattere le uova in una ciotola con un pizzico di sale.",
+            "Immergere ogni cotoletta nelle uova sbattute, poi passarla nel pangrattato premendo bene con i polpastrelli.",
+            "Cuocere in abbondante burro caldo (deve immergere le cotolette per un terzo) per circa 6 minuti per lato, fino a doratura.",
+            "Scolare su carta assorbente e servire calde. La crosta deve essere dorata, l'interno rosato."
+        ],
+        "prepTime": 30,
+        "difficulty": "easy",
+        "tags": [
+            "secondo",
+            "tradizionale",
+            "milano"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Patate al Forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Patate a Pasta Gialla",
+                "quantity": "1kg",
+                "category": "vegetables"
+            },
+            {
+                "name": "Rosmarino Fresco",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Timo Fresco",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Aglio",
+                "quantity": "2 spicchi",
+                "category": "vegetables"
+            },
+            {
+                "name": "Olio d'Oliva",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Sale fino",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Pepe Nero",
+                "quantity": "q.b.",
+                "category": "condiments"
+            }
+        ],
+        "instructions": [
+            "Sbucciare le patate e tagliarle a cubetti regolari di circa 2 cm.",
+            "Sbollentarle in acqua bollente salata per 7 minuti. Scolarle e asciugarle bene.",
+            "Condire con olio d'oliva, rosmarino tritato, timo, aglio schiacciato, sale e pepe. Mescolare bene.",
+            "Stendere le patate su una teglia unta d'olio in un unico strato, senza sovrapporle.",
+            "Infornare a 220°C (forno ventilato) per 40 minuti, girando delicatamente a metà cottura, fino a doratura e croccantezza."
+        ],
+        "prepTime": 55,
+        "difficulty": "easy",
+        "tags": [
+            "contorno",
+            "classico",
+            "croccante"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Cheesecake alla fragola",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Biscotti Secchi",
+                "quantity": "150g",
+                "category": "pasta"
+            },
+            {
+                "name": "Burro",
+                "quantity": "70g",
+                "category": "dairy"
+            },
+            {
+                "name": "Zucchero di Canna",
+                "quantity": "40g",
+                "category": "sugar"
+            },
+            {
+                "name": "Ricotta Vaccina",
+                "quantity": "500g",
+                "category": "dairy"
+            },
+            {
+                "name": "Mascarpone",
+                "quantity": "250g",
+                "category": "dairy"
+            },
+            {
+                "name": "Panna Fresca Liquida",
+                "quantity": "50ml",
+                "category": "dairy"
+            },
+            {
+                "name": "Zucchero a Velo",
+                "quantity": "150g",
+                "category": "sugar"
+            },
+            {
+                "name": "Gelatina in Fogli",
+                "quantity": "10g",
+                "category": "other"
+            },
+            {
+                "name": "Fragole Fresche",
+                "quantity": "250g",
+                "category": "fruit"
+            }
+        ],
+        "instructions": [
+            "Tritare finemente i biscotti con lo zucchero di canna, unire il burro fuso e mescolare. Pressare il composto in una tortiera a cerniera da 20 cm foderata con carta forno. Far riposare in frigo per 1 ora.",
+            "Ammollare la gelatina in acqua fredda per 10 minuti.",
+            "Frullare le fragole e tenerle da parte. In una ciotola, mescolare ricotta e mascarpone, aggiungere lo zucchero a velo setacciato.",
+            "Scaldare la panna in un pentolino. Quando bolle, spegnere, strizzare la gelatina e scioglierla nella panna calda. Lasciare intiepidire.",
+            "Unire la salsa di fragole alla crema di formaggi, poi aggiungere il composto di panna e gelatina tiepido. Mescolare bene.",
+            "Versare la crema sulla base di biscotti, livellare e far rassodare in frigorifero per almeno 3 ore. Decorare con fragole fresche prima di servire."
+        ],
+        "prepTime": 35,
+        "difficulty": "medium",
+        "tags": [
+            "dolce",
+            "freddo",
+            "frutta"
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Pasta al pomodoro",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Spaghetti",
+                "quantity": "400g",
+                "category": "pasta"
+            },
+            {
+                "name": "Pomodori Pelati",
+                "quantity": "500g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Aglio",
+                "quantity": "2 spicchi",
+                "category": "vegetables"
+            },
+            {
+                "name": "Olio d'Oliva",
+                "quantity": "40ml",
+                "category": "condiments"
+            },
+            {
+                "name": "Basilico Fresco",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Sale fino",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Parmigiano Grattugiato",
+                "quantity": "q.b.",
+                "category": "dairy"
+            }
+        ],
+        "instructions": [
+            "Scaldare l'olio in una padella capiente, aggiungere l'aglio schiacciato e farlo dorare leggermente.",
+            "Versare i pomodori pelati, schiacciarli con una forchetta, salare e cuocere a fuoco medio per 15-20 minuti finché il sugo si addensa.",
+            "Cuocere gli spaghetti al dente in abbondante acqua bollente salata. Scolarli conservando un mestolo di acqua di cottura.",
+            "Versare la pasta nella padella col sugo, saltare un minuto a fuoco vivace aggiungendo un goccio di acqua di cottura se necessario.",
+            "Servire con basilico fresco e parmigiano grattugiato a piacere."
+        ],
+        "prepTime": 25,
+        "difficulty": "easy",
+        "tags": [
+            "primo",
+            "classico",
+            "veloce"
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Insalata di riso con verdure",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Riso per Insalate",
+                "quantity": "300g",
+                "category": "pasta"
+            },
+            {
+                "name": "Zucchine",
+                "quantity": "200g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Peperoni",
+                "quantity": "200g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Pomodorini Ciliegino",
+                "quantity": "200g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Mais Dolce",
+                "quantity": "150g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Tonno Sott'Olio",
+                "quantity": "200g",
+                "category": "fish"
+            },
+            {
+                "name": "Olive Verdi",
+                "quantity": "100g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Olio d'Oliva",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Succo di Limone",
+                "quantity": "q.b.",
+                "category": "fruit"
+            },
+            {
+                "name": "Sale fino",
+                "quantity": "q.b.",
+                "category": "condiments"
+            }
+        ],
+        "instructions": [
+            "Cuocere il riso in acqua bollente salata, scolarlo al dente e raffreddarlo immediatamente sotto l'acqua corrente per fermare la cottura.",
+            "Tagliare zucchine e peperoni a dadini piccoli. Sbollentare le zucchine per 2 minuti in acqua salata.",
+            "Tagliare i pomodorini a quarti, le olive verdi a rondelle. Scolare il tonno dall'olio e sgranarlo.",
+            "Unire tutti gli ingredienti in una ciotola capiente, condire con olio, sale e succo di limone.",
+            "Mescolare delicatamente e far riposare in frigorifero per almeno 30 minuti prima di servire."
+        ],
+        "prepTime": 35,
+        "difficulty": "easy",
+        "tags": [
+            "primo",
+            "freddo",
+            "estivo"
+        ]
+    },
+    {
+        "id": 9,
+        "title": "Filetti di merluzzo con pomodorini, olive e capperi",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Filetti di Merluzzo",
+                "quantity": "800g",
+                "category": "fish"
+            },
+            {
+                "name": "Pomodorini Ciliegino",
+                "quantity": "400g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Olive Taggiasche",
+                "quantity": "50g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Capperi sotto Sale",
+                "quantity": "30g",
+                "category": "condiments"
+            },
+            {
+                "name": "Aglio",
+                "quantity": "2 spicchi",
+                "category": "vegetables"
+            },
+            {
+                "name": "Prezzemolo Fresco",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Olio d'Oliva",
+                "quantity": "40ml",
+                "category": "condiments"
+            },
+            {
+                "name": "Origano",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Sale fino",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Pepe Nero",
+                "quantity": "q.b.",
+                "category": "condiments"
+            }
+        ],
+        "instructions": [
+            "Sciacquare i capperi dal sale abbondantemente. Tagliare i pomodorini a metà e le olive a rondelle.",
+            "In una padella ampia, scaldare l'olio con l'aglio schiacciato. Aggiungere i pomodorini, le olive, i capperi e l'origano. Cuocere per 10 minuti a fuoco medio.",
+            "Adagiare i filetti di merluzzo nella padella, salare e pepare. Cuocere per 3-4 minuti per lato.",
+            "Il pesce è pronto quando si sfalda facilmente con una forchetta. Servire con il sughetto di pomodorini e olive.",
+            "Spolverizzare con prezzemolo tritato fresco."
+        ],
+        "prepTime": 25,
+        "difficulty": "easy",
+        "tags": [
+            "secondo",
+            "pesce",
+            "mediterraneo"
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Insalata pantesca (patate e pomodorini)",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {
+                "name": "Patate",
+                "quantity": "400g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Pomodorini di Pachino",
+                "quantity": "300g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Cipolla Rossa",
+                "quantity": "1",
+                "category": "vegetables"
+            },
+            {
+                "name": "Olive Verdi Denocciolate",
+                "quantity": "50g",
+                "category": "vegetables"
+            },
+            {
+                "name": "Capperi sotto Sale",
+                "quantity": "30g",
+                "category": "condiments"
+            },
+            {
+                "name": "Aceto di Vino Bianco",
+                "quantity": "20ml",
+                "category": "condiments"
+            },
+            {
+                "name": "Olio d'Oliva",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Origano Secco",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Basilico Fresco",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Sale fino",
+                "quantity": "q.b.",
+                "category": "condiments"
+            },
+            {
+                "name": "Pepe Nero",
+                "quantity": "q.b.",
+                "category": "condiments"
+            }
+        ],
+        "instructions": [
+            "Lavare e lessare le patate con la buccia in acqua fredda salata per circa 30-35 minuti. Scolarle, pelarle ancora calde e lasciarle raffreddare. Tagliarle a fette di circa 1 cm.",
+            "Sbucciare la cipolla e tagliarla a fette sottili. Metterla a bagno nell'aceto per 30 minuti, poi scolarla bene.",
+            "Lavare i pomodorini, tagliarli a metà. Sciacquare i capperi sotto acqua corrente per dissalarli.",
+            "Riunire in una ciotola capiente: patate, pomodorini, cipolla scolata, capperi, olive. Condire con olio, origano, basilico spezzettato, sale e pepe.",
+            "Mescolare delicatamente e servire freddo."
+        ],
+        "prepTime": 40,
+        "difficulty": "easy",
+        "tags": [
+            "contorno",
+            "estivo",
+            "siciliano"
+        ]
+    }
+]
