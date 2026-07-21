@@ -56,37 +56,6 @@ If no recipe matches, the system tries a new combination. If that still falls sh
 
 <img src="assets/FlowDiagram.svg" alt="Request Flow — Recipe Suggestion" width="100%"/>
 
-## Course Structure (SDLC)
-
-The project follows the 6 phases of the Software Development Life Cycle:
-
-```
-📘 Ch. 00 — Theory Foundations    ✅ (Agile/Scrum, methodologies)
-📗 Ch. 01 — Idea & Requirements   ✅ (Feature analysis, brainstorming)
-📙 Ch. 02 — System Design         ✅ (Architecture, microservices)
-📕 Ch. 03 — Detailed Design       ✅ (Data modeling, API design)
-📓 Ch. 04 — Development           ⏳ (Not started)
-📔 Ch. 05 — Testing & Quality     ⏳
-📒 Ch. 06 — Deploy & CI/CD        ⏳
-```
-
----
-
-## Current Status
-
-Concept phase. The architecture is designed, the tech stack is chosen, the data models are defined. No code has been written yet.
-
-- [x] Theory foundations (Agile, Scrum, roles)
-- [x] Idea validated and requirements defined
-- [x] Microservices architecture designed
-- [x] Tech stack chosen and justified
-- [x] NoSQL data modeling
-- [x] REST API design
-- [x] Design doc reviewed
-- [ ] Sprint 1 — Recipe dataset + monorepo setup
-- [ ] Sprint 2 — AI Core (embedding + RAG pipeline)
-- [ ] Sprint 3 — Backend API (Node.js gateway)
-
 ---
 
 ## Learning Goals
