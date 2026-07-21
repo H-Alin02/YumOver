@@ -28,8 +28,10 @@ Teach people to waste less food. Not with a tracker or a mandatory shopping list
 
 The app does three things:
 - Get 3 recipes adapted to the ingredients you have. No endless lists.
+- Learn something every time: storage tips, substitutions, techniques — built into every suggestion.
 - Track impact: meals saved, money saved.
-- Plan: weekly planning, storage tips, challenges down the line. The basics need to work first.
+
+The coaching grows with you. Starts with simple tips, then adapts as it learns your patterns. You decide how much help you want.
 
 ---
 
