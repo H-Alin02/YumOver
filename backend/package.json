@@ -1,0 +1,32 @@
+{
+  "name": "food-coach-backend",
+  "version": "1.0.0",
+  "description": "Gateway API for FOOD Coach project",
+  "keywords": [
+    "food-coach",
+    "waste-reduction",
+    "recipe-api"
+  ],
+  "homepage": "https://github.com/H-Alin02/Project-Food-Coach#readme",
+  "bugs": {
+    "url": "https://github.com/H-Alin02/Project-Food-Coach/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H-Alin02/Project-Food-Coach.git"
+  },
+  "license": "MIT",
+  "author": "H-Alin02",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.8.0"
+  }
+}
