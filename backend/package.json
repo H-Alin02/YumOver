@@ -1,7 +1,7 @@
 {
   "name": "yumover-backend",
   "version": "1.0.0",
-  "description": "Gateway API for FOOD Coach project",
+  "description": "YumOver backend API gateway",
   "keywords": [
     "yumover",
     "waste-reduction",
