@@ -1,9 +1,9 @@
 {
-  "name": "food-coach-backend",
+  "name": "yumover-backend",
   "version": "1.0.0",
   "description": "Gateway API for FOOD Coach project",
   "keywords": [
-    "food-coach",
+    "yumover",
     "waste-reduction",
     "recipe-api"
   ],
