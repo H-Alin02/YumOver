@@ -1,9 +1,9 @@
 # Dipendenze
-node_modules/
+backend/node_modules/
 __pycache__/
 venv/
-env/
-.env
+/backend/env/
+/backend/.env
 
 # File di sistema operativo
 .DS_Store
