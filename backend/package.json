@@ -7,13 +7,13 @@
     "waste-reduction",
     "recipe-api"
   ],
-  "homepage": "https://github.com/H-Alin02/Project-Food-Coach#readme",
+  "homepage": "https://github.com/H-Alin02/YumOver#readme",
   "bugs": {
-    "url": "https://github.com/H-Alin02/Project-Food-Coach/issues"
+    "url": "https://github.com/H-Alin02/YumOver/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/H-Alin02/Project-Food-Coach.git"
+    "url": "git+https://github.com/H-Alin02/YumOver.git"
   },
   "license": "MIT",
   "author": "H-Alin02",
