@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <div align="center">
 
-# 🧊 Project Food Coach
+# 🧊 YumOver
 
 ### Learning software engineering by building an app against food waste.
 
@@ -12,11 +12,11 @@
 
 ---
 
-## What is Project Food Coach?
+## What is YumOver?
 
-Project Food Coach is two things, and they are not the same.
+YumOver is two things, and they are not the same.
 
-**Food Coach** is an app that tries to tackle food waste differently. Instead of just giving you recipes for leftovers (which is what they all do), it tries to teach you how to waste less upstream: how to shop, how to store, how to cook what you have. The philosophy is a bit anti-commercial: if it works well, over time you won't need it anymore. That is one of the reasons I wanted to build it.
+**YumOver** is an app that tries to tackle food waste differently. Instead of just giving you recipes for leftovers (which is what they all do), it tries to teach you how to waste less upstream: how to shop, how to store, how to cook what you have. The philosophy is a bit anti-commercial: if it works well, over time you won't need it anymore. That is one of the reasons I wanted to build it.
 
 **A learning path.** Every piece of this project is open. The code, the decisions, the mistakes. I am building it while I learn, following a real SDLC cycle from theory to deploy.
 
@@ -48,7 +48,7 @@ The coaching grows with you. Starts with simple tips, then adapts as it learns y
 
 ### Architecture
 
-<img src="assets/ArchitectureDiagram.svg" alt="Food Coach Architecture" width="100%"/>
+<img src="assets/ArchitectureDiagram.svg" alt="YumOver Architecture" width="100%"/>
 
 The pipeline is simple: embedding search on ChromaDB finds the closest recipes, the LLM adapts them to your ingredients. No fine-tuning, no custom models.
 
@@ -62,7 +62,7 @@ If no recipe matches, the system tries a new combination. If that still falls sh
 
 ## Learning Goals
 
-What I plan to learn by building Food Coach:
+What I plan to learn by building YumOver:
 
 - System design and microservices architecture
 - REST APIs with Node.js + Express

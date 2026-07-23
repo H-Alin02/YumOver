@@ -1,19 +1,19 @@
 {
-  "name": "food-coach-backend",
+  "name": "yumover-backend",
   "version": "1.0.0",
-  "description": "Gateway API for FOOD Coach project",
+  "description": "YumOver backend API gateway",
   "keywords": [
-    "food-coach",
+    "yumover",
     "waste-reduction",
     "recipe-api"
   ],
-  "homepage": "https://github.com/H-Alin02/Project-Food-Coach#readme",
+  "homepage": "https://github.com/H-Alin02/YumOver#readme",
   "bugs": {
-    "url": "https://github.com/H-Alin02/Project-Food-Coach/issues"
+    "url": "https://github.com/H-Alin02/YumOver/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/H-Alin02/Project-Food-Coach.git"
+    "url": "git+https://github.com/H-Alin02/YumOver.git"
   },
   "license": "MIT",
   "author": "H-Alin02",
