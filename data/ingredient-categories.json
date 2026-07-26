@@ -1,0 +1,23 @@
+[
+  {"id": "vegetables","label": "Ortaggi","scope": "Ortaggi freschi: foglie, bulbi, radici, steli, frutti-ortaggio, funghi. Non i tuberi amidacei (starchy-vegetables) ne i trasformati (preserved-vegetables)."},
+  {"id": "starchy-vegetables","label": "Ortaggi amidacei","scope": "Tuberi e ortaggi amidacei: patate, topinambur, manioca, batate."},
+  {"id": "preserved-vegetables","label": "Conserve vegetali","scope": "Trasformati la cui origine e gia vegetale: passate, pelati, sott'olio, sotto sale, essiccati, surgelati, in scatola. La conservazione non sposta un ingrediente fuori dalla sua famiglia di origine: i piselli surgelati restano legumes, il tonno sott'olio resta fish-seafood."},
+  {"id": "fruit","label": "Frutta","scope": "Frutta fresca, essiccata, e derivati diretti come succhi e scorze."},
+  {"id": "cereals-grains","label": "Cereali e paste","scope": "Chicchi e paste: riso, orzo, farro, quinoa, pasta secca e fresca, couscous."},
+  {"id": "bread-bakery","label": "Pane e prodotti da forno","scope": "Pane di ogni tipo, pangrattato, biscotteria secca, prodotti da forno gia cotti. Non le farine crude (flours)."},
+  {"id": "flours","label": "Farine e sfarinati","scope": "Farine, semole, amidi, fecole."},
+  {"id": "legumes","label": "Legumi","scope": "Legumi freschi, secchi, lessati, surgelati o in scatola."},
+  {"id": "nuts-seeds","label": "Frutta secca e semi","scope": "Frutta secca a guscio e semi oleosi."},
+  {"id": "meat","label": "Carni","scope": "Carni di qualunque animale terrestre: fresche, conservate, stagionate, lavorate, frattaglie."},
+  {"id": "fish-seafood","label": "Pesce e prodotti ittici","scope": "Pesci, molluschi, crostacei: freschi, surgelati o conservati."},
+  {"id": "eggs","label": "Uova","scope": "Uova intere e derivati diretti come tuorli e albumi."},
+  {"id": "dairy","label": "Latte e derivati","scope": "Latte e derivati: panna, formaggi, yogurt. Inclusi gli analoghi vegetali usati nella stessa funzione (latte di mandorla, panna vegetale). Il burro no, sta in fats-oils."},
+  {"id": "plant-proteins","label": "Proteine vegetali","scope": "Sostituti vegetali delle proteine animali: tofu, seitan, tempeh, preparati e burger vegetali."},
+  {"id": "prepared-dishes","label": "Piatti pronti e avanzi","scope": "Piatti gia pronti e avanzi cucinati usati come ingrediente: pasta avanzata, arrosto del giorno prima, sughi pronti."},
+  {"id": "fats-oils","label": "Grassi e oli","scope": "Grassi e oli da cottura o condimento, incluso il burro e gli altri grassi animali."},
+  {"id": "herbs-spices","label": "Erbe e spezie","scope": "Erbe aromatiche e spezie, fresche o secche. Non il sale (seasonings)."},
+  {"id": "seasonings","label": "Condimenti","scope": "Sale, aceti, salse, brodi, estratti sapidi."},
+  {"id": "sweeteners","label": "Zuccheri e dolcificanti","scope": "Zuccheri, miele, sciroppi, cacao."},
+  {"id": "beverages","label": "Liquidi","scope": "Liquidi usati come ingrediente: acqua, vino, birra, caffe, te."},
+  {"id": "leavening-additives","label": "Lieviti e addensanti","scope": "Lieviti, agenti lievitanti chimici, gelatine, addensanti."}
+]
