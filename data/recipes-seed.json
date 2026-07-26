@@ -42,7 +42,8 @@
             {"name": "Carota","quantity": "1","category": "vegetables"},
             {"name": "Sedano","quantity": "1 costa","category": "vegetables"},
             {"name": "Olio d'Oliva","quantity": "30ml","category": "condiments"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tritare finemente cipolla, carota e sedano. Soffriggere in olio per 5 minuti.",
@@ -279,7 +280,7 @@
         "title": "Pasta e Fagioli",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Tubetti","quantity": "300g","category": "pasta"},
             {"name": "Fagioli Borlotti Già Lessati","quantity": "400g","category": "legumes"},
@@ -291,7 +292,8 @@
             {"name": "Rosmarino","quantity": "q.b.","category": "condiments"},
             {"name": "Olio d'Oliva","quantity": "30ml","category": "condiments"},
             {"name": "Parmigiano Grattugiato","quantity": "q.b.","category": "dairy"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tritare finemente cipolla, carota e sedano. Soffriggere in olio con aglio e rosmarino per 5 minuti.",
@@ -308,7 +310,7 @@
         "title": "Risotto alla Milanese",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Riso Carnaroli","quantity": "320g","category": "pasta"},
             {"name": "Brodo Vegetale","quantity": "1l","category": "condiments"},
@@ -336,7 +338,7 @@
         "title": "Melanzane alla Parmigiana",
         "cuisine": "Italian",
         "servings": 6,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Melanzane Grandi","quantity": "1kg","category": "vegetables"},
             {"name": "Passata di Pomodoro","quantity": "700ml","category": "vegetables"},
@@ -365,7 +367,7 @@
         "title": "Pizza Margherita",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Farina 00","quantity": "500g","category": "pasta"},
             {"name": "Acqua Tiepida","quantity": "320ml","category": "beverages"},
@@ -384,7 +386,7 @@
             "Aggiungere basilico fresco prima di servire."
         ],
         "prepTime": 60,
-        "difficulty": "hard",
+        "difficulty": "medium",
         "tags": ["primo","classico","forno"]
     },
     {
@@ -392,7 +394,7 @@
         "title": "Pollo alla Cacciatora",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Pollo a Pezzi","quantity": "1kg","category": "meat"},
             {"name": "Pomodori Pelati","quantity": "400g","category": "vegetables"},
@@ -404,7 +406,8 @@
             {"name": "Salvia","quantity": "q.b.","category": "condiments"},
             {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
             {"name": "Olio d'Oliva","quantity": "40ml","category": "condiments"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Rosolare il pollo in olio finché dorato. Togliere.",
@@ -414,7 +417,7 @@
             "Servire caldo con polenta o pane."
         ],
         "prepTime": 70,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "tags": ["secondo","pollo","tradizionale"]
     },
     {
@@ -422,14 +425,15 @@
         "title": "Caprese",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Mozzarella di Bufala","quantity": "400g","category": "dairy"},
             {"name": "Pomodori Grandi Maturi","quantity": "4","category": "vegetables"},
             {"name": "Basilico Fresco","quantity": "q.b.","category": "condiments"},
             {"name": "Olio d'Oliva","quantity": "q.b.","category": "condiments"},
             {"name": "Origano","quantity": "q.b.","category": "condiments"},
-            {"name": "Sale fino e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tagliare mozzarella e pomodori a fette di 1 cm.",
@@ -446,7 +450,7 @@
         "title": "Risotto ai Funghi Porcini",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Riso Carnaroli","quantity": "320g","category": "pasta"},
             {"name": "Funghi Porcini Secchi","quantity": "50g","category": "vegetables"},
@@ -457,7 +461,8 @@
             {"name": "Parmigiano Grattugiato","quantity": "80g","category": "dairy"},
             {"name": "Prezzemolo","quantity": "q.b.","category": "condiments"},
             {"name": "Aglio","quantity": "1 spicchio","category": "vegetables"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Ammollare i funghi in acqua tiepida 20 minuti. Scolare e filtrare l'acqua.",
@@ -475,13 +480,13 @@
         "title": "Pasta all'Amatriciana",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Spaghetti","quantity": "400g","category": "pasta"},
             {"name": "Guanciale","quantity": "200g","category": "meat"},
             {"name": "Pomodori Pelati","quantity": "400g","category": "vegetables"},
             {"name": "Pecorino Romano","quantity": "80g","category": "dairy"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"},
             {"name": "Sale","quantity": "q.b.","category": "condiments"},
             {"name": "Vino Bianco","quantity": "50ml","category": "condiments"}
         ],
@@ -500,15 +505,15 @@
         "title": "Bruschetta al Pomodoro",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Pane Casereccio","quantity": "8 fette","category": "pasta"},
             {"name": "Pomodori Maturi","quantity": "4","category": "vegetables"},
             {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
             {"name": "Basilico Fresco","quantity": "q.b.","category": "condiments"},
             {"name": "Olio d'Oliva","quantity": "q.b.","category": "condiments"},
-            {"name": "Sale fino","quantity": "q.b.","category": "condiments"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tagliare i pomodori a cubetti, condire con olio, sale, pepe e basilico. Lasciar riposare 15 minuti.",
@@ -524,7 +529,7 @@
         "title": "Ribollita",
         "cuisine": "Italian",
         "servings": 6,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Pane Raffermo","quantity": "300g","category": "pasta"},
             {"name": "Fagioli Cannellini Già Lessati","quantity": "400g","category": "legumes"},
@@ -536,7 +541,8 @@
             {"name": "Sedano","quantity": "2 coste","category": "vegetables"},
             {"name": "Passata di Pomodoro","quantity": "200ml","category": "vegetables"},
             {"name": "Olio d'Oliva","quantity": "q.b.","category": "condiments"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tagliare le verdure a cubetti. Soffriggere cipolla, carote e sedano in olio.",
@@ -546,7 +552,7 @@
             "Servire calda con olio. Migliore il giorno dopo."
         ],
         "prepTime": 70,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "tags": ["primo","zuppa","toscana"]
     },
     {
@@ -554,15 +560,15 @@
         "title": "Pesce Spada alla Griglia",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Tranci di Pesce Spada","quantity": "4 (600g)","category": "fish"},
             {"name": "Limone","quantity": "2","category": "fruit"},
             {"name": "Olio d'Oliva","quantity": "50ml","category": "condiments"},
             {"name": "Prezzemolo","quantity": "q.b.","category": "condiments"},
             {"name": "Origano","quantity": "q.b.","category": "condiments"},
-            {"name": "Sale fino","quantity": "q.b.","category": "condiments"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Marinare il pesce in olio, limone, origano, sale e pepe per 15 minuti.",
@@ -578,7 +584,7 @@
         "title": "Minestrone",
         "cuisine": "Italian",
         "servings": 6,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Patate","quantity": "200g","category": "vegetables"},
             {"name": "Carote","quantity": "2","category": "vegetables"},
@@ -591,7 +597,8 @@
             {"name": "Fagioli Cannellini Già Lessati","quantity": "200g","category": "legumes"},
             {"name": "Pasta Mista Piccola","quantity": "100g","category": "pasta"},
             {"name": "Olio d'Oliva","quantity": "q.b.","category": "condiments"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tagliare tutte le verdure a dadini. Soffriggere cipolla e sedano in olio.",
@@ -600,7 +607,7 @@
             "Regolare di sale e pepe. Servire caldo con olio."
         ],
         "prepTime": 55,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "tags": ["primo","zuppa","invernale"]
     },
     {
@@ -608,12 +615,12 @@
         "title": "Gnocchi di Patate",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Patate Farinose","quantity": "1kg","category": "vegetables"},
             {"name": "Farina 00","quantity": "300g","category": "pasta"},
             {"name": "Uova","quantity": "1","category": "eggs"},
-            {"name": "Sale fino","quantity": "q.b.","category": "condiments"},
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
             {"name": "Noce Moscata","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
@@ -631,7 +638,7 @@
         "title": "Saltimbocca alla Romana",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Fettine di Vitello","quantity": "8 (500g)","category": "meat"},
             {"name": "Prosciutto Crudo","quantity": "8 fette","category": "meat"},
@@ -639,7 +646,8 @@
             {"name": "Burro","quantity": "50g","category": "dairy"},
             {"name": "Vino Bianco Secco","quantity": "100ml","category": "condiments"},
             {"name": "Farina 00","quantity": "q.b.","category": "pasta"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Mettere prosciutto e salvia su ogni fettina, fermare con uno stecchino.",
@@ -655,7 +663,7 @@
         "title": "Focaccia Genovese",
         "cuisine": "Italian",
         "servings": 6,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Farina 00","quantity": "500g","category": "pasta"},
             {"name": "Acqua Tiepida","quantity": "300ml","category": "beverages"},
@@ -666,7 +674,7 @@
             {"name": "Rosmarino","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
-            "Sciogliere il lievito nell'acqua. Aggiungere farina, olio e sale. Impastare 10 minuti.",
+            "Sciogliere il lievito nell'acqua. Aggiungere farina, olio e sale fino. Impastare 10 minuti.",
             "Far lievitare 2 ore.",
             "Stendere in teglia oliata, creare buchi con le dita.",
             "Condire con olio, sale grosso e rosmarino. Far lievitare 30 minuti.",
@@ -681,7 +689,7 @@
         "title": "Panzanella",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Pane Raffermo Toscano","quantity": "400g","category": "pasta"},
             {"name": "Pomodori Maturi","quantity": "4","category": "vegetables"},
@@ -690,7 +698,8 @@
             {"name": "Basilico Fresco","quantity": "q.b.","category": "condiments"},
             {"name": "Aceto di Vino Rosso","quantity": "20ml","category": "condiments"},
             {"name": "Olio d'Oliva","quantity": "50ml","category": "condiments"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tagliare il pane a cubetti e metterlo in ammollo in acqua 10 minuti. Strizzare.",
@@ -707,7 +716,7 @@
         "title": "Bistecca alla Fiorentina",
         "cuisine": "Italian",
         "servings": 2,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Bistecca di Manzo Fiorentina","quantity": "800g","category": "meat"},
             {"name": "Olio d'Oliva","quantity": "q.b.","category": "condiments"},
@@ -729,7 +738,7 @@
         "title": "Torta di Mele",
         "cuisine": "Italian",
         "servings": 8,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Mele Golden","quantity": "3","category": "fruit"},
             {"name": "Farina 00","quantity": "250g","category": "pasta"},
@@ -749,7 +758,7 @@
             "Cuocere a 180 gradi per 40 minuti. Spolverizzare con zucchero a velo."
         ],
         "prepTime": 55,
-        "difficulty": "easy",
+        "difficulty": "medium",
         "tags": ["dolce","frutta","classico"]
     },
     {
@@ -757,7 +766,7 @@
         "title": "Pasta alle Vongole",
         "cuisine": "Italian",
         "servings": 4,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Spaghetti","quantity": "400g","category": "pasta"},
             {"name": "Vongole Veraci","quantity": "1kg","category": "fish"},
@@ -784,7 +793,7 @@
         "title": "Caponata Siciliana",
         "cuisine": "Italian",
         "servings": 6,
-        "reviewed": false,
+        "reviewed": true,
         "ingredients": [
             {"name": "Melanzane","quantity": "800g","category": "vegetables"},
             {"name": "Sedano","quantity": "3 coste","category": "vegetables"},
@@ -797,7 +806,8 @@
             {"name": "Olio di Semi","quantity": "q.b.","category": "condiments"},
             {"name": "Olio d'Oliva","quantity": "40ml","category": "condiments"},
             {"name": "Pinoli","quantity": "30g","category": "fruit"},
-            {"name": "Sale e Pepe","quantity": "q.b.","category": "condiments"}
+            {"name": "Sale","quantity": "q.b.","category": "condiments"},
+            {"name": "Pepe","quantity": "q.b.","category": "condiments"}
         ],
         "instructions": [
             "Tagliare le melanzane a cubetti e friggerle in olio di semi. Scolare.",
