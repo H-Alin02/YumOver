@@ -1,0 +1,914 @@
+{
+  "generated": "2026-07-27",
+  "brief_version": 2,
+  "entries": [
+    {
+      "key": "olio-di-oliva",
+      "display": "olio d'oliva",
+      "variants": [
+        "Olio d'Oliva"
+      ],
+      "category": "fats-oils",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave separata da olio di semi: non e' un qualificatore decorativo, cambia sapore e punto di fumo e i due non si sostituiscono a cuor leggero."
+    },
+    {
+      "key": "olio-di-semi",
+      "display": "olio di semi",
+      "variants": [
+        "Olio di Semi"
+      ],
+      "category": "fats-oils",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Separato dall'olio d'oliva: e' l'olio da frittura, sostituirlo con l'oliva cambia il piatto (e viceversa in un dolce)."
+    },
+    {
+      "key": "burro",
+      "display": "burro",
+      "variants": [
+        "Burro"
+      ],
+      "category": "fats-oils",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "sale",
+      "display": "sale",
+      "variants": [
+        "Sale",
+        "Sale fino",
+        "Sale Grosso"
+      ],
+      "category": "seasonings",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Fino e grosso tolti: e' la stessa sostanza, il grosso si macina e il fino si usa lo stesso nell'acqua della pasta. Bassa confidenza perche' in un paio di usi (crosta di sale, salatura a secco) la grana e' un vincolo vero e non solo una comodita'."
+    },
+    {
+      "key": "aceto-di-vino",
+      "display": "aceto di vino",
+      "variants": [
+        "Aceto di Vino Rosso",
+        "Aceto di Vino Bianco"
+      ],
+      "category": "seasonings",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Rosso e bianco tolti: l'acidita' e' la stessa, cambia solo il colore del piatto. Se togli il colore la panzanella funziona ancora."
+    },
+    {
+      "key": "brodo-vegetale",
+      "display": "brodo vegetale",
+      "variants": [
+        "Brodo Vegetale"
+      ],
+      "category": "seasonings",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Vegetale' tenuto: e' cio' che rende il brodo utilizzabile in un piatto senza carne, non e' decorazione. Un brodo di carne sarebbe un'altra chiave."
+    },
+    {
+      "key": "capperi",
+      "display": "capperi",
+      "variants": [
+        "Capperi sotto Sale"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Sotto sale' tolto: i capperi in commercio sono sotto sale o sott'aceto e si sostituiscono l'un l'altro sciacquandoli. Non esistono capperi freschi in dispensa, quindi il qualificatore non discrimina nulla."
+    },
+    {
+      "key": "pepe",
+      "display": "pepe",
+      "variants": [
+        "Pepe",
+        "Pepe Nero"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Nero' tolto: il pepe senza altra indicazione e' pepe nero, il qualificatore non distingue due cose diverse in dispensa."
+    },
+    {
+      "key": "basilico",
+      "display": "basilico",
+      "variants": [
+        "Basilico Fresco"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresco' tolto come per il prezzemolo: il basilico si compra in mazzo o in vaso, quello secco e' un'altra cosa che nessuno usa al suo posto. Ha senso lo stato da-usare-subito perche' annerisce in pochi giorni."
+    },
+    {
+      "key": "prezzemolo",
+      "display": "prezzemolo",
+      "variants": [
+        "Prezzemolo",
+        "Prezzemolo Fresco"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresco' tolto: nessuno ha in casa il prezzemolo non fresco. Stato da-usare-subito perche' appassisce in frigo in pochi giorni ed e' un classico sprecato."
+    },
+    {
+      "key": "rosmarino",
+      "display": "rosmarino",
+      "variants": [
+        "Rosmarino",
+        "Rosmarino Fresco"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresco' tolto: fresco e secco si sostituiscono senza rompere niente, cambia solo la dose."
+    },
+    {
+      "key": "salvia",
+      "display": "salvia",
+      "variants": [
+        "Salvia",
+        "Salvia Fresca"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresca' tolta: come il rosmarino, la versione secca fa lo stesso lavoro con una dose diversa."
+    },
+    {
+      "key": "timo",
+      "display": "timo",
+      "variants": [
+        "Timo Fresco"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresco' tolto per la stessa ragione di rosmarino e salvia: il secco e' un sostituto accettato."
+    },
+    {
+      "key": "origano",
+      "display": "origano",
+      "variants": [
+        "Origano",
+        "Origano Secco"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Secco' tolto: l'origano che si usa in cucina e' quasi sempre secco, il qualificatore e' ridondante e non separa due cose."
+    },
+    {
+      "key": "peperoncino",
+      "display": "peperoncino",
+      "variants": [
+        "Peperoncino"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "noce-moscata",
+      "display": "noce moscata",
+      "variants": [
+        "Noce Moscata"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "zafferano",
+      "display": "zafferano",
+      "variants": [
+        "Zafferano"
+      ],
+      "category": "herbs-spices",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "aglio",
+      "display": "aglio",
+      "variants": [
+        "Aglio"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "cipolla",
+      "display": "cipolla",
+      "variants": [
+        "Cipolla",
+        "Cipolla Rossa"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Rossa' tolta: in un soffritto le due cipolle sono intercambiabili. Bassa confidenza perche' negli usi a crudo (panzanella, insalate) la rossa e' piu' dolce e la bianca sovrasta il piatto: qualcuno potrebbe volerle separate."
+    },
+    {
+      "key": "sedano",
+      "display": "sedano",
+      "variants": [
+        "Sedano"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "carote",
+      "display": "carote",
+      "variants": [
+        "Carota",
+        "Carote"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Singolare e plurale sono la stessa cosa scritta in due modi, unite."
+    },
+    {
+      "key": "zucchine",
+      "display": "zucchine",
+      "variants": [
+        "Zucchine"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "melanzane",
+      "display": "melanzane",
+      "variants": [
+        "Melanzane",
+        "Melanzane Grandi"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Grandi' tolto: e' una taglia, con due melanzane piccole la parmigiana viene uguale."
+    },
+    {
+      "key": "peperoni",
+      "display": "peperoni",
+      "variants": [
+        "Peperoni"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "cetriolo",
+      "display": "cetriolo",
+      "variants": [
+        "Cetriolo"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "fagiolini",
+      "display": "fagiolini",
+      "variants": [
+        "Fagiolini"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "cavolo-nero",
+      "display": "cavolo nero",
+      "variants": [
+        "Cavolo Nero"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave separata dalla verza: e' l'ingrediente che definisce la ribollita, la verza al suo posto da' un piatto diverso."
+    },
+    {
+      "key": "verza",
+      "display": "verza",
+      "variants": [
+        "Verza"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "pomodori",
+      "display": "pomodori",
+      "variants": [
+        "Pomodori Maturi",
+        "Pomodori Grandi Maturi"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Grandi' e 'maturi' tolti: sono decorazione, nessuno tiene in casa pomodori acerbi per cucinarli. Restano una chiave diversa dai pelati, perche' un pomodoro non diventa pelato da solo."
+    },
+    {
+      "key": "pomodorini",
+      "display": "pomodorini",
+      "variants": [
+        "Pomodorini Ciliegino",
+        "Pomodorini di Pachino"
+      ],
+      "category": "vegetables",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Ciliegino e Pachino sono varieta' dello stesso ortaggio, unite. Bassa confidenza sul confine con 'pomodori': i pomodorini si usano interi e i pomodori grandi a pezzi, ma per la maggior parte dei piatti si sostituiscono e un revisore potrebbe volere una chiave sola."
+    },
+    {
+      "key": "patate",
+      "display": "patate",
+      "variants": [
+        "Patate",
+        "Patate Farinose",
+        "Patate a Pasta Gialla"
+      ],
+      "category": "starchy-vegetables",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Farinose e a pasta gialla unite sotto una chiave sola. Bassa confidenza: e' l'unione piu' discutibile del lotto, perche' gli gnocchi vogliono la patata farinosa e con quella a pasta gialla vengono collosi, mentre nell'insalata succede il contrario. Se una ricetta di gnocchi entra nel dataset, qui servono due chiavi."
+    },
+    {
+      "key": "passata-di-pomodoro",
+      "display": "passata di pomodoro",
+      "variants": [
+        "Passata di Pomodoro"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "pomodori-pelati",
+      "display": "pomodori pelati",
+      "variants": [
+        "Pomodori Pelati"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave separata dai pomodori freschi: e' una trasformazione fatta da qualcuno, non una condizione che arriva col tempo, e infatti la tassonomia li mette gia' in due categorie diverse."
+    },
+    {
+      "key": "olive-verdi",
+      "display": "olive verdi",
+      "variants": [
+        "Olive Verdi Denocciolate",
+        "Olive Verdi"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Denocciolate' tolto: il nocciolo si toglie in cucina, non cambia il piatto. 'Verdi' tenuto perche' distingue dalle taggiasche, che hanno un altro sapore."
+    },
+    {
+      "key": "olive-taggiasche",
+      "display": "olive taggiasche",
+      "variants": [
+        "Olive Taggiasche"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Tenute separate dalle verdi: sono piccole, dolci e oleose, in un piatto ligure le verdi in salamoia stonano. Bassa confidenza perche' e' difendibile anche una chiave unica 'olive' con la varieta' buttata fra le varianti, coerente con l'idea di ruolo."
+    },
+    {
+      "key": "funghi-porcini-secchi",
+      "display": "funghi porcini secchi",
+      "variants": [
+        "Funghi Porcini Secchi"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Secchi' tenuto: il porcino secco va ammollato e dara' un'acqua saporita che e' meta' del risotto; il porcino fresco e' un altro ingrediente e sta pure in un'altra categoria."
+    },
+    {
+      "key": "mais-dolce",
+      "display": "mais dolce",
+      "variants": [
+        "Mais Dolce"
+      ],
+      "category": "preserved-vegetables",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Dolce' tenuto: la chiave 'mais' da sola coprirebbe anche farina di mais e polenta, che non c'entrano niente con l'insalata di riso."
+    },
+    {
+      "key": "limone",
+      "display": "limone",
+      "variants": [
+        "Limone",
+        "Scorza di Limone",
+        "Succo di Limone"
+      ],
+      "category": "fruit",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Scorza e succo uniti al limone intero: chi ha un limone ha entrambi, tenerli separati farebbe fallire un match che nella realta' funziona. Bassa confidenza perche' vale anche il contrario: chi ha solo il succo in bottiglia non ha la scorza, e un revisore potrebbe volere 'succo-di-limone' a se'."
+    },
+    {
+      "key": "fragole",
+      "display": "fragole",
+      "variants": [
+        "Fragole Fresche"
+      ],
+      "category": "fruit",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresche' tolto: le fragole si comprano fresche e basta. Lo stato da-usare-subito e' quello che conta davvero, ammuffiscono in due giorni."
+    },
+    {
+      "key": "mele",
+      "display": "mele",
+      "variants": [
+        "Mele Golden"
+      ],
+      "category": "fruit",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Golden' tolto: e' una varieta', la torta di mele viene con qualsiasi mela. Stato da-usare-subito perche' la mela ammaccata e' un caso anti-spreco classico."
+    },
+    {
+      "key": "spaghetti",
+      "display": "spaghetti",
+      "variants": [
+        "Spaghetti"
+      ],
+      "category": "cereals-grains",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Tenuti separati dalla pasta corta: il formato lungo e' un vincolo reale (carbonara e vongole con i tubetti sono un altro piatto), non un dettaglio decorativo."
+    },
+    {
+      "key": "pasta-corta",
+      "display": "pasta corta",
+      "variants": [
+        "Pasta Corta",
+        "Pasta Mista Piccola",
+        "Tubetti"
+      ],
+      "category": "cereals-grains",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Tre formati corti uniti: in pasta e fagioli o pasta e patate si sostituiscono senza rompere niente. Bassa confidenza perche' la 'pasta mista' e' anche un'idea anti-spreco a se' (i fondi di pacco), e buttarla fra le varianti perde quel significato."
+    },
+    {
+      "key": "riso-da-risotto",
+      "display": "riso da risotto",
+      "variants": [
+        "Riso Carnaroli"
+      ],
+      "category": "cereals-grains",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "La chiave e' il ruolo, non la varieta': carnaroli, arborio e vialone nano si sostituiscono, mentre e' il tipo di riso (ricco di amido) il vincolo che tiene in piedi il risotto."
+    },
+    {
+      "key": "riso-per-insalate",
+      "display": "riso per insalate",
+      "variants": [
+        "Riso per Insalate"
+      ],
+      "category": "cereals-grains",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave diversa dal riso da risotto: qui serve un chicco che non scuoce e non lega. Scambiarli rompe entrambi i piatti, quindi non e' decorazione."
+    },
+    {
+      "key": "pane",
+      "display": "pane",
+      "variants": [
+        "Pane Casereccio",
+        "Pane Raffermo",
+        "Pane Raffermo Toscano"
+      ],
+      "category": "bread-bakery",
+      "states": [
+        "raffermo"
+      ],
+      "confidence": "bassa",
+      "reasoning": "'Casereccio' e 'toscano' tolti: sono decorazione, la panzanella con un altro pane viene lo stesso. 'Raffermo' no: e' la stessa cosa in un momento diverso della sua vita, quindi diventa uno stato, e in panzanella e ribollita e' un requisito. Bassa confidenza perche' un pane in cassetta o un pane molto morbido si sbriciolano invece di reggere, e non e' ovvio se questo meriti una chiave a parte."
+    },
+    {
+      "key": "pangrattato",
+      "display": "pangrattato",
+      "variants": [
+        "Pangrattato"
+      ],
+      "category": "bread-bakery",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave separata dal pane: e' il prodotto del pane raffermo macinato, non una condizione del pane, e in una panatura non si sostituiscono."
+    },
+    {
+      "key": "savoiardi",
+      "display": "savoiardi",
+      "variants": [
+        "Savoiardi"
+      ],
+      "category": "bread-bakery",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Tenuti separati dai biscotti secchi: devono assorbire il caffe' senza disfarsi, un biscotto secco qualunque nel tiramisu' si sfalda."
+    },
+    {
+      "key": "biscotti-secchi",
+      "display": "biscotti secchi",
+      "variants": [
+        "Biscotti Secchi"
+      ],
+      "category": "bread-bakery",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Secchi' tenuto: serve un biscotto che si sbricioli in polvere; un biscotto morbido non fa una base."
+    },
+    {
+      "key": "farina-00",
+      "display": "farina 00",
+      "variants": [
+        "Farina 00"
+      ],
+      "category": "flours",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'00' tenuto perche' la farina non e' una sola cosa: integrale, manitoba e semola si comportano in modo diverso e meritano chiavi proprie quando compariranno. Bassa confidenza perche' oggi nel dataset c'e' solo la 00, e una chiave 'farina' generica sarebbe piu' vicina all'idea di ruolo."
+    },
+    {
+      "key": "fagioli-cannellini",
+      "display": "fagioli cannellini",
+      "variants": [
+        "Fagioli Cannellini Già Lessati"
+      ],
+      "category": "legumes",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Gia' lessati' resta solo fra le varianti: con quelli secchi la ricetta si fa comunque, ci vuole solo l'ammollo. Bassa confidenza sulla varieta': cannellini e borlotti si sostituiscono in quasi tutti i piatti del dataset, e un revisore potrebbe volere una chiave unica 'fagioli'."
+    },
+    {
+      "key": "fagioli-borlotti",
+      "display": "fagioli borlotti",
+      "variants": [
+        "Fagioli Borlotti Già Lessati"
+      ],
+      "category": "legumes",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Come i cannellini: 'gia' lessati' e' solo una comodita' e resta fra le varianti. Bassa confidenza per la stessa ragione, la separazione cannellini/borlotti potrebbe essere una distinzione da ricettario piu' che da app anti-spreco."
+    },
+    {
+      "key": "piselli",
+      "display": "piselli",
+      "variants": [
+        "Piselli Surgelati"
+      ],
+      "category": "legumes",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Surgelati' tolto e lasciato solo fra le varianti: e' il terzo caso del brief, con i piselli freschi la ricetta si fa comunque. La categoria resta legumes, come dice la tassonomia."
+    },
+    {
+      "key": "pinoli",
+      "display": "pinoli",
+      "variants": [
+        "Pinoli"
+      ],
+      "category": "nuts-seeds",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "guanciale",
+      "display": "guanciale",
+      "variants": [
+        "Guanciale"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "prosciutto-crudo",
+      "display": "prosciutto crudo",
+      "variants": [
+        "Prosciutto Crudo"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Crudo' tenuto: crudo e cotto sono due prodotti diversi, nei saltimbocca il cotto non regge la cottura ne' il sapore."
+    },
+    {
+      "key": "carne-macinata",
+      "display": "carne macinata",
+      "variants": [
+        "Carne Macinata Mista"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Mista' tolto: il ragu' viene anche di solo manzo, il misto e' tradizione non vincolo."
+    },
+    {
+      "key": "pollo",
+      "display": "pollo",
+      "variants": [
+        "Pollo a Pezzi"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'A pezzi' tolto: e' un'istruzione di taglio, non un ingrediente diverso."
+    },
+    {
+      "key": "bistecca-di-manzo",
+      "display": "bistecca di manzo",
+      "variants": [
+        "Bistecca di Manzo Fiorentina"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Fiorentina' tolto trattandola come nome del piatto. Bassa confidenza perche' la fiorentina e' anche un taglio preciso (lombata con osso, alta almeno tre dita) e con una fettina sottile la cottura descritta non funziona: qui potrebbe servire una chiave a parte."
+    },
+    {
+      "key": "costolette-di-vitello",
+      "display": "costolette di vitello",
+      "variants": [
+        "Costolette di Vitello"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Tenute separate dalle fettine: sono il taglio con l'osso della milanese, con una fettina sottile il piatto cambia."
+    },
+    {
+      "key": "fettine-di-vitello",
+      "display": "fettine di vitello",
+      "variants": [
+        "Fettine di Vitello"
+      ],
+      "category": "meat",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave diversa dalle costolette: la scaloppina vuole la fetta sottile, non e' lo stesso taglio."
+    },
+    {
+      "key": "merluzzo",
+      "display": "merluzzo",
+      "variants": [
+        "Filetti di Merluzzo"
+      ],
+      "category": "fish-seafood",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Filetti di' tolto: e' il formato in cui lo compri, non un ingrediente diverso."
+    },
+    {
+      "key": "pesce-spada",
+      "display": "pesce spada",
+      "variants": [
+        "Tranci di Pesce Spada"
+      ],
+      "category": "fish-seafood",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Tranci di' tolto per la stessa ragione dei filetti: e' come e' tagliato, non cosa e'."
+    },
+    {
+      "key": "vongole",
+      "display": "vongole",
+      "variants": [
+        "Vongole Veraci"
+      ],
+      "category": "fish-seafood",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Veraci' tolto: le lupini fanno lo stesso lavoro nelle vongole in bianco, cambia il pregio non il piatto."
+    },
+    {
+      "key": "tonno-sottolio",
+      "display": "tonno sott'olio",
+      "variants": [
+        "Tonno Sott'Olio"
+      ],
+      "category": "fish-seafood",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Sott'olio' tenuto: la scatoletta e il tonno fresco non sono la stessa cosa e non si sostituiscono in un'insalata di riso."
+    },
+    {
+      "key": "uova",
+      "display": "uova",
+      "variants": [
+        "Uova",
+        "Uova Medie"
+      ],
+      "category": "eggs",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Medie' tolto, e' una taglia. La chiave e' 'uova' anche se 'Uova' e' pure il nome di una categoria: le uova sono legittimamente entrambe le cose, e il vincolo mirava a impedire chiavi che ingoiano piu' ingredienti (tipo 'verdure'), non le collisioni di stringa."
+    },
+    {
+      "key": "tuorli",
+      "display": "tuorli",
+      "variants": [
+        "Tuorli d'Uovo"
+      ],
+      "category": "eggs",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "Tenuti separati dalle uova intere. Bassa confidenza: per il match la separazione e' uno svantaggio, chi ha le uova ha anche i tuorli e la carbonara la puo' fare. Li tengo distinti perche' una ricetta che usa solo i tuorli lascia gli albumi, ed e' esattamente l'avanzo su cui l'app dovrebbe dire qualcosa."
+    },
+    {
+      "key": "latte",
+      "display": "latte",
+      "variants": [
+        "Latte"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "panna-fresca",
+      "display": "panna fresca",
+      "variants": [
+        "Panna Fresca Liquida"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Liquida' tolto perche' ridondante, 'fresca' tenuto perche' la panna da cucina UHT non monta e dove serve montata il dolce non riesce. Bassa confidenza: dove la panna va solo scaldata le due sono intercambiabili, quindi la distinzione dipende dalla ricetta piu' che dall'ingrediente."
+    },
+    {
+      "key": "mascarpone",
+      "display": "mascarpone",
+      "variants": [
+        "Mascarpone"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "alta"
+    },
+    {
+      "key": "ricotta",
+      "display": "ricotta",
+      "variants": [
+        "Ricotta Vaccina"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Vaccina' tolto: quella di pecora fa lo stesso lavoro, cambia solo il gusto."
+    },
+    {
+      "key": "mozzarella",
+      "display": "mozzarella",
+      "variants": [
+        "Mozzarella",
+        "Mozzarella di Bufala"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Di bufala' tolto: sulla pizza e nella caprese si sostituiscono. Bassa confidenza perche' la bufala rilascia molta piu' acqua e in parmigiana o pizza al forno il risultato peggiora sensibilmente: e' al limite fra decorazione e vincolo."
+    },
+    {
+      "key": "parmigiano",
+      "display": "parmigiano",
+      "variants": [
+        "Parmigiano Grattugiato"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Grattugiato' tolto: e' un'operazione che fai in cucina, non un ingrediente diverso."
+    },
+    {
+      "key": "pecorino",
+      "display": "pecorino",
+      "variants": [
+        "Pecorino Romano"
+      ],
+      "category": "dairy",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Romano' tolto trattandolo come denominazione. Bassa confidenza perche' il romano e' molto piu' salato e sapido degli altri pecorini, e in cacio e pepe o carbonara e' proprio quella sapidita' a fare il piatto."
+    },
+    {
+      "key": "zucchero",
+      "display": "zucchero",
+      "variants": [
+        "Zucchero",
+        "Zucchero a Velo",
+        "Zucchero di Canna"
+      ],
+      "category": "sweeteners",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'A velo' e 'di canna' tolti: il canna si sostituisce sempre e il velo si ottiene macinando il semolato. Bassa confidenza perche' dove il velo serve per spolverare o per una glassa la grana e' un requisito e non tutti hanno un macinino."
+    },
+    {
+      "key": "cacao",
+      "display": "cacao",
+      "variants": [
+        "Cacao Amaro in polvere"
+      ],
+      "category": "sweeteners",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'In polvere' tolto perche' il cacao da cucina e' in polvere per definizione, 'amaro' tolto perche' con quello zuccherato il tiramisu' si mangia lo stesso. Bassa confidenza: la spolverata amara e' proprio quello che bilancia il dolce, quindi la scelta e' opinabile."
+    },
+    {
+      "key": "acqua",
+      "display": "acqua",
+      "variants": [
+        "Acqua Tiepida"
+      ],
+      "category": "beverages",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Tiepida' tolto: e' un'istruzione di procedimento (serve al lievito), non un ingrediente diverso da tenere in dispensa."
+    },
+    {
+      "key": "vino-bianco",
+      "display": "vino bianco",
+      "variants": [
+        "Vino Bianco Secco",
+        "Vino Bianco"
+      ],
+      "category": "beverages",
+      "states": [],
+      "confidence": "bassa",
+      "reasoning": "'Secco' tolto: il vino bianco da tavola e' secco quasi sempre. Bassa confidenza perche' se qualcuno sfuma con un bianco dolce il risotto ne esce rovinato, quindi il qualificatore un vincolo lo esprime davvero."
+    },
+    {
+      "key": "caffe",
+      "display": "caffè",
+      "variants": [
+        "Caffè Moka"
+      ],
+      "category": "beverages",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Moka' tolto: e' il metodo di estrazione. Per bagnare i savoiardi vanno bene moka, espresso o solubile."
+    },
+    {
+      "key": "lievito-di-birra",
+      "display": "lievito di birra",
+      "variants": [
+        "Lievito di Birra Fresco"
+      ],
+      "category": "leavening-additives",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'Fresco' tolto: cubetto e secco attivo si sostituiscono cambiando la dose. Resta invece una chiave diversa dal lievito per dolci: scambiarli e' l'errore che non fa lievitare l'impasto."
+    },
+    {
+      "key": "lievito-per-dolci",
+      "display": "lievito per dolci",
+      "variants": [
+        "Lievito per Dolci"
+      ],
+      "category": "leavening-additives",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "Chiave separata dal lievito di birra: e' un lievitante chimico istantaneo, se lo usi al posto del birra il pane non cresce."
+    },
+    {
+      "key": "gelatina",
+      "display": "gelatina alimentare",
+      "variants": [
+        "Gelatina in Fogli"
+      ],
+      "category": "leavening-additives",
+      "states": [],
+      "confidence": "alta",
+      "reasoning": "'In fogli' tolto: la gelatina in polvere fa lo stesso lavoro con una conversione di peso."
+    }
+  ],
+  "revisions": [
+    "2026-07-27: 'da-usare-subito' rimosso dal vocabolario. E' un segnale lato utente, nessuna ricetta lo richiede. Nel vocabolario resta solo 'raffermo'.",
+    "2026-07-27: chiave 'uova-intere' rinominata 'uova'. Il vincolo su chiave/categoria vietava il collasso di granularita', non la collisione di stringhe."
+  ]
+}
