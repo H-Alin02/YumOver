@@ -6,7 +6,9 @@
 ### Learning software engineering by building an app against food waste.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Python%20%7C%20MongoDB-339933)]()
+[![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Python%20%7C%20PostgreSQL-339933)]()
+[![Sprint progress](https://img.shields.io/github/milestones/progress/H-Alin02/YumOver/1)](https://github.com/H-Alin02/YumOver/milestone/1)
+[![Last commit](https://img.shields.io/github/last-commit/H-Alin02/YumOver)]()
 
 </div>
 
@@ -41,22 +43,34 @@ The coaching grows with you. Starts with simple tips, then adapts as it learns y
 |---|---|---|
 | **Gateway** | Node.js + Express | API REST, orchestration |
 | **AI Worker** | Python + FastAPI | RAG recommendation engine |
-| **Database** | MongoDB Atlas | Structured data |
-| **Vector DB** | ChromaDB | Embeddings for similarity search |
+| **Database** | PostgreSQL | Relational core for recipes/ingredients, with room to grow (JSONB, pgvector) without switching engines later |
+| **Recipe retrieval** | Under evaluation | Comparing deterministic ingredient matching against embedding search, on real data, before picking one |
 | **LLM** | Gemini API (MVP) | Recipe refinement |
 | **Frontend (future)** | React Native | Cross-platform mobile |
 
 ### Architecture
 
-<img src="assets/ArchitectureDiagram.svg" alt="YumOver Architecture" width="100%"/>
-
-The pipeline is simple: embedding search on ChromaDB finds the closest recipes, the LLM adapts them to your ingredients. No fine-tuning, no custom models.
+Node.js gateway takes the request, the Python worker retrieves candidate recipes from Postgres and calls Gemini to adapt them to what you actually have. No fine-tuning, no custom models.
 
 If no recipe matches, the system tries a new combination. If that still falls short, it asks: "Do you also have an egg? With that I could make..."
 
-### Request Flow
+---
 
-<img src="assets/FlowDiagram.svg" alt="Request Flow — Recipe Suggestion" width="100%"/>
+## Roadmap
+
+### Towards MVP
+
+- Pick what you have from a list of ingredients (based on available recipes)
+- Get three recipes you can actually cook
+- Swap out an ingredient you don't have, when it's swappable
+- Use up what's about to go bad first
+- Exclude what you're allergic to, deterministically
+
+### Post-MVP
+
+- A companion that remembers your patterns over time, not just recipes
+- Cross-platform mobile app (React Native)
+- Practical techniques for using up what you can't cook right away, not just more recipes
 
 ---
 
@@ -66,10 +80,10 @@ What I plan to learn by building YumOver:
 
 - System design and microservices architecture
 - REST APIs with Node.js + Express
-- NoSQL databases (MongoDB) and data modeling
-- RAG pipeline (embedding search + LLM refinement)
-- Vector databases (ChromaDB)
-- AI integration (Gemini API, sentence-transformers)
+- Relational databases (PostgreSQL) and data modeling
+- RAG pipeline (retrieval + LLM refinement)
+- Retrieval strategies: deterministic matching vs. embeddings
+- AI integration (Gemini API)
 - Python + FastAPI for AI microservices
 - DevOps: CI/CD, Docker, cloud deploy
 - Cross-platform mobile frontend (React Native, future)
