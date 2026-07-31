@@ -1,0 +1,915 @@
+{
+  "generated": "2026-07-31",
+  "ingredients": [
+    {
+      "key": "acqua",
+      "display": "acqua",
+      "category": "beverages",
+      "is_staple": true,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Acqua Tiepida"
+      ]
+    },
+    {
+      "key": "caffe",
+      "display": "caffè",
+      "category": "beverages",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Caffè Moka"
+      ]
+    },
+    {
+      "key": "vino-bianco",
+      "display": "vino bianco",
+      "category": "beverages",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Vino Bianco Secco",
+        "Vino Bianco"
+      ]
+    },
+    {
+      "key": "biscotti-secchi",
+      "display": "biscotti secchi",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Biscotti Secchi"
+      ]
+    },
+    {
+      "key": "pane",
+      "display": "pane",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [
+        "raffermo"
+      ],
+      "variants": [
+        "Pane Casereccio",
+        "Pane Raffermo",
+        "Pane Raffermo Toscano"
+      ]
+    },
+    {
+      "key": "pangrattato",
+      "display": "pangrattato",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pangrattato"
+      ]
+    },
+    {
+      "key": "savoiardi",
+      "display": "savoiardi",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Savoiardi"
+      ]
+    },
+    {
+      "key": "pasta-corta",
+      "display": "pasta corta",
+      "category": "cereals-grains",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pasta Corta",
+        "Pasta Mista Piccola",
+        "Tubetti"
+      ]
+    },
+    {
+      "key": "riso-da-risotto",
+      "display": "riso da risotto",
+      "category": "cereals-grains",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Riso Carnaroli"
+      ]
+    },
+    {
+      "key": "riso-per-insalate",
+      "display": "riso per insalate",
+      "category": "cereals-grains",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Riso per Insalate"
+      ]
+    },
+    {
+      "key": "spaghetti",
+      "display": "spaghetti",
+      "category": "cereals-grains",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Spaghetti"
+      ]
+    },
+    {
+      "key": "latte",
+      "display": "latte",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Latte"
+      ]
+    },
+    {
+      "key": "mascarpone",
+      "display": "mascarpone",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Mascarpone"
+      ]
+    },
+    {
+      "key": "mozzarella",
+      "display": "mozzarella",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Mozzarella",
+        "Mozzarella di Bufala"
+      ]
+    },
+    {
+      "key": "panna",
+      "display": "panna",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Panna Fresca Liquida"
+      ]
+    },
+    {
+      "key": "parmigiano",
+      "display": "parmigiano",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Parmigiano Grattugiato"
+      ]
+    },
+    {
+      "key": "pecorino",
+      "display": "pecorino",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pecorino Romano"
+      ]
+    },
+    {
+      "key": "ricotta",
+      "display": "ricotta",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Ricotta Vaccina"
+      ]
+    },
+    {
+      "key": "tuorli",
+      "display": "tuorli",
+      "category": "eggs",
+      "is_staple": false,
+      "derives_from": "uova",
+      "states": [],
+      "variants": [
+        "Tuorli d'Uovo"
+      ]
+    },
+    {
+      "key": "uova",
+      "display": "uova",
+      "category": "eggs",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Uova",
+        "Uova Medie"
+      ]
+    },
+    {
+      "key": "burro",
+      "display": "burro",
+      "category": "fats-oils",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Burro"
+      ]
+    },
+    {
+      "key": "olio-di-oliva",
+      "display": "olio d'oliva",
+      "category": "fats-oils",
+      "is_staple": true,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Olio d'Oliva"
+      ]
+    },
+    {
+      "key": "olio-di-semi",
+      "display": "olio di semi",
+      "category": "fats-oils",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Olio di Semi"
+      ]
+    },
+    {
+      "key": "merluzzo",
+      "display": "merluzzo",
+      "category": "fish-seafood",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Filetti di Merluzzo"
+      ]
+    },
+    {
+      "key": "pesce-spada",
+      "display": "pesce spada",
+      "category": "fish-seafood",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Tranci di Pesce Spada"
+      ]
+    },
+    {
+      "key": "tonno-sottolio",
+      "display": "tonno sott'olio",
+      "category": "fish-seafood",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Tonno Sott'Olio"
+      ]
+    },
+    {
+      "key": "vongole",
+      "display": "vongole",
+      "category": "fish-seafood",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Vongole Veraci"
+      ]
+    },
+    {
+      "key": "farina",
+      "display": "farina",
+      "category": "flours",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Farina 00"
+      ]
+    },
+    {
+      "key": "fragole",
+      "display": "fragole",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Fragole Fresche"
+      ]
+    },
+    {
+      "key": "limone",
+      "display": "limone",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Limone"
+      ]
+    },
+    {
+      "key": "mele",
+      "display": "mele",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Mele Golden"
+      ]
+    },
+    {
+      "key": "scorza-di-limone",
+      "display": "scorza di limone",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": "limone",
+      "states": [],
+      "variants": [
+        "Scorza di Limone"
+      ]
+    },
+    {
+      "key": "succo-di-limone",
+      "display": "succo di limone",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": "limone",
+      "states": [],
+      "variants": [
+        "Succo di Limone"
+      ]
+    },
+    {
+      "key": "basilico",
+      "display": "basilico",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Basilico Fresco"
+      ]
+    },
+    {
+      "key": "noce-moscata",
+      "display": "noce moscata",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Noce Moscata"
+      ]
+    },
+    {
+      "key": "origano",
+      "display": "origano",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Origano",
+        "Origano Secco"
+      ]
+    },
+    {
+      "key": "pepe",
+      "display": "pepe",
+      "category": "herbs-spices",
+      "is_staple": true,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pepe",
+        "Pepe Nero"
+      ]
+    },
+    {
+      "key": "peperoncino",
+      "display": "peperoncino",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Peperoncino"
+      ]
+    },
+    {
+      "key": "prezzemolo",
+      "display": "prezzemolo",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Prezzemolo",
+        "Prezzemolo Fresco"
+      ]
+    },
+    {
+      "key": "rosmarino",
+      "display": "rosmarino",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Rosmarino",
+        "Rosmarino Fresco"
+      ]
+    },
+    {
+      "key": "salvia",
+      "display": "salvia",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Salvia",
+        "Salvia Fresca"
+      ]
+    },
+    {
+      "key": "timo",
+      "display": "timo",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Timo Fresco"
+      ]
+    },
+    {
+      "key": "zafferano",
+      "display": "zafferano",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Zafferano"
+      ]
+    },
+    {
+      "key": "gelatina",
+      "display": "gelatina alimentare",
+      "category": "leavening-additives",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Gelatina in Fogli"
+      ]
+    },
+    {
+      "key": "lievito-di-birra",
+      "display": "lievito di birra",
+      "category": "leavening-additives",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Lievito di Birra Fresco"
+      ]
+    },
+    {
+      "key": "lievito-per-dolci",
+      "display": "lievito per dolci",
+      "category": "leavening-additives",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Lievito per Dolci"
+      ]
+    },
+    {
+      "key": "fagioli",
+      "display": "fagioli",
+      "category": "legumes",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Fagioli Borlotti Già Lessati",
+        "Fagioli Cannellini Già Lessati"
+      ]
+    },
+    {
+      "key": "piselli",
+      "display": "piselli",
+      "category": "legumes",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Piselli Surgelati"
+      ]
+    },
+    {
+      "key": "bistecca-di-manzo",
+      "display": "bistecca di manzo",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Bistecca di Manzo Fiorentina"
+      ]
+    },
+    {
+      "key": "carne-macinata",
+      "display": "carne macinata",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Carne Macinata Mista"
+      ]
+    },
+    {
+      "key": "costolette-di-vitello",
+      "display": "costolette di vitello",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Costolette di Vitello"
+      ]
+    },
+    {
+      "key": "fettine-di-vitello",
+      "display": "fettine di vitello",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Fettine di Vitello"
+      ]
+    },
+    {
+      "key": "guanciale",
+      "display": "guanciale",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Guanciale"
+      ]
+    },
+    {
+      "key": "pollo",
+      "display": "pollo",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pollo a Pezzi"
+      ]
+    },
+    {
+      "key": "prosciutto-crudo",
+      "display": "prosciutto crudo",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Prosciutto Crudo"
+      ]
+    },
+    {
+      "key": "pinoli",
+      "display": "pinoli",
+      "category": "nuts-seeds",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pinoli"
+      ]
+    },
+    {
+      "key": "capperi",
+      "display": "capperi",
+      "category": "preserved-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Capperi sotto Sale"
+      ]
+    },
+    {
+      "key": "funghi-porcini-secchi",
+      "display": "funghi porcini secchi",
+      "category": "preserved-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Funghi Porcini Secchi"
+      ]
+    },
+    {
+      "key": "mais-dolce",
+      "display": "mais dolce",
+      "category": "preserved-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Mais Dolce"
+      ]
+    },
+    {
+      "key": "olive",
+      "display": "olive",
+      "category": "preserved-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Olive Taggiasche",
+        "Olive Verdi",
+        "Olive Verdi Denocciolate"
+      ]
+    },
+    {
+      "key": "passata-di-pomodoro",
+      "display": "passata di pomodoro",
+      "category": "preserved-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Passata di Pomodoro"
+      ]
+    },
+    {
+      "key": "pomodori-pelati",
+      "display": "pomodori pelati",
+      "category": "preserved-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pomodori Pelati"
+      ]
+    },
+    {
+      "key": "aceto-di-vino",
+      "display": "aceto di vino",
+      "category": "seasonings",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Aceto di Vino Rosso",
+        "Aceto di Vino Bianco"
+      ]
+    },
+    {
+      "key": "brodo-vegetale",
+      "display": "brodo vegetale",
+      "category": "seasonings",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Brodo Vegetale"
+      ]
+    },
+    {
+      "key": "sale",
+      "display": "sale",
+      "category": "seasonings",
+      "is_staple": true,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Sale",
+        "Sale fino",
+        "Sale Grosso"
+      ]
+    },
+    {
+      "key": "patate",
+      "display": "patate",
+      "category": "starchy-vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Patate",
+        "Patate Farinose",
+        "Patate a Pasta Gialla"
+      ]
+    },
+    {
+      "key": "cacao",
+      "display": "cacao",
+      "category": "sweeteners",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Cacao Amaro in polvere"
+      ]
+    },
+    {
+      "key": "zucchero",
+      "display": "zucchero",
+      "category": "sweeteners",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Zucchero",
+        "Zucchero a Velo",
+        "Zucchero di Canna"
+      ]
+    },
+    {
+      "key": "aglio",
+      "display": "aglio",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Aglio"
+      ]
+    },
+    {
+      "key": "carote",
+      "display": "carote",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Carota",
+        "Carote"
+      ]
+    },
+    {
+      "key": "cavolo-nero",
+      "display": "cavolo nero",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Cavolo Nero"
+      ]
+    },
+    {
+      "key": "cetriolo",
+      "display": "cetriolo",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Cetriolo"
+      ]
+    },
+    {
+      "key": "cipolla",
+      "display": "cipolla",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Cipolla",
+        "Cipolla Rossa"
+      ]
+    },
+    {
+      "key": "fagiolini",
+      "display": "fagiolini",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Fagiolini"
+      ]
+    },
+    {
+      "key": "melanzane",
+      "display": "melanzane",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Melanzane",
+        "Melanzane Grandi"
+      ]
+    },
+    {
+      "key": "peperoni",
+      "display": "peperoni",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Peperoni"
+      ]
+    },
+    {
+      "key": "pomodori",
+      "display": "pomodori",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pomodori Grandi Maturi",
+        "Pomodori Maturi",
+        "Pomodorini Ciliegino",
+        "Pomodorini di Pachino"
+      ]
+    },
+    {
+      "key": "sedano",
+      "display": "sedano",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Sedano"
+      ]
+    },
+    {
+      "key": "verza",
+      "display": "verza",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Verza"
+      ]
+    },
+    {
+      "key": "zucchine",
+      "display": "zucchine",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Zucchine"
+      ]
+    }
+  ]
+}
