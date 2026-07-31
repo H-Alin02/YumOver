@@ -18,14 +18,19 @@
   "license": "MIT",
   "author": "H-Alin02",
   "type": "module",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch --env-file=.env app.js"
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
   },
   "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
     "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mongoose": "^9.8.0"
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "prisma": "^7.9.1"
   }
 }
