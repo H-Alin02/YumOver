@@ -1,8 +1,5 @@
 name: PR references an issue
 
-# Regola fissa, nessun giudizio sul contenuto: ogni PR deve chiudere una issue.
-# Senza la parola chiave, la issue va chiusa a mano e la board resta indietro.
-
 on:
   pull_request:
     types: [opened, edited, synchronize, reopened]
@@ -16,9 +13,9 @@ jobs:
           PR_BODY: ${{ github.event.pull_request.body }}
         run: |
           if echo "$PR_BODY" | grep -qiE '\b(close[sd]?|fix(e[sd])?|resolve[sd]?)\s+#[0-9]+'; then
-            echo "OK: la PR referenzia una issue."
+            echo "OK: the PR references an issue."
           else
-            echo "Questa PR non contiene 'Closes #N' (o Fixes/Resolves)."
-            echo "Ogni PR deve chiudere una issue, altrimenti la board non si aggiorna da sola."
+            echo "This PR does not contain 'Closes #N' (or Fixes/Resolves)."
+            echo "Every PR must close an issue, otherwise the board will not update automatically."
             exit 1
           fi

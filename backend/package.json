@@ -18,10 +18,11 @@
   "license": "MIT",
   "author": "H-Alin02",
   "type": "module",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "node --watch src/app.js"
+    "test": "node --test",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.9.1",
