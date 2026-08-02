@@ -1,0 +1,121 @@
+[
+    {
+        "id": "q1-classic",
+        "note": "The obvious case. If a retriever gets this wrong, it is broken.",
+        "pantry": ["spaghetti","tuorli","guanciale","pecorino"],
+        "expected": [3],
+        "acceptable": [18]
+    },
+    {
+        "id": "q2-tiramisu",
+        "note": "Second classic, different category.",
+        "pantry": ["caffe","mascarpone","savoiardi"],
+        "expected": [1],
+        "acceptable": []
+    },
+    {
+        "id": "q3-strange-combination",
+        "note": "Clams are the point: they spoil fast and no other recipe uses them, so this one has to come out. Cacao is deliberate noise. Aglio and prezzemolo were added on 02/08 to lift coverage from 33% to 67%: the original pantry demanded a recipe the user had 2 ingredients out of 6 for.",
+        "pantry": ["spaghetti","vongole","aglio","prezzemolo","cacao"],
+        "expected": [29],
+        "acceptable": []
+    },
+    {
+        "id": "q4-substitution",
+        "note": "Carbonara wants guanciale, the user has prosciutto crudo. It's not the classic dish, but it's saved food.",
+        "pantry": ["spaghetti","tuorli","prosciutto-crudo","pecorino"],
+        "expected": [3],
+        "acceptable": []
+    },
+    {
+        "id": "q5-derivation",
+        "note": "The recipe asks for tuorli, the user has uova (tuorli -> uova). This query is the only way to prove the retriever actually uses derives_from.",
+        "pantry": ["spaghetti","uova","guanciale","pecorino"],
+        "expected": [3],
+        "acceptable": [18]
+    },
+    {
+        "id": "q6-minimal",
+        "note": "Two ingredients. Caprese is the only real match",
+        "pantry": ["mozzarella","pomodori"],
+        "expected": [16],
+        "acceptable": []
+    },
+    {
+        "id": "q7-full-pantry",
+        "note": "Eight ingredients spanning two dishes. Both Pasta al pomodoro and Pizza Margherita should come out.",
+        "pantry": ["spaghetti","pomodori-pelati","aglio","basilico","mozzarella","farina","acqua","lievito-di-birra"],
+        "expected": [7,14,25],
+        "acceptable": []
+    },
+    {
+        "id": "q8-staple-only",
+        "note": "Only the four is_staple ingredients. Every recipe uses at least one of these, so if a retriever counts them in the score, everything wins.",
+        "pantry": ["sale","olio-di-oliva","pepe","acqua"],
+        "expected": [],
+        "acceptable": []
+    },
+    {
+        "id": "q9-negative",
+        "note": "Nothing uses cacao + capperi, and nothing comes close. The honest answer is nothing.",
+        "pantry": ["cacao","capperi"],
+        "expected": [],
+        "acceptable": []
+    },
+    {
+        "id": "q10-riso",
+        "note": "Free pick. Insalata di riso needs succo-di-limone, the user has limone (succo-di-limone -> limone): a second derives_from path the set otherwise never exercises. Also a second non-pasta case.",
+        "pantry": ["riso-per-insalate","tonno-sottolio","mais-dolce","limone"],
+        "expected": [8],
+        "acceptable": []
+    },
+    {
+        "id": "q11-two-risottos",
+        "note": "Ranking test, and the only query whose outcome I cannot predict. Both risottos share five ingredients with this pantry, so a retriever that counts matches ties them while one that scores by proportion puts Milanese ahead. Milanese is the closer of the two and goes in expected; Funghi is the runner-up.",
+        "pantry": ["riso-da-risotto","brodo-vegetale","cipolla","vino-bianco","parmigiano"],
+        "expected": [12],
+        "acceptable": [17]
+    },
+    {
+        "id": "q12-soup",
+        "note": "Three legume-and-vegetable soups within 17 points of each other, the closest thing to a real ranking problem in the dataset. Ribollita leads and goes in expected, the other two are genuine runners-up. Ribollita also wants stale bread, which a flat list of keys cannot express, so that requirement is invisible here.",
+        "pantry": ["fagioli","carote","sedano","cipolla","patate","passata-di-pomodoro"],
+        "expected": [20],
+        "acceptable": [11,22]
+    },
+    {
+        "id": "q13-aubergine",
+        "note": "Two dishes of different kinds nearly tied: Parmigiana matches five ingredients, Pizza three, but in proportion they are 62% against 60%. Parmigiana leads and goes in expected. Whoever ranks Pizza first is not wrong, which is why it is acceptable rather than absent.",
+        "pantry": ["melanzane","passata-di-pomodoro","mozzarella","parmigiano","basilico"],
+        "expected": [13],
+        "acceptable": [14]
+    },
+    {
+        "id": "q14-chicken",
+        "note": "Chicken plus a soffritto. The soffritto (onion, carrot, celery) shows up in half the dataset, so this doubles as a precision test: a retriever that rewards common vegetables will drag in Minestrone and Pasta al Forno.",
+        "pantry": ["pollo","pomodori-pelati","cipolla","carote","sedano","vino-bianco"],
+        "expected": [15],
+        "acceptable": []
+    },
+    {
+        "id": "q15-baking",
+        "note": "Baking staples. Torta di Mele is the answer, but farina, uova and burro also pull Gnocchi and Cotoletta to 50%, which is the trap: those are savoury dishes reached through generic ingredients.",
+        "pantry": ["mele","farina","zucchero","uova","burro","latte"],
+        "expected": [28],
+        "acceptable": []
+    },
+    {
+        "id": "q16-fish",
+        "note": "Fish course, a category nothing else in the set touches. Honest note: the answer is obvious and every retriever will find it. It is here for coverage, not to separate the candidates.",
+        "pantry": ["merluzzo","pomodori","olive","capperi","prezzemolo"],
+        "expected": [9],
+        "acceptable": []
+    },
+    {
+        "id": "q17-side",
+        "note": "Side dish, the last uncovered category, and the only pantry in the set that matches a recipe completely (4/4). It tests nothing about ranking. It does check one thing: that a perfect match actually comes out first.",
+        "pantry": ["patate","rosmarino","timo","aglio"],
+        "expected": [5],
+        "acceptable": []
+    }
+]
