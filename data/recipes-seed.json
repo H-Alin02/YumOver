@@ -6,12 +6,12 @@
         "servings": 8,
         "reviewed": true,
         "ingredients": [
-            {"name": "Mascarpone","quantity": "500g","category": "dairy"},
-            {"name": "Uova Medie","quantity": "6","category": "eggs"},
-            {"name": "Savoiardi","quantity": "400g","category": "bread-bakery"},
-            {"name": "Zucchero","quantity": "120g","category": "sweeteners"},
-            {"name": "Caffè Moka","quantity": "300ml","category": "beverages"},
-            {"name": "Cacao Amaro in polvere","quantity": "q.b.","category": "sweeteners"}
+            {"key": "mascarpone","as_written": "Mascarpone","quantity": "500g","required_state": null},
+            {"key": "uova","as_written": "Uova Medie","quantity": "6","required_state": null},
+            {"key": "savoiardi","as_written": "Savoiardi","quantity": "400g","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero","quantity": "120g","required_state": null},
+            {"key": "caffe","as_written": "Caffè Moka","quantity": "300ml","required_state": null},
+            {"key": "cacao","as_written": "Cacao Amaro in polvere","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Preparare il caffè e lasciarlo raffreddare.",
@@ -22,7 +22,7 @@
             "Stendere uno strato di crema al mascarpone. Ripetere con un secondo strato di savoiardi e crema.",
             "Spolverizzare con abbondante cacao amaro e far riposare in frigorifero per almeno 1 ora prima di servire."
         ],
-        "prepTime": 40,
+        "prep_time": 40,
         "difficulty": "easy",
         "tags": ["dolce","senza-cottura","classico"]
     },
@@ -33,17 +33,17 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Pasta Corta","quantity": "400g","category": "cereals-grains"},
-            {"name": "Carne Macinata Mista","quantity": "500g","category": "meat"},
-            {"name": "Passata di Pomodoro","quantity": "500ml","category": "preserved-vegetables"},
-            {"name": "Mozzarella","quantity": "200g","category": "dairy"},
-            {"name": "Parmigiano Grattugiato","quantity": "100g","category": "dairy"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Carota","quantity": "1","category": "vegetables"},
-            {"name": "Sedano","quantity": "1 costa","category": "vegetables"},
-            {"name": "Olio d'Oliva","quantity": "30ml","category": "fats-oils"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pasta-corta","as_written": "Pasta Corta","quantity": "400g","required_state": null},
+            {"key": "carne-macinata","as_written": "Carne Macinata Mista","quantity": "500g","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di Pomodoro","quantity": "500ml","required_state": null},
+            {"key": "mozzarella","as_written": "Mozzarella","quantity": "200g","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Grattugiato","quantity": "100g","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "carote","as_written": "Carota","quantity": "1","required_state": null},
+            {"key": "sedano","as_written": "Sedano","quantity": "1 costa","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "30ml","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tritare finemente cipolla, carota e sedano. Soffriggere in olio per 5 minuti.",
@@ -53,7 +53,7 @@
             "Versare in una pirofila imburrata. Coprire con la mozzarella rimasta e il parmigiano.",
             "Infornare a 180°C per 20 minuti fino a gratinatura. Lasciar riposare 5 minuti prima di servire."
         ],
-        "prepTime": 60,
+        "prep_time": 60,
         "difficulty": "easy",
         "tags": ["primo","al-forno","classico"]
     },
@@ -64,11 +64,11 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Spaghetti","quantity": "320g","category": "cereals-grains"},
-            {"name": "Guanciale","quantity": "150g","category": "meat"},
-            {"name": "Pecorino Romano","quantity": "50g","category": "dairy"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Tuorli d'Uovo","quantity": "6","category": "eggs"}
+            {"key": "spaghetti","as_written": "Spaghetti","quantity": "320g","required_state": null},
+            {"key": "guanciale","as_written": "Guanciale","quantity": "150g","required_state": null},
+            {"key": "pecorino","as_written": "Pecorino Romano","quantity": "50g","required_state": null},
+            {"key": "pepe","as_written": "Pepe Nero","quantity": "q.b.","required_state": null},
+            {"key": "tuorli","as_written": "Tuorli d'Uovo","quantity": "6","required_state": null}
         ],
         "instructions": [
             "Tagliare il guanciale a tocchetti di circa 1 cm e soffriggerlo a fuoco lento in una padella antiaderente fino a doratura. Non aggiungere olio.",
@@ -78,7 +78,7 @@
             "Aggiungere immediatamente il composto di tuorli e pecorino, mescolando velocemente. La crema si formerà con il calore della pasta.",
             "Se necessario, aggiungere un goccio di acqua di cottura per cremosità. Servire subito con pecorino e pepe."
         ],
-        "prepTime": 25,
+        "prep_time": 25,
         "difficulty": "medium",
         "tags": ["primo","classico","romana"]
     },
@@ -89,11 +89,11 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Costolette di Vitello","quantity": "4 (alte 2cm)","category": "meat"},
-            {"name": "Uova","quantity": "2","category": "eggs"},
-            {"name": "Pangrattato","quantity": "q.b.","category": "bread-bakery"},
-            {"name": "Burro","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"}
+            {"key": "costolette-di-vitello","as_written": "Costolette di Vitello","quantity": "4 (alte 2cm)","required_state": null},
+            {"key": "uova","as_written": "Uova","quantity": "2","required_state": null},
+            {"key": "pangrattato","as_written": "Pangrattato","quantity": "q.b.","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Praticare dei taglietti sulla pellicola esterna delle costolette per evitare che si arriccino in cottura. Non batterle.",
@@ -102,7 +102,7 @@
             "Cuocere in abbondante burro caldo (deve immergere le cotolette per un terzo) per circa 6 minuti per lato, fino a doratura.",
             "Scolare su carta assorbente e servire calde. La crosta deve essere dorata, l'interno rosato."
         ],
-        "prepTime": 30,
+        "prep_time": 30,
         "difficulty": "easy",
         "tags": ["secondo","tradizionale","milano"]
     },
@@ -113,13 +113,13 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Patate a Pasta Gialla","quantity": "1kg","category": "starchy-vegetables"},
-            {"name": "Rosmarino Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Timo Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "patate","as_written": "Patate a Pasta Gialla","quantity": "1kg","required_state": null},
+            {"key": "rosmarino","as_written": "Rosmarino Fresco","quantity": "q.b.","required_state": null},
+            {"key": "timo","as_written": "Timo Fresco","quantity": "q.b.","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe Nero","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Sbucciare le patate e tagliarle a cubetti regolari di circa 2 cm.",
@@ -128,7 +128,7 @@
             "Stendere le patate su una teglia unta d'olio in un unico strato, senza sovrapporle.",
             "Infornare a 220°C (forno ventilato) per 40 minuti, girando delicatamente a metà cottura, fino a doratura e croccantezza."
         ],
-        "prepTime": 55,
+        "prep_time": 55,
         "difficulty": "easy",
         "tags": ["contorno","classico","croccante"]
     },
@@ -139,15 +139,15 @@
         "servings": 6,
         "reviewed": true,
         "ingredients": [
-            {"name": "Biscotti Secchi","quantity": "150g","category": "bread-bakery"},
-            {"name": "Burro","quantity": "70g","category": "fats-oils"},
-            {"name": "Zucchero di Canna","quantity": "40g","category": "sweeteners"},
-            {"name": "Ricotta Vaccina","quantity": "500g","category": "dairy"},
-            {"name": "Mascarpone","quantity": "250g","category": "dairy"},
-            {"name": "Panna Fresca Liquida","quantity": "50ml","category": "dairy"},
-            {"name": "Zucchero a Velo","quantity": "150g","category": "sweeteners"},
-            {"name": "Gelatina in Fogli","quantity": "10g","category": "leavening-additives"},
-            {"name": "Fragole Fresche","quantity": "250g","category": "fruit"}
+            {"key": "biscotti-secchi","as_written": "Biscotti Secchi","quantity": "150g","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "70g","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero di Canna","quantity": "40g","required_state": null},
+            {"key": "ricotta","as_written": "Ricotta Vaccina","quantity": "500g","required_state": null},
+            {"key": "mascarpone","as_written": "Mascarpone","quantity": "250g","required_state": null},
+            {"key": "panna","as_written": "Panna Fresca Liquida","quantity": "50ml","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero a Velo","quantity": "150g","required_state": null},
+            {"key": "gelatina","as_written": "Gelatina in Fogli","quantity": "10g","required_state": null},
+            {"key": "fragole","as_written": "Fragole Fresche","quantity": "250g","required_state": null}
         ],
         "instructions": [
             "Tritare finemente i biscotti con lo zucchero di canna, unire il burro fuso e mescolare. Pressare il composto in una tortiera a cerniera da 20 cm foderata con carta forno. Far riposare in frigo per 1 ora.",
@@ -157,7 +157,7 @@
             "Unire la salsa di fragole alla crema di formaggi, poi aggiungere il composto di panna e gelatina tiepido. Mescolare bene.",
             "Versare la crema sulla base di biscotti, livellare e far rassodare in frigorifero per almeno 3 ore. Decorare con fragole fresche prima di servire."
         ],
-        "prepTime": 35,
+        "prep_time": 35,
         "difficulty": "medium",
         "tags": ["dolce","freddo","frutta"]
     },
@@ -168,13 +168,13 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Spaghetti","quantity": "400g","category": "cereals-grains"},
-            {"name": "Pomodori Pelati","quantity": "500g","category": "preserved-vegetables"},
-            {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
-            {"name": "Olio d'Oliva","quantity": "40ml","category": "fats-oils"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"},
-            {"name": "Parmigiano Grattugiato","quantity": "q.b.","category": "dairy"}
+            {"key": "spaghetti","as_written": "Spaghetti","quantity": "400g","required_state": null},
+            {"key": "pomodori-pelati","as_written": "Pomodori Pelati","quantity": "500g","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "40ml","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Grattugiato","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Scaldare l'olio in una padella capiente, aggiungere l'aglio schiacciato e farlo dorare leggermente.",
@@ -183,7 +183,7 @@
             "Versare la pasta nella padella col sugo, saltare un minuto a fuoco vivace aggiungendo un goccio di acqua di cottura se necessario.",
             "Servire con basilico fresco e parmigiano grattugiato a piacere."
         ],
-        "prepTime": 25,
+        "prep_time": 25,
         "difficulty": "easy",
         "tags": ["primo","classico","veloce"]
     },
@@ -194,16 +194,16 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Riso per Insalate","quantity": "300g","category": "cereals-grains"},
-            {"name": "Zucchine","quantity": "200g","category": "vegetables"},
-            {"name": "Peperoni","quantity": "200g","category": "vegetables"},
-            {"name": "Pomodorini Ciliegino","quantity": "200g","category": "vegetables"},
-            {"name": "Mais Dolce","quantity": "150g","category": "preserved-vegetables"},
-            {"name": "Tonno Sott'Olio","quantity": "200g","category": "fish-seafood"},
-            {"name": "Olive Verdi","quantity": "100g","category": "preserved-vegetables"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Succo di Limone","quantity": "q.b.","category": "fruit"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"}
+            {"key": "riso-per-insalate","as_written": "Riso per Insalate","quantity": "300g","required_state": null},
+            {"key": "zucchine","as_written": "Zucchine","quantity": "200g","required_state": null},
+            {"key": "peperoni","as_written": "Peperoni","quantity": "200g","required_state": null},
+            {"key": "pomodori","as_written": "Pomodorini Ciliegino","quantity": "200g","required_state": null},
+            {"key": "mais-dolce","as_written": "Mais Dolce","quantity": "150g","required_state": null},
+            {"key": "tonno-sottolio","as_written": "Tonno Sott'Olio","quantity": "200g","required_state": null},
+            {"key": "olive","as_written": "Olive Verdi","quantity": "100g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "succo-di-limone","as_written": "Succo di Limone","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Cuocere il riso in acqua bollente salata, scolarlo al dente e raffreddarlo immediatamente sotto l'acqua corrente per fermare la cottura.",
@@ -212,7 +212,7 @@
             "Unire tutti gli ingredienti in una ciotola capiente, condire con olio, sale e succo di limone.",
             "Mescolare delicatamente e far riposare in frigorifero per almeno 30 minuti prima di servire."
         ],
-        "prepTime": 35,
+        "prep_time": 35,
         "difficulty": "easy",
         "tags": ["primo","freddo","estivo"]
     },
@@ -223,16 +223,16 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Filetti di Merluzzo","quantity": "800g","category": "fish-seafood"},
-            {"name": "Pomodorini Ciliegino","quantity": "400g","category": "vegetables"},
-            {"name": "Olive Taggiasche","quantity": "50g","category": "preserved-vegetables"},
-            {"name": "Capperi sotto Sale","quantity": "30g","category": "preserved-vegetables"},
-            {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
-            {"name": "Prezzemolo Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Olio d'Oliva","quantity": "40ml","category": "fats-oils"},
-            {"name": "Origano","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "merluzzo","as_written": "Filetti di Merluzzo","quantity": "800g","required_state": null},
+            {"key": "pomodori","as_written": "Pomodorini Ciliegino","quantity": "400g","required_state": null},
+            {"key": "olive","as_written": "Olive Taggiasche","quantity": "50g","required_state": null},
+            {"key": "capperi","as_written": "Capperi sotto Sale","quantity": "30g","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "prezzemolo","as_written": "Prezzemolo Fresco","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "40ml","required_state": null},
+            {"key": "origano","as_written": "Origano","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe Nero","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Sciacquare i capperi dal sale abbondantemente. Tagliare i pomodorini a metà e le olive a rondelle.",
@@ -241,7 +241,7 @@
             "Il pesce è pronto quando si sfalda facilmente con una forchetta. Servire con il sughetto di pomodorini e olive.",
             "Spolverizzare con prezzemolo tritato fresco."
         ],
-        "prepTime": 25,
+        "prep_time": 25,
         "difficulty": "easy",
         "tags": ["secondo","pesce","mediterraneo"]
     },
@@ -252,17 +252,17 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Patate","quantity": "400g","category": "starchy-vegetables"},
-            {"name": "Pomodorini di Pachino","quantity": "300g","category": "vegetables"},
-            {"name": "Cipolla Rossa","quantity": "1","category": "vegetables"},
-            {"name": "Olive Verdi Denocciolate","quantity": "50g","category": "preserved-vegetables"},
-            {"name": "Capperi sotto Sale","quantity": "30g","category": "preserved-vegetables"},
-            {"name": "Aceto di Vino Bianco","quantity": "20ml","category": "seasonings"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Origano Secco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "patate","as_written": "Patate","quantity": "400g","required_state": null},
+            {"key": "pomodori","as_written": "Pomodorini di Pachino","quantity": "300g","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla Rossa","quantity": "1","required_state": null},
+            {"key": "olive","as_written": "Olive Verdi Denocciolate","quantity": "50g","required_state": null},
+            {"key": "capperi","as_written": "Capperi sotto Sale","quantity": "30g","required_state": null},
+            {"key": "aceto-di-vino","as_written": "Aceto di Vino Bianco","quantity": "20ml","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "origano","as_written": "Origano Secco","quantity": "q.b.","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe Nero","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Lavare e lessare le patate con la buccia in acqua fredda salata per circa 30-35 minuti. Scolarle, pelarle ancora calde e lasciarle raffreddare. Tagliarle a fette di circa 1 cm.",
@@ -271,7 +271,7 @@
             "Riunire in una ciotola capiente: patate, pomodorini, cipolla scolata, capperi, olive. Condire con olio, origano, basilico spezzettato, sale e pepe.",
             "Mescolare delicatamente e servire freddo."
         ],
-        "prepTime": 40,
+        "prep_time": 40,
         "difficulty": "easy",
         "tags": ["contorno","estivo","siciliano"]
     },
@@ -282,18 +282,18 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Tubetti","quantity": "300g","category": "cereals-grains"},
-            {"name": "Fagioli Borlotti Già Lessati","quantity": "400g","category": "legumes"},
-            {"name": "Passata di Pomodoro","quantity": "250ml","category": "preserved-vegetables"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Carota","quantity": "1","category": "vegetables"},
-            {"name": "Sedano","quantity": "1 costa","category": "vegetables"},
-            {"name": "Aglio","quantity": "1 spicchio","category": "vegetables"},
-            {"name": "Rosmarino","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Olio d'Oliva","quantity": "30ml","category": "fats-oils"},
-            {"name": "Parmigiano Grattugiato","quantity": "q.b.","category": "dairy"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pasta-corta","as_written": "Tubetti","quantity": "300g","required_state": null},
+            {"key": "fagioli","as_written": "Fagioli Borlotti Già Lessati","quantity": "400g","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di Pomodoro","quantity": "250ml","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "carote","as_written": "Carota","quantity": "1","required_state": null},
+            {"key": "sedano","as_written": "Sedano","quantity": "1 costa","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "1 spicchio","required_state": null},
+            {"key": "rosmarino","as_written": "Rosmarino","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "30ml","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Grattugiato","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tritare finemente cipolla, carota e sedano. Soffriggere in olio con aglio e rosmarino per 5 minuti.",
@@ -301,7 +301,7 @@
             "Portare a ebollizione, aggiungere la pasta e cuocere mescolando spesso fino a cottura.",
             "Regolare di sale e pepe. Servire calda con un filo d'olio e parmigiano grattugiato."
         ],
-        "prepTime": 40,
+        "prep_time": 40,
         "difficulty": "easy",
         "tags": ["primo","zuppa","invernale"]
     },
@@ -312,14 +312,14 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Riso Carnaroli","quantity": "320g","category": "cereals-grains"},
-            {"name": "Brodo Vegetale","quantity": "1l","category": "seasonings"},
-            {"name": "Zafferano","quantity": "1 bustina","category": "herbs-spices"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Vino Bianco Secco","quantity": "100ml","category": "beverages"},
-            {"name": "Burro","quantity": "80g","category": "fats-oils"},
-            {"name": "Parmigiano Grattugiato","quantity": "80g","category": "dairy"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"}
+            {"key": "riso-da-risotto","as_written": "Riso Carnaroli","quantity": "320g","required_state": null},
+            {"key": "brodo-vegetale","as_written": "Brodo Vegetale","quantity": "1l","required_state": null},
+            {"key": "zafferano","as_written": "Zafferano","quantity": "1 bustina","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "vino-bianco","as_written": "Vino Bianco Secco","quantity": "100ml","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "80g","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Grattugiato","quantity": "80g","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tritare la cipolla e soffriggerla in 30g burro a fuoco dolce per 5 minuti.",
@@ -329,7 +329,7 @@
             "A metà cottura aggiungere lo zafferano sciolto in brodo. Cuocere 18 minuti totali.",
             "Mantecare con burro e parmigiano. Far riposare 2 minuti prima di servire."
         ],
-        "prepTime": 40,
+        "prep_time": 40,
         "difficulty": "medium",
         "tags": ["primo","risotto","tradizionale"]
     },
@@ -340,16 +340,16 @@
         "servings": 6,
         "reviewed": true,
         "ingredients": [
-            {"name": "Melanzane Grandi","quantity": "1kg","category": "vegetables"},
-            {"name": "Passata di Pomodoro","quantity": "700ml","category": "preserved-vegetables"},
-            {"name": "Mozzarella","quantity": "300g","category": "dairy"},
-            {"name": "Parmigiano Grattugiato","quantity": "150g","category": "dairy"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
-            {"name": "Olio di Semi","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Olio d'Oliva","quantity": "30ml","category": "fats-oils"},
-            {"name": "Sale fino","quantity": "q.b.","category": "seasonings"},
-            {"name": "Farina 00","quantity": "q.b.","category": "flours"}
+            {"key": "melanzane","as_written": "Melanzane Grandi","quantity": "1kg","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di Pomodoro","quantity": "700ml","required_state": null},
+            {"key": "mozzarella","as_written": "Mozzarella","quantity": "300g","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Grattugiato","quantity": "150g","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "olio-di-semi","as_written": "Olio di Semi","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "30ml","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "q.b.","required_state": null},
+            {"key": "farina","as_written": "Farina 00","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare le melanzane a fette di 1 cm. Salarle e lasciarle spurgare 30 minuti.",
@@ -358,7 +358,7 @@
             "Alternare strati di melanzane, sugo, mozzarella e parmigiano in una pirofila.",
             "Infornare a 180 gradi per 30 minuti. Lasciar riposare 10 minuti."
         ],
-        "prepTime": 90,
+        "prep_time": 90,
         "difficulty": "medium",
         "tags": ["secondo","vegetariano","siciliano"]
     },
@@ -369,14 +369,14 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Farina 00","quantity": "500g","category": "flours"},
-            {"name": "Acqua Tiepida","quantity": "320ml","category": "beverages"},
-            {"name": "Lievito di Birra Fresco","quantity": "3g","category": "leavening-additives"},
-            {"name": "Sale fino","quantity": "10g","category": "seasonings"},
-            {"name": "Passata di Pomodoro","quantity": "200ml","category": "preserved-vegetables"},
-            {"name": "Mozzarella di Bufala","quantity": "250g","category": "dairy"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Olio d'Oliva","quantity": "30ml","category": "fats-oils"}
+            {"key": "farina","as_written": "Farina 00","quantity": "500g","required_state": null},
+            {"key": "acqua","as_written": "Acqua Tiepida","quantity": "320ml","required_state": null},
+            {"key": "lievito-di-birra","as_written": "Lievito di Birra Fresco","quantity": "3g","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "10g","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di Pomodoro","quantity": "200ml","required_state": null},
+            {"key": "mozzarella","as_written": "Mozzarella di Bufala","quantity": "250g","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "30ml","required_state": null}
         ],
         "instructions": [
             "Sciogliere il lievito nell'acqua. Aggiungere farina e sale. Impastare 10 minuti.",
@@ -385,7 +385,7 @@
             "Condire con passata, mozzarella, olio e sale. Cuocere a 250 gradi per 8-10 minuti.",
             "Aggiungere basilico fresco prima di servire."
         ],
-        "prepTime": 60,
+        "prep_time": 60,
         "difficulty": "medium",
         "tags": ["primo","classico","forno"]
     },
@@ -396,18 +396,18 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Pollo a Pezzi","quantity": "1kg","category": "meat"},
-            {"name": "Pomodori Pelati","quantity": "400g","category": "preserved-vegetables"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Carota","quantity": "1","category": "vegetables"},
-            {"name": "Sedano","quantity": "1 costa","category": "vegetables"},
-            {"name": "Vino Bianco Secco","quantity": "150ml","category": "beverages"},
-            {"name": "Rosmarino","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Salvia","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
-            {"name": "Olio d'Oliva","quantity": "40ml","category": "fats-oils"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pollo","as_written": "Pollo a Pezzi","quantity": "1kg","required_state": null},
+            {"key": "pomodori-pelati","as_written": "Pomodori Pelati","quantity": "400g","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "carote","as_written": "Carota","quantity": "1","required_state": null},
+            {"key": "sedano","as_written": "Sedano","quantity": "1 costa","required_state": null},
+            {"key": "vino-bianco","as_written": "Vino Bianco Secco","quantity": "150ml","required_state": null},
+            {"key": "rosmarino","as_written": "Rosmarino","quantity": "q.b.","required_state": null},
+            {"key": "salvia","as_written": "Salvia","quantity": "q.b.","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "40ml","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Rosolare il pollo in olio finché dorato. Togliere.",
@@ -416,7 +416,7 @@
             "Rimettere il pollo, coprire e cuocere a fuoco lento 45 minuti.",
             "Servire caldo con polenta o pane."
         ],
-        "prepTime": 70,
+        "prep_time": 70,
         "difficulty": "medium",
         "tags": ["secondo","pollo","tradizionale"]
     },
@@ -427,13 +427,13 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Mozzarella di Bufala","quantity": "400g","category": "dairy"},
-            {"name": "Pomodori Grandi Maturi","quantity": "4","category": "vegetables"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Origano","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "mozzarella","as_written": "Mozzarella di Bufala","quantity": "400g","required_state": null},
+            {"key": "pomodori","as_written": "Pomodori Grandi Maturi","quantity": "4","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "origano","as_written": "Origano","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare mozzarella e pomodori a fette di 1 cm.",
@@ -441,7 +441,7 @@
             "Condire con sale, pepe, origano, basilico e olio.",
             "Servire a temperatura ambiente."
         ],
-        "prepTime": 10,
+        "prep_time": 10,
         "difficulty": "easy",
         "tags": ["antipasto","freddo","veloce"]
     },
@@ -452,17 +452,17 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Riso Carnaroli","quantity": "320g","category": "cereals-grains"},
-            {"name": "Funghi Porcini Secchi","quantity": "50g","category": "preserved-vegetables"},
-            {"name": "Brodo Vegetale","quantity": "1l","category": "seasonings"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Vino Bianco Secco","quantity": "100ml","category": "beverages"},
-            {"name": "Burro","quantity": "60g","category": "fats-oils"},
-            {"name": "Parmigiano Grattugiato","quantity": "80g","category": "dairy"},
-            {"name": "Prezzemolo","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Aglio","quantity": "1 spicchio","category": "vegetables"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "riso-da-risotto","as_written": "Riso Carnaroli","quantity": "320g","required_state": null},
+            {"key": "funghi-porcini-secchi","as_written": "Funghi Porcini Secchi","quantity": "50g","required_state": null},
+            {"key": "brodo-vegetale","as_written": "Brodo Vegetale","quantity": "1l","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "vino-bianco","as_written": "Vino Bianco Secco","quantity": "100ml","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "60g","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Grattugiato","quantity": "80g","required_state": null},
+            {"key": "prezzemolo","as_written": "Prezzemolo","quantity": "q.b.","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "1 spicchio","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Ammollare i funghi in acqua tiepida 20 minuti. Scolare e filtrare l'acqua.",
@@ -471,7 +471,7 @@
             "A metà cottura aggiungere i funghi. Cuocere 18 minuti.",
             "Mantecare con burro e parmigiano. Servire con prezzemolo."
         ],
-        "prepTime": 45,
+        "prep_time": 45,
         "difficulty": "medium",
         "tags": ["primo","autunno","funghi"]
     },
@@ -482,13 +482,13 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Spaghetti","quantity": "400g","category": "cereals-grains"},
-            {"name": "Guanciale","quantity": "200g","category": "meat"},
-            {"name": "Pomodori Pelati","quantity": "400g","category": "preserved-vegetables"},
-            {"name": "Pecorino Romano","quantity": "80g","category": "dairy"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Vino Bianco","quantity": "50ml","category": "beverages"}
+            {"key": "spaghetti","as_written": "Spaghetti","quantity": "400g","required_state": null},
+            {"key": "guanciale","as_written": "Guanciale","quantity": "200g","required_state": null},
+            {"key": "pomodori-pelati","as_written": "Pomodori Pelati","quantity": "400g","required_state": null},
+            {"key": "pecorino","as_written": "Pecorino Romano","quantity": "80g","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "vino-bianco","as_written": "Vino Bianco","quantity": "50ml","required_state": null}
         ],
         "instructions": [
             "Rosolare il guanciale a striscioline senza olio fino a renderlo croccante.",
@@ -496,7 +496,7 @@
             "Cuocere la pasta al dente. Scolarla e versarla nel sugo.",
             "Saltare brevemente. Servire con pecorino e pepe."
         ],
-        "prepTime": 25,
+        "prep_time": 25,
         "difficulty": "easy",
         "tags": ["primo","classico","romana"]
     },
@@ -507,20 +507,20 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Pane Casereccio","quantity": "8 fette","category": "bread-bakery"},
-            {"name": "Pomodori Maturi","quantity": "4","category": "vegetables"},
-            {"name": "Aglio","quantity": "2 spicchi","category": "vegetables"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pane","as_written": "Pane Casereccio","quantity": "8 fette","required_state": null},
+            {"key": "pomodori","as_written": "Pomodori Maturi","quantity": "4","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare i pomodori a cubetti, condire con olio, sale, pepe e basilico. Lasciar riposare 15 minuti.",
             "Abbrustolire il pane. Strofinare con aglio.",
             "Distribuire il condimento sui crostini e servire subito."
         ],
-        "prepTime": 20,
+        "prep_time": 20,
         "difficulty": "easy",
         "tags": ["antipasto","veloce","estivo"]
     },
@@ -531,18 +531,18 @@
         "servings": 6,
         "reviewed": true,
         "ingredients": [
-            {"name": "Pane Raffermo","quantity": "300g","category": "bread-bakery"},
-            {"name": "Fagioli Cannellini Già Lessati","quantity": "400g","category": "legumes"},
-            {"name": "Cavolo Nero","quantity": "300g","category": "vegetables"},
-            {"name": "Verza","quantity": "200g","category": "vegetables"},
-            {"name": "Patate","quantity": "200g","category": "starchy-vegetables"},
-            {"name": "Carote","quantity": "2","category": "vegetables"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Sedano","quantity": "2 coste","category": "vegetables"},
-            {"name": "Passata di Pomodoro","quantity": "200ml","category": "preserved-vegetables"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pane","as_written": "Pane Raffermo","quantity": "300g","required_state": "raffermo"},
+            {"key": "fagioli","as_written": "Fagioli Cannellini Già Lessati","quantity": "400g","required_state": null},
+            {"key": "cavolo-nero","as_written": "Cavolo Nero","quantity": "300g","required_state": null},
+            {"key": "verza","as_written": "Verza","quantity": "200g","required_state": null},
+            {"key": "patate","as_written": "Patate","quantity": "200g","required_state": null},
+            {"key": "carote","as_written": "Carote","quantity": "2","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "sedano","as_written": "Sedano","quantity": "2 coste","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di Pomodoro","quantity": "200ml","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare le verdure a cubetti. Soffriggere cipolla, carote e sedano in olio.",
@@ -551,7 +551,7 @@
             "Aggiungere il pane a pezzi e mescolare fino a che si ammorbidisce.",
             "Servire calda con olio. Migliore il giorno dopo."
         ],
-        "prepTime": 70,
+        "prep_time": 70,
         "difficulty": "medium",
         "tags": ["primo","zuppa","toscana"]
     },
@@ -562,20 +562,20 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Tranci di Pesce Spada","quantity": "4 (600g)","category": "fish-seafood"},
-            {"name": "Limone","quantity": "2","category": "fruit"},
-            {"name": "Olio d'Oliva","quantity": "50ml","category": "fats-oils"},
-            {"name": "Prezzemolo","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Origano","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pesce-spada","as_written": "Tranci di Pesce Spada","quantity": "4 (600g)","required_state": null},
+            {"key": "limone","as_written": "Limone","quantity": "2","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "50ml","required_state": null},
+            {"key": "prezzemolo","as_written": "Prezzemolo","quantity": "q.b.","required_state": null},
+            {"key": "origano","as_written": "Origano","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Marinare il pesce in olio, limone, origano, sale e pepe per 15 minuti.",
             "Scaldare bene la griglia.",
             "Cuocere 4 minuti per lato. Servire con prezzemolo e limone."
         ],
-        "prepTime": 25,
+        "prep_time": 25,
         "difficulty": "easy",
         "tags": ["secondo","pesce","griglia"]
     },
@@ -586,19 +586,19 @@
         "servings": 6,
         "reviewed": true,
         "ingredients": [
-            {"name": "Patate","quantity": "200g","category": "starchy-vegetables"},
-            {"name": "Carote","quantity": "2","category": "vegetables"},
-            {"name": "Zucchine","quantity": "1","category": "vegetables"},
-            {"name": "Fagiolini","quantity": "150g","category": "vegetables"},
-            {"name": "Piselli Surgelati","quantity": "150g","category": "legumes"},
-            {"name": "Sedano","quantity": "2 coste","category": "vegetables"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Pomodori Pelati","quantity": "200g","category": "preserved-vegetables"},
-            {"name": "Fagioli Cannellini Già Lessati","quantity": "200g","category": "legumes"},
-            {"name": "Pasta Mista Piccola","quantity": "100g","category": "cereals-grains"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "patate","as_written": "Patate","quantity": "200g","required_state": null},
+            {"key": "carote","as_written": "Carote","quantity": "2","required_state": null},
+            {"key": "zucchine","as_written": "Zucchine","quantity": "1","required_state": null},
+            {"key": "fagiolini","as_written": "Fagiolini","quantity": "150g","required_state": null},
+            {"key": "piselli","as_written": "Piselli Surgelati","quantity": "150g","required_state": null},
+            {"key": "sedano","as_written": "Sedano","quantity": "2 coste","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "pomodori-pelati","as_written": "Pomodori Pelati","quantity": "200g","required_state": null},
+            {"key": "fagioli","as_written": "Fagioli Cannellini Già Lessati","quantity": "200g","required_state": null},
+            {"key": "pasta-corta","as_written": "Pasta Mista Piccola","quantity": "100g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare tutte le verdure a dadini. Soffriggere cipolla e sedano in olio.",
@@ -606,7 +606,7 @@
             "Aggiungere piselli, fagioli e pasta. Cuocere altri 10 minuti.",
             "Regolare di sale e pepe. Servire caldo con olio."
         ],
-        "prepTime": 55,
+        "prep_time": 55,
         "difficulty": "medium",
         "tags": ["primo","zuppa","invernale"]
     },
@@ -617,11 +617,11 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Patate Farinose","quantity": "1kg","category": "starchy-vegetables"},
-            {"name": "Farina 00","quantity": "300g","category": "flours"},
-            {"name": "Uova","quantity": "1","category": "eggs"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Noce Moscata","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "patate","as_written": "Patate Farinose","quantity": "1kg","required_state": null},
+            {"key": "farina","as_written": "Farina 00","quantity": "300g","required_state": null},
+            {"key": "uova","as_written": "Uova","quantity": "1","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "noce-moscata","as_written": "Noce Moscata","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Lessare le patate con la buccia 40 minuti. Pelarle e schiacciarle.",
@@ -629,7 +629,7 @@
             "Formare cordoni di 2 cm, tagliare a tocchetti e rigare con la forchetta.",
             "Cuocere in acqua bollente. Sono pronti quando vengono a galla."
         ],
-        "prepTime": 60,
+        "prep_time": 60,
         "difficulty": "medium",
         "tags": ["primo","gnocchi","classico"]
     },
@@ -640,21 +640,21 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Fettine di Vitello","quantity": "8 (500g)","category": "meat"},
-            {"name": "Prosciutto Crudo","quantity": "8 fette","category": "meat"},
-            {"name": "Salvia Fresca","quantity": "8 foglie","category": "herbs-spices"},
-            {"name": "Burro","quantity": "50g","category": "fats-oils"},
-            {"name": "Vino Bianco Secco","quantity": "100ml","category": "beverages"},
-            {"name": "Farina 00","quantity": "q.b.","category": "flours"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "fettine-di-vitello","as_written": "Fettine di Vitello","quantity": "8 (500g)","required_state": null},
+            {"key": "prosciutto-crudo","as_written": "Prosciutto Crudo","quantity": "8 fette","required_state": null},
+            {"key": "salvia","as_written": "Salvia Fresca","quantity": "8 foglie","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "50g","required_state": null},
+            {"key": "vino-bianco","as_written": "Vino Bianco Secco","quantity": "100ml","required_state": null},
+            {"key": "farina","as_written": "Farina 00","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Mettere prosciutto e salvia su ogni fettina, fermare con uno stecchino.",
             "Infarinare leggermente. Cuocere in burro 2 minuti per lato.",
             "Sfumare con vino e far restringere. Servire caldi."
         ],
-        "prepTime": 20,
+        "prep_time": 20,
         "difficulty": "easy",
         "tags": ["secondo","romano","veloce"]
     },
@@ -665,13 +665,13 @@
         "servings": 6,
         "reviewed": true,
         "ingredients": [
-            {"name": "Farina 00","quantity": "500g","category": "flours"},
-            {"name": "Acqua Tiepida","quantity": "300ml","category": "beverages"},
-            {"name": "Lievito di Birra Fresco","quantity": "12g","category": "leavening-additives"},
-            {"name": "Olio d'Oliva","quantity": "80ml","category": "fats-oils"},
-            {"name": "Sale fino","quantity": "10g","category": "seasonings"},
-            {"name": "Sale Grosso","quantity": "q.b.","category": "seasonings"},
-            {"name": "Rosmarino","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "farina","as_written": "Farina 00","quantity": "500g","required_state": null},
+            {"key": "acqua","as_written": "Acqua Tiepida","quantity": "300ml","required_state": null},
+            {"key": "lievito-di-birra","as_written": "Lievito di Birra Fresco","quantity": "12g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "80ml","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "10g","required_state": null},
+            {"key": "sale","as_written": "Sale Grosso","quantity": "q.b.","required_state": null},
+            {"key": "rosmarino","as_written": "Rosmarino","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Sciogliere il lievito nell'acqua. Aggiungere farina, olio e sale fino. Impastare 10 minuti.",
@@ -680,7 +680,7 @@
             "Condire con olio, sale grosso e rosmarino. Far lievitare 30 minuti.",
             "Cuocere a 220 gradi per 20-25 minuti."
         ],
-        "prepTime": 45,
+        "prep_time": 45,
         "difficulty": "medium",
         "tags": ["antipasto","lievitati","ligure"]
     },
@@ -691,15 +691,15 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Pane Raffermo Toscano","quantity": "400g","category": "bread-bakery"},
-            {"name": "Pomodori Maturi","quantity": "4","category": "vegetables"},
-            {"name": "Cetriolo","quantity": "1","category": "vegetables"},
-            {"name": "Cipolla Rossa","quantity": "1","category": "vegetables"},
-            {"name": "Basilico Fresco","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Aceto di Vino Rosso","quantity": "20ml","category": "seasonings"},
-            {"name": "Olio d'Oliva","quantity": "50ml","category": "fats-oils"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "pane","as_written": "Pane Raffermo Toscano","quantity": "400g","required_state": "raffermo"},
+            {"key": "pomodori","as_written": "Pomodori Maturi","quantity": "4","required_state": null},
+            {"key": "cetriolo","as_written": "Cetriolo","quantity": "1","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla Rossa","quantity": "1","required_state": null},
+            {"key": "basilico","as_written": "Basilico Fresco","quantity": "q.b.","required_state": null},
+            {"key": "aceto-di-vino","as_written": "Aceto di Vino Rosso","quantity": "20ml","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "50ml","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare il pane a cubetti e metterlo in ammollo in acqua 10 minuti. Strizzare.",
@@ -707,7 +707,7 @@
             "Unire tutti gli ingredienti, condire con olio, aceto, sale e pepe.",
             "Far riposare in frigo 30 minuti. Servire freddo."
         ],
-        "prepTime": 20,
+        "prep_time": 20,
         "difficulty": "easy",
         "tags": ["primo","freddo","toscano"]
     },
@@ -718,10 +718,10 @@
         "servings": 2,
         "reviewed": true,
         "ingredients": [
-            {"name": "Bistecca di Manzo Fiorentina","quantity": "800g","category": "meat"},
-            {"name": "Olio d'Oliva","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Sale Grosso","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe Nero","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "bistecca-di-manzo","as_written": "Bistecca di Manzo Fiorentina","quantity": "800g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale Grosso","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe Nero","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Togliere la bistecca dal frigo 1 ora prima.",
@@ -729,7 +729,7 @@
             "Cuocere 5-6 minuti per lato per cottura al sangue.",
             "Condire con sale, pepe e olio. Servire subito."
         ],
-        "prepTime": 15,
+        "prep_time": 15,
         "difficulty": "medium",
         "tags": ["secondo","carne","toscana"]
     },
@@ -740,15 +740,15 @@
         "servings": 8,
         "reviewed": true,
         "ingredients": [
-            {"name": "Mele Golden","quantity": "3","category": "fruit"},
-            {"name": "Farina 00","quantity": "250g","category": "flours"},
-            {"name": "Zucchero","quantity": "200g","category": "sweeteners"},
-            {"name": "Uova","quantity": "3","category": "eggs"},
-            {"name": "Burro","quantity": "100g","category": "fats-oils"},
-            {"name": "Latte","quantity": "100ml","category": "dairy"},
-            {"name": "Lievito per Dolci","quantity": "1 bustina","category": "leavening-additives"},
-            {"name": "Scorza di Limone","quantity": "1","category": "fruit"},
-            {"name": "Zucchero a Velo","quantity": "q.b.","category": "sweeteners"}
+            {"key": "mele","as_written": "Mele Golden","quantity": "3","required_state": null},
+            {"key": "farina","as_written": "Farina 00","quantity": "250g","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero","quantity": "200g","required_state": null},
+            {"key": "uova","as_written": "Uova","quantity": "3","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "100g","required_state": null},
+            {"key": "latte","as_written": "Latte","quantity": "100ml","required_state": null},
+            {"key": "lievito-per-dolci","as_written": "Lievito per Dolci","quantity": "1 bustina","required_state": null},
+            {"key": "scorza-di-limone","as_written": "Scorza di Limone","quantity": "1","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero a Velo","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Montare burro e zucchero. Aggiungere le uova una alla volta.",
@@ -757,7 +757,7 @@
             "Versare in tortiera imburrata. Disporre le mele rimaste sopra.",
             "Cuocere a 180 gradi per 40 minuti. Spolverizzare con zucchero a velo."
         ],
-        "prepTime": 55,
+        "prep_time": 55,
         "difficulty": "medium",
         "tags": ["dolce","frutta","classico"]
     },
@@ -768,14 +768,14 @@
         "servings": 4,
         "reviewed": true,
         "ingredients": [
-            {"name": "Spaghetti","quantity": "400g","category": "cereals-grains"},
-            {"name": "Vongole Veraci","quantity": "1kg","category": "fish-seafood"},
-            {"name": "Aglio","quantity": "3 spicchi","category": "vegetables"},
-            {"name": "Vino Bianco Secco","quantity": "150ml","category": "beverages"},
-            {"name": "Prezzemolo","quantity": "q.b.","category": "herbs-spices"},
-            {"name": "Olio d'Oliva","quantity": "60ml","category": "fats-oils"},
-            {"name": "Peperoncino","quantity": "1","category": "herbs-spices"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"}
+            {"key": "spaghetti","as_written": "Spaghetti","quantity": "400g","required_state": null},
+            {"key": "vongole","as_written": "Vongole Veraci","quantity": "1kg","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "3 spicchi","required_state": null},
+            {"key": "vino-bianco","as_written": "Vino Bianco Secco","quantity": "150ml","required_state": null},
+            {"key": "prezzemolo","as_written": "Prezzemolo","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "60ml","required_state": null},
+            {"key": "peperoncino","as_written": "Peperoncino","quantity": "1","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Far spurgare le vongole in acqua e sale 30 minuti. Sciacquare.",
@@ -784,7 +784,7 @@
             "Cuocere la pasta al dente. Versarla nella padella con le vongole e il liquido.",
             "Saltare, aggiungere prezzemolo e servire subito."
         ],
-        "prepTime": 40,
+        "prep_time": 40,
         "difficulty": "medium",
         "tags": ["primo","pesce","napoletano"]
     },
@@ -795,19 +795,19 @@
         "servings": 6,
         "reviewed": true,
         "ingredients": [
-            {"name": "Melanzane","quantity": "800g","category": "vegetables"},
-            {"name": "Sedano","quantity": "3 coste","category": "vegetables"},
-            {"name": "Pomodori Pelati","quantity": "300g","category": "preserved-vegetables"},
-            {"name": "Olive Verdi Denocciolate","quantity": "100g","category": "preserved-vegetables"},
-            {"name": "Capperi sotto Sale","quantity": "40g","category": "preserved-vegetables"},
-            {"name": "Cipolla","quantity": "1","category": "vegetables"},
-            {"name": "Aceto di Vino Rosso","quantity": "40ml","category": "seasonings"},
-            {"name": "Zucchero","quantity": "30g","category": "sweeteners"},
-            {"name": "Olio di Semi","quantity": "q.b.","category": "fats-oils"},
-            {"name": "Olio d'Oliva","quantity": "40ml","category": "fats-oils"},
-            {"name": "Pinoli","quantity": "30g","category": "nuts-seeds"},
-            {"name": "Sale","quantity": "q.b.","category": "seasonings"},
-            {"name": "Pepe","quantity": "q.b.","category": "herbs-spices"}
+            {"key": "melanzane","as_written": "Melanzane","quantity": "800g","required_state": null},
+            {"key": "sedano","as_written": "Sedano","quantity": "3 coste","required_state": null},
+            {"key": "pomodori-pelati","as_written": "Pomodori Pelati","quantity": "300g","required_state": null},
+            {"key": "olive","as_written": "Olive Verdi Denocciolate","quantity": "100g","required_state": null},
+            {"key": "capperi","as_written": "Capperi sotto Sale","quantity": "40g","required_state": null},
+            {"key": "cipolla","as_written": "Cipolla","quantity": "1","required_state": null},
+            {"key": "aceto-di-vino","as_written": "Aceto di Vino Rosso","quantity": "40ml","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero","quantity": "30g","required_state": null},
+            {"key": "olio-di-semi","as_written": "Olio di Semi","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio d'Oliva","quantity": "40ml","required_state": null},
+            {"key": "pinoli","as_written": "Pinoli","quantity": "30g","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
         ],
         "instructions": [
             "Tagliare le melanzane a cubetti e friggerle in olio di semi. Scolare.",
@@ -816,7 +816,7 @@
             "Aggiungere olive, capperi, sedano e melanzane. Sciogliere zucchero nell'aceto e versare.",
             "Cuocere 5 minuti, aggiungere i pinoli. Servire a temperatura ambiente."
         ],
-        "prepTime": 50,
+        "prep_time": 50,
         "difficulty": "medium",
         "tags": ["contorno","siciliano","estivo"]
     }
