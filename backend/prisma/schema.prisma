@@ -28,21 +28,11 @@ model Ingredient {
 
   // An ingredient has only a category (in this project)
   category          Category           @relation(fields: [category_id], references: [id])
-  aliases           IngredientAlias[]
   recipeIngredients RecipeIngredient[]
 
   deriverFrom Ingredient?  @relation("Derivations", fields: [derives_from_id], references: [id])
   derived     Ingredient[] @relation("Derivations")
   @@map("ingredient")
-}
-
-model IngredientAlias {
-  alias         String @id
-  display       String
-  ingredient_id Int // references ingredient (id)
-
-  ingredient Ingredient @relation(fields: [ingredient_id], references: [id])
-  @@map("ingredient_alias")
 }
 
 model Recipe {
