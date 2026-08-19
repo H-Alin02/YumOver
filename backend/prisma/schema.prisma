@@ -51,6 +51,7 @@ model Recipe {
 }
 
 model RecipeIngredient {
+  id             Int @id @default(autoincrement()) //surrogate key
   recipe_id      Int // references recipe(id)
   ingredient_id  Int // references ingredient(id)
   as_written     String
@@ -60,7 +61,7 @@ model RecipeIngredient {
   recipe     Recipe    @relation(fields: [recipe_id], references: [id])
   ingredient Ingredient @relation(fields: [ingredient_id], references: [id])
 
-  @@id([recipe_id, ingredient_id])
+  @@index([recipe_id,ingredient_id]) 
   @@index([ingredient_id]) // index for the retriver
   @@map("recipe_ingredient")
 }
