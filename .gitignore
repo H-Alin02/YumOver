@@ -1,9 +1,13 @@
 # Dipendenze
 backend/node_modules/
 __pycache__/
+*.py[cod]
 venv/
+.venv/
+.pytest_cache/
 /backend/env/
 /backend/.env
+worker/.env
 
 # File di sistema operativo
 .DS_Store
@@ -22,6 +26,7 @@ Thumbs.db
 .claude/
 CLAUDE.md
 docs/
+
 # File di lavoro (non fanno parte del progetto)
 data/_*
 scripts/_*

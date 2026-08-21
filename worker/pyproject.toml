@@ -1,0 +1,25 @@
+[project]
+name = "worker"
+version = "0.1.0"
+description = "YumOver AI worker: retrieval and LLM refinement"
+readme = "README.md"
+authors = [
+    { name = "H-Alin02", email = "habasescualinmarian@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.141.1",
+    "python-dotenv>=1.2.3",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[project.scripts]
+worker = "app.app:main"
+
+[tool.uv.build-backend]
+module-name = "app"
+module-root = ""
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
