@@ -59,7 +59,7 @@ Then **Gemini rewrites** those three for what you actually have and explains the
 It never picks the recipes, so the three you see are the matcher's three.
 
 <p align="center">
-  <img src="assets/ArchitectureDiagram2.svg" alt="How YumOver works: a browser asks the Node.js gateway, which looks recipes up in PostgreSQL and passes them to a Python matcher; Gemini then rewrites the three closest. Dashed boxes mark what is planned and not built yet" width="820">
+  <img src="assets/ArchitectureDiagram.svg" alt="How YumOver works: a browser asks the Node.js gateway, which looks recipes up in PostgreSQL and passes them to a Python matcher; Gemini then rewrites the three closest. Dashed boxes mark what is planned and not built yet" width="820">
 </p>
 
 ### What happens when you ask
@@ -67,7 +67,7 @@ It never picks the recipes, so the three you see are the matcher's three.
 One request, start to finish.
 
 <p align="center">
-  <img src="assets/FlowDiagram2.svg" alt="Sequence of one request: you say what you have, the gateway loads the recipes, the matcher keeps the three closest, Gemini rewrites them, and you get three recipes plus what is missing from each" width="820">
+  <img src="assets/FlowDiagram.svg" alt="Sequence of one request: you say what you have, the gateway loads the recipes, the matcher keeps the three closest, Gemini rewrites them, and you get three recipes plus what is missing from each" width="820">
 </p>
 
 ---
