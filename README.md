@@ -1,13 +1,15 @@
 <!-- markdownlint-disable MD041 MD033 -->
 <div align="center">
 
-# 🧊 YumOver
+<img src="assets/logo.png" alt="YumOver" width="420">
 
 ### Learning software engineering by building an app against food waste.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20Python%20%7C%20PostgreSQL-339933)]()
-[![Sprint progress](https://img.shields.io/github/milestones/progress/H-Alin02/YumOver/1)](https://github.com/H-Alin02/YumOver/milestone/1)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=nodedotjs&logoColor=white)]()
+[![Python](https://img.shields.io/badge/Python-FastAPI-3776AB?logo=python&logoColor=white)]()
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-4169E1?logo=postgresql&logoColor=white)]()
+[![MVP progress](https://img.shields.io/github/milestones/progress/H-Alin02/YumOver/1)](https://github.com/H-Alin02/YumOver/milestone/1)
 [![Last commit](https://img.shields.io/github/last-commit/H-Alin02/YumOver)]()
 
 </div>
@@ -44,15 +46,29 @@ The coaching grows with you. Starts with simple tips, then adapts as it learns y
 | **Gateway** | Node.js + Express | API REST, orchestration |
 | **AI Worker** | Python + FastAPI | RAG recommendation engine |
 | **Database** | PostgreSQL | Relational core for recipes/ingredients, with room to grow (JSONB, pgvector) without switching engines later |
-| **Recipe retrieval** | Under evaluation | Comparing deterministic ingredient matching against embedding search, on real data, before picking one |
-| **LLM** | Gemini API (MVP) | Recipe refinement |
+| **Recipe retrieval** | Deterministic overlap (Jaccard, k=3) | Measured against embedding search on real data — overlap won on every metric, three orders of magnitude faster ([#25](https://github.com/H-Alin02/YumOver/issues/25)) |
+| **LLM** | Gemini API (MVP) | Adapts the retrieved recipe and explains substitutions |
 | **Frontend (future)** | React Native | Cross-platform mobile |
 
 ### Architecture
 
-Node.js gateway takes the request, the Python worker retrieves candidate recipes from Postgres and calls Gemini to adapt them to what you actually have. No fine-tuning, no custom models.
+Three parts. The **gateway** takes your request and it pulls the recipes out of the database and hands them over. The **matcher** compares
+your ingredients against every recipe it was given and keeps the three closest: under
+two ingredients in common it returns nothing at all, rather than the least bad guess.
+Then **Gemini rewrites** those three for what you actually have and explains the swaps.
+It never picks the recipes, so the three you see are the matcher's three.
 
-If no recipe matches, the system tries a new combination. If that still falls short, it asks: "Do you also have an egg? With that I could make..."
+<p align="center">
+  <img src="assets/ArchitectureDiagram2.svg" alt="How YumOver works: a browser asks the Node.js gateway, which looks recipes up in PostgreSQL and passes them to a Python matcher; Gemini then rewrites the three closest. Dashed boxes mark what is planned and not built yet" width="820">
+</p>
+
+### What happens when you ask
+
+One request, start to finish.
+
+<p align="center">
+  <img src="assets/FlowDiagram2.svg" alt="Sequence of one request: you say what you have, the gateway loads the recipes, the matcher keeps the three closest, Gemini rewrites them, and you get three recipes plus what is missing from each" width="820">
+</p>
 
 ---
 
