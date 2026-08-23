@@ -2,26 +2,33 @@ from app.retrieval import reach, retrieve
 
 MIN_RECALL = 0.97
 
+
 def test_eggs_supply_yolks(index):
     assert reach(index, ["uova"]) == {"uova", "tuorli"}
+
 
 def test_yolks_do_not_supply_eggs(index):
     assert reach(index, ["tuorli"]) == {"tuorli"}
 
+
 def test_staples_are_dropped_from_the_pantry(index):
     assert reach(index, ["sale", "acqua"]) == frozenset()
+
 
 def test_a_pantry_of_staples_returns_nothing(index):
     assert retrieve(index, ["sale", "olio-di-oliva", "pepe", "acqua"]) == []
 
+
 def test_staples_are_dropped_from_the_recipe_too(index):
     top = retrieve(index, ["patate", "rosmarino", "timo", "aglio"])[0]
     assert (top.recipe_id, top.score) == (5, 1.0)
-    
+
+
 def test_whole_eggs_reach_carbonara(index):
     top = retrieve(index, ["spaghetti", "uova", "guanciale", "pecorino"])[0]
     assert top.recipe_id == 3
-    
+
+
 def test_recall_on_the_evaluation_set(index, queries):
     positives = [q for q in queries if q["expected"]]
     scores = []

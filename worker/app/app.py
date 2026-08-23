@@ -1,5 +1,6 @@
-from fastapi import FastAPI
 import uvicorn
+from fastapi import FastAPI
+
 from app.retrieval import build_index, retrieve
 from app.schemas import MatchOut, SuggestRequest, SuggestResponse
 
