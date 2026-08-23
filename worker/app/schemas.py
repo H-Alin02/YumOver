@@ -1,6 +1,7 @@
 """Validation in Python (done with pydantic, like Zod in Node.js)"""
 
 from pydantic import BaseModel, Field
+
 from app.retrieval import K
 
 
