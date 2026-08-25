@@ -33,6 +33,6 @@ export const suggest = async (req, res) => {
     return res.status(502).json({ error: "Worker unavailable" });
   }
 
-  const workerResults = mapSuggestions(data.results, candidates);
-  return res.status(200).json({ workerResults });
+  const results = mapSuggestions(data.results, candidates);
+  return res.status(200).json({ results });
 };
