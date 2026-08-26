@@ -1,10 +1,20 @@
+from contextlib import asynccontextmanager
+
 import uvicorn
 from fastapi import FastAPI
 
+from app.config import get_settings
 from app.retrieval import build_index, retrieve
 from app.schemas import MatchOut, SuggestRequest, SuggestResponse
 
-app = FastAPI(title="YumOver AI Worker")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    get_settings()
+    yield
+
+
+app = FastAPI(title="YumOver AI Worker", lifespan=lifespan)
 
 
 @app.get("/health")
