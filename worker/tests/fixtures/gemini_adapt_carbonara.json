@@ -1,0 +1,29 @@
+{
+  "recipe_id": 3,
+  "title": "Pasta alla Carbonara",
+  "steps": [
+    "Tagliare la pancetta a tocchetti di circa 1 cm e soffriggerla a fuoco lento in una padella antiaderente fino a doratura. Non aggiungere olio.",
+    "Sbattere le uova in una ciotola con parmigiano grattugiato e abbondante pepe nero.",
+    "Cuocere gli spaghetti al dente in acqua bollente salata. Scolarli conservando un mestolo di acqua di cottura.",
+    "Versare la pasta calda nella padella con la pancetta, togliere dal fuoco.",
+    "Aggiungere immediatamente il composto di uova e parmigiano, mescolando velocemente. La crema si formerà con il calore della pasta.",
+    "Se necessario, aggiungere un goccio di acqua di cottura per cremosità. Servire subito con parmigiano e pepe."
+  ],
+  "substitutions": [
+    {
+      "original_key": "guanciale",
+      "replacement_key": "pancetta",
+      "reason": "Il guanciale non è disponibile in dispensa."
+    },
+    {
+      "original_key": "pecorino",
+      "replacement_key": "parmigiano",
+      "reason": "Il pecorino non è disponibile in dispensa."
+    },
+    {
+      "original_key": "tuorli",
+      "replacement_key": "uova",
+      "reason": "I tuorli non sono disponibili in dispensa, si utilizzano le uova intere."
+    }
+  ]
+}
