@@ -28,6 +28,6 @@ CLAUDE.md
 docs/
 
 # File di lavoro (non fanno parte del progetto)
-data/_*
-scripts/_*
-notebooks/_*
+**/data/_*
+**/scripts/_*
+**/notebooks/_*
