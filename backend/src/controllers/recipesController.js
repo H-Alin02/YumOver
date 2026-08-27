@@ -1,7 +1,7 @@
 import { prisma } from "../config/db.js";
 import {
   buildWorkerPayload,
-  getCandidateRecipes,
+  getAllRecipes,
   mapSuggestions,
   requestSuggestions,
 } from "../services/suggestionService.js";
@@ -16,7 +16,7 @@ export const suggest = async (req, res) => {
   }
 
   const [candidates, ingredients] = await Promise.all([
-    getCandidateRecipes(pantry),
+    getAllRecipes(),
     prisma.ingredient.findMany(),
   ]);
 
