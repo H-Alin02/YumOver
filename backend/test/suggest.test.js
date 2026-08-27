@@ -32,6 +32,20 @@ test("POST /api/recipes/suggest returns mapped recipes for a matching pantry", a
         score: 0.9,
         matched: ["spaghetti", "guanciale", "uova"],
         missing: [],
+        adapted: {
+          recipe_id: 3,
+          feasible: true,
+          title: "Carbonara con le uova",
+          steps: ["Cuoci la pasta", "Manteca con uova e guanciale"],
+          substitutions: [
+            {
+              original_key: "tuorli",
+              replacement_key: "uova",
+              reason: "Le uova intere danno la stessa base grassa.",
+            },
+          ],
+          unfeasible_reason: null,
+        },
       },
     ],
   };
@@ -76,8 +90,16 @@ test("POST /api/recipes/suggest returns mapped recipes for a matching pantry", a
       results: [
         {
           id: 3,
-          title: "Carbonara",
+          title: "Carbonara con le uova",
           instructions: ["Cuoci la pasta", "Manteca con uova e guanciale"],
+          substitutions: [
+            {
+              original_key: "tuorli",
+              replacement_key: "uova",
+              reason: "Le uova intere danno la stessa base grassa.",
+            },
+          ],
+          originalTitle: "Carbonara",
           score: 0.9,
           matched: ["spaghetti", "guanciale", "uova"],
           missing: [],
