@@ -2,15 +2,21 @@
 
 from pydantic import BaseModel, Field
 
+from app.gemini import AdaptedRecipe
 from app.retrieval import K
 
 
 class IngredientRef(BaseModel):
     key: str
+    as_written: str
+    quantity: str
+    required_state: str | None = None
 
 
 class RecipeIn(BaseModel):
     id: int
+    title: str
+    instructions: list[str]
     ingredients: list[IngredientRef]
 
 
@@ -32,6 +38,7 @@ class MatchOut(BaseModel):
     score: float
     matched: list[str]
     missing: list[str]
+    adapted: AdaptedRecipe
 
 
 class SuggestResponse(BaseModel):
