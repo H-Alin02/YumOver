@@ -1,17 +1,10 @@
 import { prisma } from "../config/db.js";
 
-export const getCandidateRecipes = async (pantry) => {
-  const recipes = await prisma.recipe.findMany({
+export const getAllRecipes = async () =>
+  prisma.recipe.findMany({
     include: { recipeIngredients: { include: { ingredient: true } } },
   });
 
-  return recipes.filter((recipe) => {
-    const matches = recipe.recipeIngredients.filter((ri) =>
-      pantry.includes(ri.ingredient.key),
-    );
-    return matches.length >= 2;
-  });
-};
 
 export const buildWorkerPayload = (pantry, candidates, ingredients) => {
   // Lookup table
@@ -22,10 +15,16 @@ export const buildWorkerPayload = (pantry, candidates, ingredients) => {
     pantry,
     recipes: candidates.map((r) => ({
       id: r.id,
+      title: r.title,
+      instructions: r.instructions,
       ingredients: r.recipeIngredients.map((ri) => ({
         key: ri.ingredient.key,
+        as_written: ri.as_written,
+        quantity: ri.quantity,
+        required_state: ri.required_state,
       })),
     })),
+
     ingredients: ingredients.map((i) => ({
       key: i.key,
       is_staple: i.is_staple,
@@ -48,15 +47,19 @@ export const requestSuggestions = async (payload) => {
 export const mapSuggestions = (workerResults, candidates) => {
   const recipeById = new Map(candidates.map((r) => [r.id, r]));
 
-  return workerResults.map((result) => {
-    const recipe = recipeById.get(result.recipe_id);
-    return {
-      id: recipe.id,
-      title: recipe.title,
-      instructions: recipe.instructions,
-      score: result.score,
-      matched: result.matched,
-      missing: result.missing,
-    };
-  });
+  return workerResults
+    .filter((result) => result.adapted.feasible)
+    .map((result) => {
+      const recipe = recipeById.get(result.recipe_id);
+      return {
+        id: result.recipe_id,
+        title: result.adapted.title,
+        instructions: result.adapted.steps,
+        substitutions: result.adapted.substitutions,
+        originalTitle: recipe.title,
+        score: result.score,
+        matched: result.matched,
+        missing: result.missing,
+      };
+    });
 };

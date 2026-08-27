@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field, model_validator
 
 from app.config import get_settings
 
-MODEL = "gemini-3.1-flash-lite"
+MODEL = "gemini-3.5-flash-lite"
 TIMEOUT_MS = 10_000
 SYSTEM_INSTRUCTION = """Sei un cuoco italiano e il tuo obiettivo è far evitare il più 
 possibile gli sprechi alimentari. Adatti una ricetta a quello che una persona
@@ -64,8 +64,8 @@ class Substitution(BaseModel):
     original_key: str = Field(
         description="Chiave canonica dell'ingrediente della ricetta che manca."
     )
-    replacement_key: str = Field(
-        description="Chiave canonica dell'ingrediente della dispensa che lo sostituisce."
+    replacement_key: str | None = Field(
+        description="Chiave canonica della dispensa che lo sostituisce, oppure null se l'ingrediente viene omesso."
     )
     reason: str = Field(
         description="Una frase: il ruolo che l'ingrediente svolge nel piatto."

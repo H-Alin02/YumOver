@@ -1,8 +1,26 @@
+import pytest
 from fastapi.testclient import TestClient
 
-from app.app import app
+from app import app as app_module
+from app.gemini import AdaptedRecipe
 
-client = TestClient(app)
+client = TestClient(app_module.app)
+
+
+def fake_adapt(recipe, pantry):
+    return AdaptedRecipe(
+        recipe_id=recipe["id"],
+        feasible=True,
+        title=recipe["title"],
+        steps=recipe["instructions"],
+        substitutions=[],
+        unfeasible_reason=None,
+    )
+
+
+@pytest.fixture(autouse=True)
+def no_llm(monkeypatch):
+    monkeypatch.setattr(app_module, "adapt", fake_adapt)
 
 
 def body(pantry, recipes, ingredients, **extra):
@@ -12,7 +30,17 @@ def body(pantry, recipes, ingredients, **extra):
         "recipes": [
             {
                 "id": r["id"],
-                "ingredients": [{"key": m["key"]} for m in r["ingredients"]],
+                "title": r["title"],
+                "instructions": r["instructions"],
+                "ingredients": [
+                    {
+                        "key": m["key"],
+                        "as_written": m["as_written"],
+                        "quantity": m["quantity"],
+                        "required_state": m["required_state"],
+                    }
+                    for m in r["ingredients"]
+                ],
             }
             for r in recipes
         ],
@@ -41,6 +69,7 @@ def test_suggest_finds_carbonara(recipes, ingredients):
     results = response.json()["results"]
     assert results[0]["recipe_id"] == 3
     assert results[0]["missing"] == []
+    assert results[0]["adapted"]["recipe_id"] == 3
 
 
 def test_suggest_stays_silent(recipes, ingredients):

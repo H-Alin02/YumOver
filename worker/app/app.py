@@ -4,6 +4,7 @@ import uvicorn
 from fastapi import FastAPI
 
 from app.config import get_settings
+from app.gemini import adapt
 from app.retrieval import build_index, retrieve
 from app.schemas import MatchOut, SuggestRequest, SuggestResponse
 
@@ -29,6 +30,7 @@ def suggest(request: SuggestRequest) -> SuggestResponse:
         ingredients=[i.model_dump() for i in request.ingredients],
     )
     matches = retrieve(index, request.pantry, k=request.k)
+    by_id = {r.id: r for r in request.recipes}
     return SuggestResponse(
         results=[
             MatchOut(
@@ -36,6 +38,7 @@ def suggest(request: SuggestRequest) -> SuggestResponse:
                 score=round(m.score, 3),
                 matched=sorted(m.matched),
                 missing=sorted(m.missing),
+                adapted=adapt(by_id[m.recipe_id].model_dump(), request.pantry),
             )
             for m in matches
         ]
