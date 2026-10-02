@@ -8,6 +8,8 @@ venv/
 /backend/env/
 /backend/.env
 worker/.env
+frontend/node_modules/
+frontend/dist/
 
 # File di sistema operativo
 .DS_Store
