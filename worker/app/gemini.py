@@ -8,8 +8,8 @@ from pydantic import BaseModel, Field, model_validator
 
 from app.config import get_settings
 
-MODEL = "gemini-3.5-flash-lite"
-TIMEOUT_MS = 15_000
+MODEL = "gemini-3.8-flash"
+TIMEOUT_MS = 25_000
 SYSTEM_INSTRUCTION = """Sei un cuoco italiano e il tuo obiettivo è far evitare gli sprechi
 alimentari: adatti una ricetta a quello che una persona ha davvero in casa, e dici
 onestamente quando non si può fare.
@@ -148,6 +148,6 @@ def adapt(recipe: dict, pantry: list[str]) -> AdaptedRecipe:
             "mime_type": "application/json",
             "schema": AdaptedRecipe.model_json_schema(),
         },
-        generation_config={"thinking_level": "high"},
+        generation_config={"thinking_level": "medium"},
     )
     return AdaptedRecipe.model_validate_json(interaction.output_text)
