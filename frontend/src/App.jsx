@@ -53,7 +53,7 @@ export default function App() {
   }
 
   async function addToPantry() {
-    const display = inputText.trim();
+    const display = inputText.trim().toLowerCase();
     if (display === "") return;
 
     const key = vocabularyMap.get(display);
