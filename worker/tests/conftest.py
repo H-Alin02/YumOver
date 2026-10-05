@@ -25,7 +25,7 @@ def ingredients():
 
 @pytest.fixture(scope="session")
 def queries():
-    return load(REPO / "notebooks" / "eval-queries.json")
+    return load(Path(__file__).parent / "eval-queries.json")
 
 
 @pytest.fixture(scope="session")
