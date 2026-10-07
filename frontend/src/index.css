@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Montagu+Slab:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Montagu+Slab:wght@700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-sage: #4A5D23;       /* header, secondary button outline */
-  --color-mustard: #F2B705;    /* primary actions */
-  --color-terracotta: #D9583D; /* expiring ingredients */
-  --color-ground: #EDF1E3;     /* page background */
-  --color-card: #FFFFFF;       /* cards, chips, inputs */
-  --color-ink: #2D3436;        /* text */
+  --color-sage: #4a5d23; /* header, secondary button outline */
+  --color-mustard: #f2b705; /* primary actions */
+  --color-terracotta: #d9583d; /* expiring ingredients */
+  --color-ground: #edf1e3; /* page background */
+  --color-card: #ffffff; /* cards, chips, inputs */
+  --color-ink: #2d3436; /* text */
 
-  --color-line: #D2DBC0;       /* borders, shadow under chips and cards */
-  --color-muted: #5C6455;      /* secondary text */
+  --color-line: #d2dbc0; /* borders, shadow under chips and cards */
+  --color-muted: #5c6455; /* secondary text */
+  --color-disabled: #dce3cf;
 
-  --shadow-press-mustard: 0 4px 0 #B88A00;
+  --shadow-press-mustard: 0 4px 0 #b88a00;
   --shadow-press-sage: 0 4px 0 var(--color-sage);
   --shadow-press-line: 0 3px 0 var(--color-line);
 
