@@ -1,4 +1,4 @@
-const IngredientPicker = ({inputText, onInputChange, vocabulary, onAdd, msg }) => {
+const IngredientPicker = ({ inputText, onInputChange, vocabulary, onAdd, msg }) => {
     return (
         <section className="flex flex-col gap-2">
             <label htmlFor="ingredient-input" className="text-sm font-semibold">
