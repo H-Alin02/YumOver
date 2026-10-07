@@ -1,4 +1,9 @@
 import { useState, useEffect } from "react"
+import Header from "./components/Header";
+import IngredientPicker from "./components/IngredientPicker";
+import PantryChips from "./components/PantryChips";
+import SearchButton from "./components/SearchButton";
+import RecipeList from "./components/RecipeList";
 const VITE_API_URL = import.meta.env.VITE_API_URL;
 
 export default function App() {
@@ -78,7 +83,7 @@ export default function App() {
     }
     if (pantry.some((item) => item.key === key)) return;
 
-    setPantry([...pantry, {key, display}]);
+    setPantry([...pantry, { key, display }]);
     setInputText("");
     setMsg("");
   }
@@ -89,83 +94,20 @@ export default function App() {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-brand p-8">
-        YumOver
-      </h1>
-
-      <p className="text-2xl font-bold text-brand p-8">
-        The app against food waste ;)
-      </p>
-
-      <div className="p-8">
-        <input
-          type="text"
-          list="ingredient-options"
-          placeholder="Inserisci un ingrediente..."
-          value={inputText}
-          onChange={(e) => setInputText(e.target.value)}
-          className="border border-gray-700 p-2 rounded mr-2 w-full max-w-md"
-        />
-
-        <datalist id="ingredient-options">
-          {
-            vocabulary.map((item) => (
-              <option key={item.key} value={item.display} />
-            ))
-          }
-        </datalist>
-
-        <button
-          type="button"
-          onClick={handleSend}
-          className="bg-green-600 text-white p-2 rounded"
-        >Send!
-        </button>
-
-        <button
-          type="button"
-          onClick={addToPantry}
-          className="bg-green-600 text-white p-2 rounded"
-        >Aggiungi</button>
-
-        <ul className="flex flex-wrap gap-2 mt-4">
-          {pantry.map((item) => (
-            <li
-              key={item.key}
-              className="flex items-center gap-1 rounded-full border border-gray-400 py-1 pl-3 pr-1 text-sm"
-            >
-              {item.display}
-              <button
-                type="button"
-                onClick={() => removeFromPantry(item.key)}
-                className="flex h-6 w-6 items-center justify-center rounded-full hover:bg-gray-200"
-              >
-                ✕
-              </button>
-            </li>
-          ))}
-        </ul>
-
-        {msg && <p role="status" className="mt-2 text-sm text-gray-600">{msg}</p>}
-
-      </div>
-
-      <ul className="p-8">
-        {
-          recipes.map((recipe) => (
-            <li key={recipe.id}>
-              <h2 className="mb-3 text-lg font-medium text-heading">{recipe.title}</h2>
-              <ol className="max-w-md space-y-2 text-body list-decimal list-inside">
-                {
-                  recipe.instructions.map((step, index) => (
-                    <li key={index}>{step}</li>
-                  ))
-                }
-              </ol>
-            </li>
-          ))
-        }
-      </ul>
+      <Header />
+      <IngredientPicker
+        inputText={inputText}
+        onInputChange={setInputText}
+        vocabulary={vocabulary}
+        onAdd={addToPantry}
+        msg={msg}
+      />
+      <PantryChips
+        pantry={pantry}
+        onRemove={removeFromPantry}
+      />
+      <SearchButton onSearch={handleSend} />
+      <RecipeList recipes={recipes} />
     </div>
   )
 }
