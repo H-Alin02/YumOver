@@ -25,6 +25,7 @@ export default function App() {
   ]);
   const [msg, setMsg] = useState("");
   const vocabularyMap = new Map(vocabulary.map((x) => [x.display, x.key]));
+  const displayByKey = new Map(vocabulary.map((x) => [x.key, x.display]));
   const [status, setStatus] = useState("idle"); //idle, loading, success, error
 
   useEffect(() => {
@@ -118,7 +119,10 @@ export default function App() {
           count={recipes.length}
         />
         {status === "loading" && <RecipeSkeleton />}
-        <RecipeList recipes={recipes} />
+        <RecipeList
+          recipes={recipes}
+          displayByKey={displayByKey}
+        />
       </main>
     </div>
   )
