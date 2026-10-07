@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Montagu+Slab:wght@700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #e4572e;
+  --color-sage: #4A5D23;       /* header, secondary button outline */
+  --color-mustard: #F2B705;    /* primary actions */
+  --color-terracotta: #D9583D; /* expiring ingredients */
+  --color-ground: #EDF1E3;     /* page background */
+  --color-card: #FFFFFF;       /* cards, chips, inputs */
+  --color-ink: #2D3436;        /* text */
+
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montagu Slab", ui-serif, serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+  }
 }
