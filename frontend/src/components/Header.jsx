@@ -1,14 +1,14 @@
 const Header = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold text-brand p-8">
-        YumOver
+    <header className="flex flex-col gap-1 rounded-2xl bg-sage p-4">
+      <h1 className="font-display text-6xl">
+        <span className="text-card">Yum</span><span className="text-mustard">Over</span>
       </h1>
 
-      <p className="text-2xl font-bold text-brand p-8">
-        The app against food waste ;)
+      <p className="text-lg font-semibold text-card">
+        L'app contro lo spreco di cibo 😉
       </p>
-    </div>
+    </header>
   )
 }
 

@@ -9,6 +9,13 @@
   --color-card: #FFFFFF;       /* cards, chips, inputs */
   --color-ink: #2D3436;        /* text */
 
+  --color-line: #D2DBC0;       /* borders, shadow under chips and cards */
+  --color-muted: #5C6455;      /* secondary text */
+
+  --shadow-press-mustard: 0 4px 0 #B88A00;
+  --shadow-press-sage: 0 4px 0 var(--color-sage);
+  --shadow-press-line: 0 3px 0 var(--color-line);
+
   --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Montagu Slab", ui-serif, serif;
 }

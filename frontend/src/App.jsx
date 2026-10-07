@@ -11,7 +11,14 @@ export default function App() {
   const [inputText, setInputText] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [vocabulary, setVocabulary] = useState([]);
-  const [pantry, setPantry] = useState([]);
+  // TEST: pre-filled pantry.
+  const [pantry, setPantry] = useState([
+    { key: "pomodori", display: "pomodori" },
+    { key: "basilico", display: "basilico" },
+    { key: "aglio", display: "aglio" },
+    { key: "mozzarella", display: "mozzarella" },
+    { key: "pane", display: "pane" },
+  ]);
   const [msg, setMsg] = useState("");
   const vocabularyMap = new Map(vocabulary.map((x) => [x.display, x.key]));
 
@@ -93,21 +100,27 @@ export default function App() {
   }
 
   return (
-    <div>
+    <div className="mx-auto w-full max-w-xl px-4 py-6 sm:px-6 flex flex-col gap-6">
       <Header />
-      <IngredientPicker
-        inputText={inputText}
-        onInputChange={setInputText}
-        vocabulary={vocabulary}
-        onAdd={addToPantry}
-        msg={msg}
-      />
-      <PantryChips
-        pantry={pantry}
-        onRemove={removeFromPantry}
-      />
-      <SearchButton onSearch={handleSend} />
-      <RecipeList recipes={recipes} />
+      <main className="flex flex-col gap-6">
+        <IngredientPicker
+          inputText={inputText}
+          onInputChange={setInputText}
+          vocabulary={vocabulary}
+          onAdd={addToPantry}
+          msg={msg}
+        />
+        <PantryChips
+          pantry={pantry}
+          onRemove={removeFromPantry}
+        />
+        <SearchButton onSearch={handleSend} />
+        {/* #99: loading, empty and error states go here. The element is in the page
+            before any message on purpose: screen readers only announce changes to a
+            live region that already exists. */}
+        <div />
+        <RecipeList recipes={recipes} />
+      </main>
     </div>
   )
 }

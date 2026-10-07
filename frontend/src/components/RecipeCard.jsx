@@ -1,8 +1,8 @@
 const RecipeCard = ({ recipe }) => {
     return (
-        <li>
-            <h2 className="mb-3 text-lg font-medium text-heading">{recipe.title}</h2>
-            <ol className="max-w-md space-y-2 text-body list-decimal list-inside">
+        <li className="rounded-2xl bg-card p-4 shadow-press-line">
+            <h2 className="mb-2 font-display text-xl">{recipe.title}</h2>
+            <ol className="list-inside list-decimal space-y-2 text-muted">
                 {
                     recipe.instructions.map((step, index) => (
                         <li key={index}>{step}</li>
