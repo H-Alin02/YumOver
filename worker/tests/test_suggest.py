@@ -1,19 +1,10 @@
-import pathlib
-
-import httpx
 import pytest
 from fastapi.testclient import TestClient
 
 from app import app as app_module
 from app.gemini import AdaptedRecipe
-from app.schemas import TaxonomyIn
 
 client = TestClient(app_module.app)
-
-FIXTURES = pathlib.Path(__file__).parent / "fixtures"
-RECORDED_RESPONSE = (FIXTURES / "gemini_adapt_carbonara.json").read_text(
-    encoding="utf-8"
-)
 
 
 def fake_adapt(recipe, pantry):
@@ -101,9 +92,8 @@ def test_k_is_capped(recipes, ingredients):
 def test_one_failed_recipe_does_not_lose_the_others(recipes, ingredients, monkeypatch):
     def fake_adapt_with_exception(recipe, pantry):
         if recipe["id"] == 3:
-            raise httpx.TimeoutException("Timeout Exception")
-        else:
-            return fake_adapt(recipe, pantry)
+            raise RuntimeError("Gemini timed out")
+        return fake_adapt(recipe, pantry)
 
     monkeypatch.setattr(app_module, "adapt", fake_adapt_with_exception)
 
@@ -116,31 +106,29 @@ def test_one_failed_recipe_does_not_lose_the_others(recipes, ingredients, monkey
     assert results[18]["adapted"]["feasible"] is True
 
 
-def test_a_replacement_outside_the_pantry_is_dropped(ingredients):
-    adapted_recipe = AdaptedRecipe.model_validate_json(RECORDED_RESPONSE)
-    taxonomy = [TaxonomyIn.model_validate(ingredient) for ingredient in ingredients]
-    result = app_module.check_if_feasible(
-        adapted_recipe, ["spaghetti", "pancetta"], taxonomy
+def test_a_replacement_outside_the_pantry_is_dropped(index, recorded_response):
+    adapted_recipe = AdaptedRecipe.model_validate_json(recorded_response)
+    result = app_module.drop_unavailable_replacements(
+        adapted_recipe, index, ["spaghetti", "pancetta"]
     )
     assert result.feasible is False
     assert "parmigiano" in result.unfeasible_reason
 
 
-def test_replacements_the_user_has_are_kept(ingredients):
-    adapted_recipe = AdaptedRecipe.model_validate_json(RECORDED_RESPONSE)
-    taxonomy = [TaxonomyIn.model_validate(ingredient) for ingredient in ingredients]
-    result = app_module.check_if_feasible(
-        adapted_recipe, ["spaghetti", "pancetta", "parmigiano", "uova"], taxonomy
+def test_replacements_the_user_has_are_kept(index, recorded_response):
+    adapted_recipe = AdaptedRecipe.model_validate_json(recorded_response)
+    result = app_module.drop_unavailable_replacements(
+        adapted_recipe, index, ["spaghetti", "pancetta", "parmigiano", "uova"]
     )
     assert result.feasible is True
 
 
 def test_suggest_drops_a_recipe_with_a_missing_replacement(
-    recipes, ingredients, monkeypatch
+    recipes, ingredients, monkeypatch, recorded_response
 ):
     def recorded_adapt(recipe, pantry):
         if recipe["id"] == 3:
-            return AdaptedRecipe.model_validate_json(RECORDED_RESPONSE)
+            return AdaptedRecipe.model_validate_json(recorded_response)
         return fake_adapt(recipe, pantry)
 
     monkeypatch.setattr(app_module, "adapt", recorded_adapt)

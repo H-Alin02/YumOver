@@ -1,16 +1,13 @@
 import logging
 from contextlib import asynccontextmanager
 
-import httpx
 import uvicorn
 from fastapi import FastAPI
-from google.genai import errors
-from pydantic import ValidationError
 
 from app.config import get_settings
 from app.gemini import AdaptedRecipe, adapt
-from app.retrieval import build_index, retrieve
-from app.schemas import MatchOut, SuggestRequest, SuggestResponse, TaxonomyIn
+from app.retrieval import Index, build_index, reach, retrieve
+from app.schemas import MatchOut, SuggestRequest, SuggestResponse
 
 logger = logging.getLogger(__name__)
 
@@ -29,45 +26,38 @@ def health():
     return {"status": "OK"}
 
 
+def unfeasible(recipe_id: int, reason: str) -> AdaptedRecipe:
+    return AdaptedRecipe(
+        recipe_id=recipe_id,
+        feasible=False,
+        title=None,
+        steps=[],
+        substitutions=[],
+        unfeasible_reason=reason,
+    )
+
+
 def safe_adapt(recipe: dict, pantry: list[str]) -> AdaptedRecipe:
     try:
         return adapt(recipe, pantry)
-    except (httpx.HTTPError, errors.APIError, ValidationError) as exc:
-        logger.warning("adapt failed for recipe_id=%s: %r", recipe["id"], exc)
-        return AdaptedRecipe(
-            recipe_id=recipe["id"],
-            feasible=False,
-            title=None,
-            steps=[],
-            substitutions=[],
-            unfeasible_reason="Gemini responded incorrectly",
-        )
+    except Exception:
+        logger.exception("adapt failed for recipe_id=%s", recipe["id"])
+        return unfeasible(recipe["id"], "Gemini non ha risposto correttamente")
 
 
-def check_if_feasible(
-    adapted: AdaptedRecipe, pantry: list[str], taxonomy: list[TaxonomyIn]
+def drop_unavailable_replacements(
+    adapted: AdaptedRecipe, index: Index, pantry: list[str]
 ) -> AdaptedRecipe:
     if not adapted.feasible:
         return adapted
-    available = set(pantry)
-    available.update(
-        [ingredient.key for ingredient in taxonomy if ingredient.is_staple]
-    )
-    available.update(
-        [ingredient.key for ingredient in taxonomy if ingredient.derives_from in pantry]
-    )
-
+    available = reach(index, pantry) | index.staples
     for substitution in adapted.substitutions:
         if substitution.replacement_key is None:
             continue
         if substitution.replacement_key not in available:
-            return AdaptedRecipe(
-                recipe_id=adapted.recipe_id,
-                feasible=False,
-                title=None,
-                steps=[],
-                substitutions=[],
-                unfeasible_reason=f"{substitution.replacement_key} is not an ingredient in the pantry",
+            return unfeasible(
+                adapted.recipe_id,
+                f"{substitution.replacement_key} non è in dispensa",
             )
     return adapted
 
@@ -87,10 +77,10 @@ def suggest(request: SuggestRequest) -> SuggestResponse:
                 score=round(m.score, 3),
                 matched=sorted(m.matched),
                 missing=sorted(m.missing),
-                adapted=check_if_feasible(
+                adapted=drop_unavailable_replacements(
                     safe_adapt(by_id[m.recipe_id].model_dump(), request.pantry),
+                    index,
                     request.pantry,
-                    request.ingredients,
                 ),
             )
             for m in matches
