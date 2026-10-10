@@ -114,10 +114,13 @@ class AdaptedRecipe(BaseModel):
 def get_client() -> genai.Client:
     """Creates the Gemini Client and stores it in the cache"""
     settings = get_settings()
-    return genai.Client(
+    client = genai.Client(
         api_key=settings.gemini_api_key,
         http_options=types.HttpOptions(timeout=TIMEOUT_MS),
     )
+    # Build the lazy `interactions`, avoiding multiple copies in parallel threads
+    _ = client.interactions
+    return client
 
 
 def format_recipe(recipe: dict) -> str:

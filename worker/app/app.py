@@ -1,11 +1,12 @@
 import logging
+from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
 
 import uvicorn
 from fastapi import FastAPI
 
 from app.config import get_settings
-from app.gemini import AdaptedRecipe, adapt
+from app.gemini import AdaptedRecipe, adapt, get_client
 from app.retrieval import Index, build_index, reach, retrieve
 from app.schemas import MatchOut, SuggestRequest, SuggestResponse
 
@@ -15,6 +16,7 @@ logger = logging.getLogger(__name__)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     get_settings()
+    get_client()
     yield
 
 
@@ -70,6 +72,13 @@ def suggest(request: SuggestRequest) -> SuggestResponse:
     )
     matches = retrieve(index, request.pantry, k=request.k)
     by_id = {r.id: r for r in request.recipes}
+    with ThreadPoolExecutor(max_workers=max(len(matches), 1)) as pool:
+        adapted = list(
+            pool.map(
+                lambda m: safe_adapt(by_id[m.recipe_id].model_dump(), request.pantry),
+                matches,
+            )
+        )
     return SuggestResponse(
         results=[
             MatchOut(
@@ -78,12 +87,12 @@ def suggest(request: SuggestRequest) -> SuggestResponse:
                 matched=sorted(m.matched),
                 missing=sorted(m.missing),
                 adapted=drop_unavailable_replacements(
-                    safe_adapt(by_id[m.recipe_id].model_dump(), request.pantry),
+                    a,
                     index,
                     request.pantry,
                 ),
             )
-            for m in matches
+            for m, a in zip(matches, adapted, strict=True)
         ]
     )
 
