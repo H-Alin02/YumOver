@@ -134,7 +134,7 @@ def build_input(recipe: dict, pantry: list[str]) -> str:
     return (
         f"-----Ricetta Originale (recipe_id: {recipe['id']})-----\n"
         f"{format_recipe(recipe)}\n\n"
-        f"-----Dispensa-----\n{", ".join(pantry)}\n"
+        f"-----Dispensa-----\n{', '.join(pantry)}\n"
     )
 
 

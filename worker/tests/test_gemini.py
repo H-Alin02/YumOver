@@ -1,4 +1,3 @@
-import pathlib
 from types import SimpleNamespace
 
 import pytest
@@ -6,14 +5,6 @@ from pydantic import ValidationError
 
 from app import gemini
 from app.gemini import AdaptedRecipe
-
-FIXTURES = pathlib.Path(__file__).parent / "fixtures"
-RECORDED_RESPONSE = (FIXTURES / "gemini_adapt_carbonara.json").read_text(
-    encoding="utf-8"
-)
-RECORDED_REFUSAL = (FIXTURES / "gemini_adapt_unfeasible.json").read_text(
-    encoding="utf-8"
-)
 
 
 @pytest.fixture
@@ -29,8 +20,8 @@ def fake_client(text):
     )
 
 
-def test_adapt_parses_a_recorded_response(monkeypatch, carbonara):
-    monkeypatch.setattr(gemini, "get_client", lambda: fake_client(RECORDED_RESPONSE))
+def test_adapt_parses_a_recorded_response(monkeypatch, carbonara, recorded_response):
+    monkeypatch.setattr(gemini, "get_client", lambda: fake_client(recorded_response))
     result = gemini.adapt(carbonara, ["spaghetti", "pancetta"])
     assert result.feasible
     assert result.substitutions
@@ -42,8 +33,8 @@ def test_adapt_raises_on_invalid_response(monkeypatch, carbonara):
         gemini.adapt(carbonara, ["spaghetti"])
 
 
-def test_adapt_parses_a_recorded_refusal(monkeypatch, carbonara):
-    monkeypatch.setattr(gemini, "get_client", lambda: fake_client(RECORDED_REFUSAL))
+def test_adapt_parses_a_recorded_refusal(monkeypatch, carbonara, recorded_refusal):
+    monkeypatch.setattr(gemini, "get_client", lambda: fake_client(recorded_refusal))
     result = gemini.adapt(carbonara, ["spaghetti"])
     assert not result.feasible
     assert result.unfeasible_reason
