@@ -1,0 +1,7 @@
+**/node_modules
+**/.env
+frontend/dist
+docs
+CLAUDE.md
+.claude
+.git
