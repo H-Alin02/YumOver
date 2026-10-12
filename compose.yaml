@@ -1,0 +1,18 @@
+services:
+  worker:
+    build: worker/
+    env_file:
+      - worker/.env
+    environment:
+      HOST: 0.0.0.0
+
+  gateway:
+    build: .
+    env_file:
+      - backend/.env
+    environment:
+      PORT: 8000
+      NODE_ENV: production
+      WORKER_URL: http://worker:8001
+    ports:
+      - "127.0.0.1:8000:8000"
