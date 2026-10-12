@@ -139,3 +139,10 @@ def test_suggest_drops_a_recipe_with_a_missing_replacement(
     results = {result["recipe_id"]: result for result in response.json()["results"]}
     assert results[3]["adapted"]["feasible"] is False
     assert "parmigiano" in results[3]["adapted"]["unfeasible_reason"]
+
+
+def test_a_pantry_of_11_ingredients_is_rejected(recipes, ingredients):
+    payload = body(
+        ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"], recipes, ingredients
+    )
+    assert client.post("/suggest", json=payload).status_code == 422
