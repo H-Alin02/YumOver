@@ -2,9 +2,12 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app import app as app_module
+from app.config import Settings
 from app.gemini import AdaptedRecipe
 
-client = TestClient(app_module.app)
+SECRET = "test-secret"
+
+client = TestClient(app_module.app, headers={"X-Worker-Secret": SECRET})
 
 
 def fake_adapt(recipe, pantry):
@@ -15,6 +18,15 @@ def fake_adapt(recipe, pantry):
         steps=recipe["instructions"],
         substitutions=[],
         unfeasible_reason=None,
+    )
+
+
+@pytest.fixture(autouse=True)
+def fake_settings(monkeypatch):
+    monkeypatch.setattr(
+        app_module,
+        "get_settings",
+        lambda: Settings(gemini_api_key="test", worker_secret=SECRET),
     )
 
 
@@ -146,3 +158,11 @@ def test_a_pantry_of_11_ingredients_is_rejected(recipes, ingredients):
         ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"], recipes, ingredients
     )
     assert client.post("/suggest", json=payload).status_code == 422
+
+
+def test_a_request_without_the_secret_is_rejected(recipes, ingredients):
+    payload = body(["spaghetti", "pancetta", "uova"], recipes, ingredients)
+    response = client.post(
+        "/suggest", json=payload, headers={"X-Worker-Secret": "wrong"}
+    )
+    assert response.status_code == 401

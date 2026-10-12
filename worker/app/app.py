@@ -1,9 +1,10 @@
 import logging
+import secrets
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
 
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException
 
 from app.config import get_settings
 from app.gemini import AdaptedRecipe, adapt, get_client
@@ -65,7 +66,12 @@ def drop_unavailable_replacements(
 
 
 @app.post("/suggest", response_model=SuggestResponse)
-def suggest(request: SuggestRequest) -> SuggestResponse:
+def suggest(
+    request: SuggestRequest, x_worker_secret: str = Header(default="")
+) -> SuggestResponse:
+    if not secrets.compare_digest(x_worker_secret, get_settings().worker_secret):
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
     index = build_index(
         recipes=[r.model_dump() for r in request.recipes],
         ingredients=[i.model_dump() for i in request.ingredients],
