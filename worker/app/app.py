@@ -98,4 +98,5 @@ def suggest(request: SuggestRequest) -> SuggestResponse:
 
 
 def main() -> None:
-    uvicorn.run(app, host="127.0.0.1", port=8001)
+    settings = get_settings()
+    uvicorn.run(app, host=settings.host, port=settings.port)
