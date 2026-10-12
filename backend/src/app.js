@@ -2,6 +2,7 @@ import express from "express";
 import healthRoutes from "./routes/healthRoutes.js";
 import recipesRoutes from "./routes/recipesRoutes.js";
 import ingredientsRoutes from "./routes/ingredientsRoutes.js";
+import errorHandler from "./middlewares/errorMiddleware.js";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import cors from "cors";
@@ -30,5 +31,7 @@ app.use(express.static(DIST));
 app.get("/{*splat}", (req, res) => {
     res.sendFile(join(DIST, "index.html"));
 });
+
+app.use(errorHandler);
 
 export default app;
