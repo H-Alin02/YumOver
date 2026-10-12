@@ -6,11 +6,14 @@ import errorHandler from "./middlewares/errorMiddleware.js";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import cors from "cors";
+import helmet from "helmet"
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DIST = join(HERE, "..", "..", "frontend", "dist");
 
 const app = express();
+
+app.use(helmet())
 
 // CORS middleware
 app.use(cors({ origin: "http://localhost:5173" }));
