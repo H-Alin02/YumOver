@@ -2,14 +2,18 @@ import express from "express";
 import healthRoutes from "./routes/healthRoutes.js";
 import recipesRoutes from "./routes/recipesRoutes.js";
 import ingredientsRoutes from "./routes/ingredientsRoutes.js";
+import errorHandler from "./middlewares/errorMiddleware.js";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import cors from "cors";
+import helmet from "helmet"
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DIST = join(HERE, "..", "..", "frontend", "dist");
 
 const app = express();
+
+app.use(helmet())
 
 // CORS middleware
 app.use(cors({ origin: "http://localhost:5173" }));
@@ -30,5 +34,7 @@ app.use(express.static(DIST));
 app.get("/{*splat}", (req, res) => {
     res.sendFile(join(DIST, "index.html"));
 });
+
+app.use(errorHandler);
 
 export default app;

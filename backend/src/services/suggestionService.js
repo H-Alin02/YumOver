@@ -36,7 +36,7 @@ export const buildWorkerPayload = (pantry, candidates, ingredients) => {
 export const requestSuggestions = async (payload) => {
   const workerRes = await fetch(`${process.env.WORKER_URL}/suggest`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", "X-Worker-Secret": process.env.WORKER_SECRET },
     body: JSON.stringify(payload),
   });
 

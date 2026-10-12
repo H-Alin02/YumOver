@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     gemini_api_key: str
     host: str = "127.0.0.1"
     port: int = 8001
+    worker_secret: str
 
 
 @lru_cache

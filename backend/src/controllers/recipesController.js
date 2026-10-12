@@ -5,14 +5,18 @@ import {
   mapSuggestions,
   requestSuggestions,
 } from "../services/suggestionService.js";
+import { z } from "zod";
+
+const suggestSchema = z.object({
+  pantry: z.array(z.string().trim().min(1).max(100)).min(2).max(10)
+});
 
 export const suggest = async (req, res) => {
-  const { pantry } = req.body;
-
-  if (!Array.isArray(pantry) || pantry.length === 0) {
+  const result = suggestSchema.safeParse(req.body);
+  if (!result.success) {
     return res
       .status(400)
-      .json({ error: "Pantry must be a non-empty array of ingredient keys" });
+      .json({ error: "Pantry must be an array of 2 to 10 ingredients keys." });
   }
 
   const [candidates, ingredients] = await Promise.all([
@@ -24,7 +28,7 @@ export const suggest = async (req, res) => {
     return res.status(200).json({ results: [] });
   }
 
-  const payload = buildWorkerPayload(pantry, candidates, ingredients);
+  const payload = buildWorkerPayload(result.data.pantry, candidates, ingredients);
 
   let data;
   try {

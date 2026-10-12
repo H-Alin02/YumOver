@@ -27,7 +27,7 @@ class TaxonomyIn(BaseModel):
 
 
 class SuggestRequest(BaseModel):
-    pantry: list[str] = Field(min_length=1)
+    pantry: list[str] = Field(min_length=1, max_length=10)
     recipes: list[RecipeIn] = Field(min_length=1)
     ingredients: list[TaxonomyIn] = Field(min_length=1)
     k: int = Field(default=K, ge=1, le=10)
