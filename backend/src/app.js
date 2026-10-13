@@ -13,7 +13,10 @@ const DIST = join(HERE, "..", "..", "frontend", "dist");
 
 const app = express();
 
-app.use(helmet())
+// Trust the first proxy for secure behind-proxy deployments.
+app.set("trust proxy", 1);
+
+app.use(helmet());
 
 // CORS middleware
 app.use(cors({ origin: "http://localhost:5173" }));
