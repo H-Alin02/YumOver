@@ -45,3 +45,15 @@ def test_silence_on_the_impossible_pantries(index, queries):
     assert negatives, "the evaluation set lost its negative queries"
     for query in negatives:
         assert retrieve(index, query["pantry"]) == [], query["id"]
+
+
+def test_one_ingredient_finds_a_nearly_complete_recipe(index):
+    found = {m.recipe_id for m in retrieve(index, ["pollo"])}
+    # 48 is "Petto di pollo alla piastra", only the lemon is missing
+    assert 48 in found
+
+
+def test_one_ingredient_skips_a_recipe_missing_too_much(index):
+    found = {m.recipe_id for m in retrieve(index, ["pollo"])}
+    # 15 is "Pollo alla Cacciatora", 8 ingredients are missing
+    assert 15 not in found

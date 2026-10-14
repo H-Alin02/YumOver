@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import app from "../src/app.js";
 
 const rejectedPantries = [
-    { name: "one ingredient", pantry: ["uova"] },
+    { name: "no ingredients", pantry: [] },
     {
         name: "eleven ingredients",
         pantry: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"],

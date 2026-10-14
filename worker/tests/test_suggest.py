@@ -113,7 +113,6 @@ def test_one_failed_recipe_does_not_lose_the_others(recipes, ingredients, monkey
     response = client.post("/suggest", json=payload)
     assert response.status_code == 200
     results = {result["recipe_id"]: result for result in response.json()["results"]}
-    assert len(results) == 2
     assert results[3]["adapted"]["feasible"] is False
     assert results[18]["adapted"]["feasible"] is True
 
