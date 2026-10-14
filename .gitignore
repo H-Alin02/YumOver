@@ -33,3 +33,5 @@ docs/
 **/data/_*
 **/scripts/_*
  notebooks/
+
+gha-creds-*.json

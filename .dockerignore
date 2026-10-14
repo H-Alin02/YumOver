@@ -5,3 +5,4 @@ docs
 CLAUDE.md
 .claude
 .git
+gha-creds-*.json

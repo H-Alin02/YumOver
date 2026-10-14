@@ -52,4 +52,28 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run build
+  deploy:
+    needs: [test, worker, frontend]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    env: 
+      REGISTRY: europe-west1-docker.pkg.dev/gen-lang-client-0972210119/yumover
+    permissions:
+      contents: read
+      id-token: write
+    steps: 
+      - uses: actions/checkout@v7
+      - uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/684916234126/locations/global/workloadIdentityPools/github/providers/yumover
+          service_account: yumover-deployer@gen-lang-client-0972210119.iam.gserviceaccount.com
+      - uses: google-github-actions/setup-gcloud@v3
+      - run: gcloud auth configure-docker europe-west1-docker.pkg.dev --quiet
+      - run: |
+          docker build -t "$REGISTRY/worker:${{ github.sha }}" worker/
+          docker push "$REGISTRY/worker:${{ github.sha }}"
+          docker build -t "$REGISTRY/gateway:${{ github.sha }}" .
+          docker push "$REGISTRY/gateway:${{ github.sha }}"
+          gcloud run deploy yumover-worker --region=europe-west1 --image="$REGISTRY/worker:${{ github.sha }}"
+          gcloud run deploy yumover-gateway --region=europe-west1 --image="$REGISTRY/gateway:${{ github.sha }}"
 
