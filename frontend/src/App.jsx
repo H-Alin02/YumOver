@@ -8,7 +8,7 @@ import StatusMessage from "./components/StatusMessage";
 import RecipeSkeleton from "./components/RecipeSkeleton";
 import { callAPI } from "./api";
 
-const MIN_INGREDIENTS = 2;
+const MIN_INGREDIENTS = 1;
 
 export default function App() {
 
@@ -112,7 +112,7 @@ export default function App() {
           onSearch={handleSend}
           disabled={pantry.length < MIN_INGREDIENTS || status === "loading"}
           loading={status === "loading"}
-          hint={pantry.length < MIN_INGREDIENTS ? `Inserisci almeno ${MIN_INGREDIENTS} ingredienti` : ""}
+          hint={pantry.length < MIN_INGREDIENTS ? `Inserisci almeno ${MIN_INGREDIENTS} ingrediente` : ""}
         />
         <StatusMessage
           status={status}

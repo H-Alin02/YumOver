@@ -8,7 +8,7 @@ import {
 import { z } from "zod";
 
 const suggestSchema = z.object({
-  pantry: z.array(z.string().trim().min(1).max(100)).min(2).max(10)
+  pantry: z.array(z.string().trim().min(1).max(100)).min(1).max(10)
 });
 
 export const suggest = async (req, res) => {
@@ -16,7 +16,7 @@ export const suggest = async (req, res) => {
   if (!result.success) {
     return res
       .status(400)
-      .json({ error: "Pantry must be an array of 2 to 10 ingredients keys." });
+      .json({ error: "Pantry must be an array of 1 to 10 ingredients keys." });
   }
 
   const [candidates, ingredients] = await Promise.all([

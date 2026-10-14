@@ -7,7 +7,8 @@ The strategy is the overlap scored with Jaccard.
 from dataclasses import dataclass
 
 K = 3
-MIN_MATCH = 2
+MIN_MATCH = 1
+MAX_MISSING = 1
 
 
 @dataclass(frozen=True)
@@ -78,14 +79,17 @@ def retrieve(
     rows = []
     for recipe_id, needed in index.recipe_keys.items():
         matched = needed & available
+        missing = needed - available
         if len(matched) < min_match:
+            continue
+        if len(matched) == 1 and len(missing) > MAX_MISSING:
             continue
         rows.append(
             Match(
                 recipe_id=recipe_id,
                 score=score_jaccard(matched, needed, have),
                 matched=matched,
-                missing=needed - available,
+                missing=missing,
             )
         )
 
