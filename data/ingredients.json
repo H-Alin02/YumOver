@@ -910,6 +910,92 @@
       "variants": [
         "Zucchine"
       ]
+    },
+    {
+      "key": "insalata",
+      "display": "insalata",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Insalata",
+        "Lattuga",
+        "Lattuga Iceberg",
+        "Lattuga romana",
+        "Misticanza"
+      ]
+    },
+    {
+      "key": "rucola",
+      "display": "rucola",
+      "category": "vegetables",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Rucola"
+      ]
+    },
+    {
+      "key": "maionese",
+      "display": "maionese",
+      "category": "seasonings",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Maionese"
+      ]
+    },
+    {
+      "key": "uvetta",
+      "display": "uvetta",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Uvetta sultanina",
+        "Uvetta"
+      ]
+    },
+    {
+      "key": "amaretti",
+      "display": "amaretti",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Amaretti secchi",
+        "Amaretti"
+      ]
+    },
+    {
+      "key": "canditi",
+      "display": "canditi",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Canditi",
+        "Frutta candita"
+      ]
+    },
+    {
+      "key": "groviera",
+      "display": "groviera",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Groviera",
+        "Gruviera",
+        "Emmental"
+      ]
     }
   ]
 }

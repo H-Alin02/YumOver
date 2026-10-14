@@ -819,5 +819,809 @@
         "prep_time": 50,
         "difficulty": "medium",
         "tags": ["contorno","siciliano","estivo"]
+    },
+    {
+        "id": 31,
+        "title": "Pasta al tonno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pasta-corta","as_written": "pasta","quantity": "320 gr","required_state": null},
+            {"key": "tonno-sottolio","as_written": "tonno sott'olio","quantity": "220 gr","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "passata di pomodoro","quantity": "400 ml","required_state": null},
+            {"key": "aglio","as_written": "spicchio di aglio","quantity": "1","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio di oliva extravergine","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Portare a bollire l'acqua in una pentola capiente per la pasta.",
+            "Rosolare lo spicchio di aglio in padella con l'olio extravergine di oliva.",
+            "Aggiungere la passata di pomodoro, salare e cuocere per 5-10 minuti.",
+            "Togliere l'aglio, unire il tonno e far cuocere il sugo fino a fine cottura della pasta.",
+            "Scolare la pasta al dente e unirla al sugo in padella, mescolando bene.",
+            "Servire subito."
+        ],
+        "prep_time": 25,
+        "difficulty": "easy",
+        "tags": ["primo","classico","veloce","pesce"]
+    },
+    {
+        "id": 32,
+        "title": "Spaghetti aglio, olio e peperoncino",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "spaghetti","as_written": "Spaghetti 400 g","quantity": "400 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine di oliva 8 cucchiai","quantity": "8 cucchiai","required_state": null},
+            {"key": "aglio","as_written": "Aglio 1 spicchio","quantity": "1 spicchio","required_state": null},
+            {"key": "peperoncino","as_written": "Peperoncino secco 1","quantity": "1","required_state": null},
+            {"key": "prezzemolo","as_written": "Prezzemolo fresco 1 mazzetto (facoltativo)","quantity": "1 mazzetto","required_state": null},
+            {"key": "sale","as_written": "q.b. di sale","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Portare a bollore abbondante acqua, salarla e cuocere gli spaghetti per il tempo indicato sulla confezione.",
+            "Sbucciare lo spicchio d'aglio, togliere l'anima e tagliarlo a fettine; spezzettare il peperoncino secco.",
+            "Scaldare l'olio con aglio e peperoncino a fuoco medio-basso, fino a doratura dell'aglio.",
+            "Togliere aglio e peperoncino dall'olio, lasciando l'olio aromatizzato in padella.",
+            "Tritare finemente il prezzemolo, se lo si usa.",
+            "Scolare la pasta un minuto prima della cottura indicata, tenendo da parte un mestolo di acqua di cottura.",
+            "Saltare la pasta nell'olio aromatizzato con un po' di acqua di cottura e il prezzemolo, fino a ottenere un condimento cremoso."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["primo","classico","veloce","vegetariano"]
+    },
+    {
+        "id": 33,
+        "title": "Risotto alle zucchine",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "riso-da-risotto","as_written": "riso Carnaroli","quantity": "300 g","required_state": null},
+            {"key": "zucchine","as_written": "zucchine (meglio se biologiche)","quantity": "350 g","required_state": null},
+            {"key": "brodo-vegetale","as_written": "brodo con dado vegetale","quantity": "500 ml","required_state": null},
+            {"key": "cipolla","as_written": "cipolla bianca","quantity": "1","required_state": null},
+            {"key": "vino-bianco","as_written": "vino bianco secco","quantity": "2 bicchieri","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Reggiano o Grana Padano","quantity": "50 g","required_state": null},
+            {"key": "burro","as_written": "burro","quantity": "50 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Sciogliere il dado vegetale in 500 ml di acqua bollente e tenere il brodo caldo su un fornello a parte.",
+            "Tritare finemente la cipolla e tagliare le zucchine a rondelle o a dadini.",
+            "Appassire la cipolla nell'olio d'oliva finche diventa trasparente.",
+            "Tostare il riso per 2-3 minuti, poi sfumare con il vino bianco secco e lasciarlo evaporare.",
+            "Aggiungere il brodo caldo a mestoli, mescolando e lasciando assorbire prima di ogni aggiunta.",
+            "Dopo circa 10 minuti di cottura unire le zucchine, salare e pepare.",
+            "Cuocere per circa 20 minuti in totale, poi a fuoco spento unire burro e parmigiano grattugiato e mantecare fino a ottenere una consistenza cremosa."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["primo","classico","veloce","estivo"]
+    },
+    {
+        "id": 34,
+        "title": "Pappa al pomodoro",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pomodori-pelati","as_written": "pomodori maturi oppure pomodori pelati","quantity": "500 g","required_state": null},
+            {"key": "pane","as_written": "pane casereccio raffermo","quantity": "300 g","required_state": "raffermo"},
+            {"key": "aglio","as_written": "aglio (spicchi)","quantity": "2 spicchi","required_state": null},
+            {"key": "brodo-vegetale","as_written": "brodo vegetale caldo","quantity": "500 g","required_state": null},
+            {"key": "basilico","as_written": "basilico fresco","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Tagliare a pezzetti i pomodori; se sono freschi, sbollentarli e pelarli prima.",
+            "Rosolare leggermente l'aglio nell'olio extravergine, senza farlo scurire.",
+            "Aggiungere i pomodori e il sale e far cuocere per una quindicina di minuti, schiacciando la polpa mentre si ammorbidisce.",
+            "Unire il pane raffermo spezzettato e bagnare con il brodo vegetale caldo, un po' alla volta, mescolando.",
+            "Abbassare la fiamma e proseguire per 15-20 minuti, rimescolando di frequente, finché il composto diventa una pappa densa.",
+            "Spegnere il fuoco, unire il basilico spezzettato e lasciare riposare per circa 10 minuti.",
+            "Servire calda o tiepida con un filo di olio extravergine a crudo, una macinata di pepe e qualche foglia di basilico."
+        ],
+        "prep_time": 45,
+        "difficulty": "easy",
+        "tags": ["primo","tradizionale","vegetariano","anti-spreco"]
+    },
+    {
+        "id": 35,
+        "title": "Zuppa di cipolle",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "cipolla","as_written": "700 g di cipolle dorate","quantity": "700 g","required_state": null},
+            {"key": "burro","as_written": "70 g di burro","quantity": "70 g","required_state": null},
+            {"key": "farina","as_written": "30 g di farina","quantity": "30 g","required_state": null},
+            {"key": "brodo-vegetale","as_written": "1 l di brodo vegetale o di carne","quantity": "1 l","required_state": null},
+            {"key": "groviera","as_written": "Groviera","quantity": "150 g","required_state": null},
+            {"key": "sale","as_written": "q.b. di sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "q.b. di pepe","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "3 cucchiai di olio extravergine d'oliva","quantity": "3 cucchiai","required_state": null},
+            {"key": "pane","as_written": "4 fette di pane casereccio","quantity": "4 fette","required_state": null}
+        ],
+        "instructions": [
+            "Affettare sottilmente le cipolle.",
+            "Farle appassire coperte nel burro e nell'olio extravergine a fuoco basso per circa 15 minuti, salando leggermente.",
+            "Unire la farina e farla colorire per qualche minuto, mescolando, poi versare il brodo vegetale caldo a filo, mescolando per evitare grumi.",
+            "Cuocere coperto a fuoco basso per circa 1 ora.",
+            "Aggiustare di sale e pepe e unire metà della groviera grattugiata.",
+            "Tagliare il pane a cubetti e tostarlo in padella con un filo d'olio extravergine.",
+            "Servire la zuppa calda con i crostini e la groviera rimasta; a piacere gratinare in forno per qualche minuto."
+        ],
+        "prep_time": 75,
+        "difficulty": "easy",
+        "tags": ["primo","classico","invernale","tradizionale"]
+    },
+    {
+        "id": 36,
+        "title": "Pasta e zucchine",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pasta-corta","as_written": "Pasta corta (mezze maniche)","quantity": "400 g","required_state": null},
+            {"key": "zucchine","as_written": "Zucchine","quantity": "800 g","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano","quantity": "100 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "aglio","as_written": "Aglio (spicchio)","quantity": "1 spicchio","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le zucchine e tagliarle a cubetti.",
+            "Scaldare l'olio in padella con lo spicchio d'aglio.",
+            "Saltare le zucchine a fuoco alto per circa 5 minuti, poi salarle.",
+            "Lessare la pasta in abbondante acqua salata.",
+            "Scolare la pasta a metà cottura nella padella con le zucchine e finire la cottura risottando con qualche cucchiaio di acqua di cottura, fino al dente.",
+            "Mantecare con il parmigiano, pepare e servire calda."
+        ],
+        "prep_time": 25,
+        "difficulty": "easy",
+        "tags": ["primo","classico","veloce","vegetariano"]
+    },
+    {
+        "id": 37,
+        "title": "Pollo al forno con patate",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pollo","as_written": "pollo","quantity": "1,5 kg","required_state": null},
+            {"key": "patate","as_written": "patate","quantity": "800 gr","required_state": null},
+            {"key": "rosmarino","as_written": "rosmarino","quantity": "3-4 rametti","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio di oliva (extravergine)","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Tagliare il pollo a pezzi e condirlo con olio, rosmarino, sale e pepe.",
+            "Rosolare il pollo in padella con un filo d'olio a fuoco vivo, finché dora su tutti i lati.",
+            "Sbucciare e tagliare le patate a pezzi, poi condirle con olio, sale e rosmarino.",
+            "Disporre pollo e patate in teglia e infornare a 180°C per 50-60 minuti.",
+            "Passare sotto il grill per qualche minuto per dorare la superficie.",
+            "Servire caldo."
+        ],
+        "prep_time": 95,
+        "difficulty": "easy",
+        "tags": ["secondo","carne","al-forno","classico"]
+    },
+    {
+        "id": 38,
+        "title": "Bocconcini di pollo al limone",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pollo","as_written": "1 petto di pollo (intero)","quantity": "1 petto intero","required_state": null},
+            {"key": "limone","as_written": "1 limone","quantity": "1","required_state": null},
+            {"key": "farina","as_written": "farina","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Tagliare il petto di pollo a cubetti e infarinarli.",
+            "Spremere il limone e tenere da parte il succo.",
+            "Rosolare i cubetti di pollo nell'olio extravergine d'oliva, salandoli.",
+            "Aggiungere il succo di limone, coprire e cuocere circa 15 minuti.",
+            "Servire guarnito con fette di limone."
+        ],
+        "prep_time": 30,
+        "difficulty": "easy",
+        "tags": ["secondo","carne","classico","veloce"]
+    },
+    {
+        "id": 39,
+        "title": "Pollo alla pizzaiola",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pollo","as_written": "Petto di pollo: 4 fette (circa 600 gr)","quantity": "4 fette (circa 600 g)","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di pomodoro: 450 gr","quantity": "450 g","required_state": null},
+            {"key": "mozzarella","as_written": "Mozzarella o fiordilatte: 100 gr","quantity": "100 g","required_state": null},
+            {"key": "capperi","as_written": "Capperi: 15 gr","quantity": "15 g","required_state": null},
+            {"key": "aglio","as_written": "Aglio: 1 spicchio","quantity": "1 spicchio","required_state": null},
+            {"key": "origano","as_written": "Origano essiccato: q.b.","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale: q.b.","quantity": "q.b.","required_state": null},
+            {"key": "basilico","as_written": "Basilico per guarnire: q.b.","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine d'oliva (EVO)","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Scaldare un filo di olio extravergine d'oliva in una padella antiaderente e rosolare il pollo a fuoco medio fino a doratura.",
+            "Togliere il pollo dalla padella e preparare il sugo nella stessa padella con aglio e passata di pomodoro.",
+            "Aggiungere sale, pepe, origano e capperi e cuocere circa 15 minuti a fuoco basso.",
+            "Rimettere il pollo nel sugo.",
+            "Disporre la mozzarella a fettine sul pollo e coprire fino a scioglimento.",
+            "Guarnire con il basilico e servire."
+        ],
+        "prep_time": 40,
+        "difficulty": "easy",
+        "tags": ["secondo","carne","classico"]
+    },
+    {
+        "id": 40,
+        "title": "Polpette al sugo",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "carne-macinata","as_written": "Carne macinata di manzo (oppure metà manzo e metà maiale)","quantity": "750 g","required_state": null},
+            {"key": "uova","as_written": "Uova","quantity": "2","required_state": null},
+            {"key": "parmigiano","as_written": "Formaggio grattugiato","quantity": "40 g","required_state": null},
+            {"key": "pane","as_written": "Pane raffermo (oppure pane in cassetta)","quantity": "2 fette","required_state": "raffermo"},
+            {"key": "prezzemolo","as_written": "Prezzemolo","quantity": "1 ciuffo","required_state": null},
+            {"key": "passata-di-pomodoro","as_written": "Passata di pomodoro","quantity": "700 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine d'oliva","quantity": "2 fili","required_state": null},
+            {"key": "basilico","as_written": "Basilico","quantity": "4 foglie","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "2 pizzichi + 1 pizzico","required_state": null},
+            {"key": "acqua","as_written": "Acqua","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe nero","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Tritare finemente il prezzemolo, ammollare il pane raffermo nell'acqua e poi strizzarlo bene.",
+            "Unire alla carne macinata il pane strizzato, le uova, il formaggio grattugiato, il prezzemolo, il sale e il pepe.",
+            "Impastare a mano fino a ottenere un composto morbido e omogeneo.",
+            "Preparare il sugo in un tegame con olio, passata di pomodoro, sale e un po' d'acqua.",
+            "Formare le polpette grandi come un mandarino e adagiarle nel sugo crudo.",
+            "Cuocere coperto a fuoco medio-basso per 30-40 minuti, controllando ogni tanto e muovendo il tegame con delicatezza: non mescolare con il mestolo, per non rompere le polpette.",
+            "Spegnere il fuoco, aggiungere il basilico e lasciar riposare 10 minuti prima di servire."
+        ],
+        "prep_time": 55,
+        "difficulty": "easy",
+        "tags": ["secondo","classico","carne","tradizionale"]
+    },
+    {
+        "id": 41,
+        "title": "Merluzzo al pomodoro",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "merluzzo","as_written": "merluzzo","quantity": "800 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio evo","quantity": "q.b.","required_state": null},
+            {"key": "aglio","as_written": "aglio","quantity": "3 spicchi","required_state": null},
+            {"key": "pomodori","as_written": "pomodori pelati o freschi","quantity": "2-3","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "acqua","as_written": "acqua","quantity": "mezzo bicchiere","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Pulire e lavare il merluzzo, se fresco, e tenerlo da parte.",
+            "Dorare l'aglio in olio extravergine a fuoco lento.",
+            "Aggiungere i pomodori e farli soffriggere.",
+            "Diluire con mezzo bicchiere d'acqua e portare a ebollizione.",
+            "Adagiare il merluzzo nel sugo, salare e pepare, poi cuocere 10-15 minuti girando delicatamente il pesce.",
+            "Far addensare il sugo a tegame scoperto, quindi servire caldo."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["secondo","pesce","veloce","classico"]
+    },
+    {
+        "id": 42,
+        "title": "Polpette di pane",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pane","as_written": "Mollica di pane raffermo: 220 g","quantity": "220 g","required_state": "raffermo"},
+            {"key": "uova","as_written": "Uova: 1","quantity": "1","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Reggiano: 60 g","quantity": "60 g","required_state": null},
+            {"key": "prezzemolo","as_written": "Prezzemolo: 1 ciuffo","quantity": "1 ciuffo","required_state": null},
+            {"key": "aglio","as_written": "Aglio: 1 spicchio","quantity": "1 spicchio","required_state": null},
+            {"key": "latte","as_written": "Latte: qb","quantity": "q.b.","required_state": null},
+            {"key": "pangrattato","as_written": "Pangrattato: qb","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-semi","as_written": "Olio di semi di arachide: qb","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Sale: qb","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe nero: qb","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine di oliva","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Ammorbidire la mollica di pane nel latte, strizzandola se è troppo bagnata.",
+            "Unire all'impasto l'uovo, il parmigiano, il prezzemolo tritato, l'aglio schiacciato, sale e pepe, e impastare.",
+            "Incorporare un filo di olio extravergine per compattare il composto.",
+            "Aggiungere il pangrattato solo se il composto resta troppo morbido per essere formato.",
+            "Formare le polpette con le mani.",
+            "Scaldare l'olio di semi a 170 °C e friggere le polpette poche alla volta fino a doratura.",
+            "Scolare le polpette su carta assorbente e servirle calde."
+        ],
+        "prep_time": 40,
+        "difficulty": "easy",
+        "tags": ["secondo","anti-spreco","tradizionale","uova"]
+    },
+    {
+        "id": 43,
+        "title": "Frittata di zucchine",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "uova","as_written": "uova (intere)","quantity": "6","required_state": null},
+            {"key": "zucchine","as_written": "zucchine (piccole e tenere)","quantity": "3-4","required_state": null},
+            {"key": "parmigiano","as_written": "parmigiano (grattugiato)","quantity": "50 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio d'oliva (extravergine)","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le zucchine e tagliarle a rondelle, non troppo sottili.",
+            "Rosolare le zucchine nell'olio extravergine d'oliva, finché sono appena tenere ma non troppo morbide.",
+            "Sbattere le uova in una ciotola con il parmigiano, un pizzico di sale e una macinata di pepe.",
+            "Unire il composto di uova alle zucchine nella padella e distribuirlo in modo uniforme.",
+            "Cuocere a fuoco basso con coperchio per circa 5 minuti, finché il fondo è rappreso.",
+            "Girare la frittata aiutandosi con un piatto e completare la cottura per qualche minuto, senza coperchio."
+        ],
+        "prep_time": 30,
+        "difficulty": "easy",
+        "tags": ["secondo","classico","vegetariano","uova"]
+    },
+    {
+        "id": 44,
+        "title": "Frittata di patate",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "uova","as_written": "uova","quantity": "4","required_state": null},
+            {"key": "patate","as_written": "patate","quantity": "600 g","required_state": null},
+            {"key": "parmigiano","as_written": "parmigiano grattugiato","quantity": "40 g","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio di oliva","quantity": "4 cucchiai","required_state": null}
+        ],
+        "instructions": [
+            "Pelare le patate e tagliarle a fettine sottili.",
+            "Sbattere le uova in una ciotola con il parmigiano, il sale e il pepe.",
+            "Scaldare l'olio in padella e far dorare le patate per circa 10 minuti.",
+            "Versare il composto di uova sulle patate e cuocere a fuoco dolce per circa 10 minuti, fino a doratura, senza girare la frittata.",
+            "Servire."
+        ],
+        "prep_time": 30,
+        "difficulty": "easy",
+        "tags": ["secondo","vegetariano","uova","classico"]
+    },
+    {
+        "id": 45,
+        "title": "Frittata di cipolle",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "uova","as_written": "6 uova","quantity": "6","required_state": null},
+            {"key": "cipolla","as_written": "2 cipolle (1 bianca e 1 rossa, grandi)","quantity": "2","required_state": null},
+            {"key": "olio-di-oliva","as_written": "4 cucchiai di olio d'oliva (extravergine)","quantity": "4 cucchiai","required_state": null},
+            {"key": "sale","as_written": "q.b. di sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "q.b. di pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Affettare sottilmente le cipolle.",
+            "Rosolare le cipolle nell'olio d'oliva a fuoco basso finché diventano morbide.",
+            "Sbattere le uova con sale e pepe.",
+            "Unire le uova alle cipolle ammorbidite e mescolare.",
+            "Cuocere a fuoco basso finché la base si rapprende, poi girare la frittata con l'aiuto di un piatto.",
+            "Cuocere l'altro lato fino a doratura e servire calda o tiepida."
+        ],
+        "prep_time": 30,
+        "difficulty": "easy",
+        "tags": ["secondo","classico","uova","vegetariano"]
+    },
+    {
+        "id": 46,
+        "title": "Insalata di tonno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "tonno-sottolio","as_written": "tonno al naturale (oppure sottolio, peso sgocciolato)","quantity": "160 g","required_state": null},
+            {"key": "insalata","as_written": "insalata (romana, gentile o lattughino)","quantity": "300 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva (vinaigrette)","quantity": "60 ml","required_state": null},
+            {"key": "sale","as_written": "sale (vinaigrette)","quantity": "3 pizzichi","required_state": null},
+            {"key": "succo-di-limone","as_written": "succo di limone o lime (vinaigrette)","quantity": "3 cucchiai","required_state": null},
+            {"key": "pepe","as_written": "pepe nero (vinaigrette, opzionale)","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare e asciugare bene l'insalata.",
+            "Sbattere olio, succo di limone, sale e pepe fino a ottenere una vinaigrette.",
+            "Strappare l'insalata nel piatto da portata.",
+            "Scolare il tonno e disporlo sull'insalata.",
+            "Condire con la vinaigrette e servire subito."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["secondo","pesce","veloce","classico"]
+    },
+    {
+        "id": 47,
+        "title": "Uova al pomodoro",
+        "cuisine": "Italian",
+        "servings": 2,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pomodori-pelati","as_written": "pomodori pelati a pezzettoni o pomodori freschi","quantity": "400 gr","required_state": null},
+            {"key": "uova","as_written": "uova","quantity": "4","required_state": null},
+            {"key": "basilico","as_written": "basilico fresco","quantity": "qualche foglia","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio evo","quantity": "un filo","required_state": null}
+        ],
+        "instructions": [
+            "Portare le uova a temperatura ambiente.",
+            "Scaldare un filo d'olio a fuoco dolce, aggiungere i pomodori pelati a pezzettoni (o i pomodori freschi scottati e spellati) e cuocere il sugo a fuoco basso per circa 10 minuti.",
+            "Salare e aggiungere il basilico.",
+            "Fare un nido nel sugo e versarvi le uova.",
+            "Cuocere 7-12 minuti, secondo la cottura del tuorlo desiderata.",
+            "Servire calde."
+        ],
+        "prep_time": 22,
+        "difficulty": "easy",
+        "tags": ["secondo","classico","veloce","vegetariano"]
+    },
+    {
+        "id": 48,
+        "title": "Petto di pollo alla piastra",
+        "cuisine": "Italian",
+        "servings": 2,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pollo","as_written": "Petto di pollo: 3 fette (600 gr circa)","quantity": "3 fette (600 g circa)","required_state": null},
+            {"key": "sale","as_written": "Sale: q.b.","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe: q.b.","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine di oliva: q.b.","quantity": "q.b.","required_state": null},
+            {"key": "limone","as_written": "Limone: 1","quantity": "1","required_state": null}
+        ],
+        "instructions": [
+            "Condire il pollo con sale e pepe, poi aggiungere l'olio e massaggiarlo nella carne.",
+            "Unire al pollo mezze fettine di limone. Se c'è tempo, lasciarlo riposare in frigo fino a 2 ore.",
+            "Se è stato in frigo, tirarlo fuori qualche minuto prima di cuocerlo.",
+            "Scaldare la piastra, preferibilmente di ghisa, per 5-10 minuti.",
+            "Cuocere due fette alla volta senza oliare la piastra, per circa 5 minuti.",
+            "Girare le fette e completare la cottura per altri 4-5 minuti, finché entrambi i lati sono dorati e l'interno è cotto.",
+            "Servire il pollo senza sovrapporre le fette, condito a crudo con un filo d'olio e del limone."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["secondo","carne","classico"]
+    },
+    {
+        "id": 49,
+        "title": "Zucchine trifolate",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "zucchine","as_written": "Zucchine","quantity": "800 g","required_state": null},
+            {"key": "aglio","as_written": "Aglio","quantity": "2 spicchi","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine d'oliva","quantity": "40 g","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare e asciugare le zucchine, poi tagliarle a rondelle di circa 3 mm.",
+            "Scaldare l'olio con l'aglio a fuoco basso per circa 5 minuti, e togliere l'aglio quando è dorato.",
+            "Aggiungere le zucchine nella padella a fuoco alto, mescolando spesso e senza coperchio.",
+            "Cuocere per 15-20 minuti, fino a quando le zucchine sono al dente.",
+            "Salare e pepare a fine cottura, poi servire."
+        ],
+        "prep_time": 40,
+        "difficulty": "easy",
+        "tags": ["contorno","classico","vegetariano","estivo"]
+    },
+    {
+        "id": 50,
+        "title": "Melanzane a funghetto",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "melanzane","as_written": "melanzane","quantity": "700 g","required_state": null},
+            {"key": "pomodori","as_written": "pomodorini ciliegino","quantity": "200 g","required_state": null},
+            {"key": "aglio","as_written": "aglio","quantity": "1 spicchio","required_state": null},
+            {"key": "basilico","as_written": "basilico","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "acqua","as_written": "acqua","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare e cimare le melanzane, poi tagliarle a cubetti.",
+            "Friggere le melanzane in olio caldo per circa 5 minuti, quindi scolarle su carta assorbente e salarle leggermente.",
+            "Soffriggere l'aglio in una padella con un filo d'olio.",
+            "Aggiungere i pomodorini tagliati a metà, un po' d'acqua e il sale, e cuocere circa 5 minuti.",
+            "Unire le melanzane fritte al sugo e mescolare per qualche minuto.",
+            "Togliere l'aglio, spegnere il fuoco e aggiungere il basilico spezzato a mano."
+        ],
+        "prep_time": 50,
+        "difficulty": "easy",
+        "tags": ["contorno","vegetariano","tradizionale","estivo"]
+    },
+    {
+        "id": 51,
+        "title": "Purè di patate",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "patate","as_written": "patate","quantity": "1 kg","required_state": null},
+            {"key": "latte","as_written": "latte","quantity": "250 ml","required_state": null},
+            {"key": "burro","as_written": "burro","quantity": "50 g","required_state": null},
+            {"key": "parmigiano","as_written": "parmigiano","quantity": "50 g","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lessare le patate con la buccia in acqua fredda per 35-40 minuti.",
+            "Schiacciare le patate ancora calde con lo schiacciapatate.",
+            "Scaldare il latte quasi fino al bollore e incorporarlo al purè.",
+            "Rimettere sul fuoco e aggiungere sale, burro e parmigiano, mescolando per 5 minuti, poi aggiustare di pepe nero."
+        ],
+        "prep_time": 70,
+        "difficulty": "easy",
+        "tags": ["contorno","classico","vegetariano"]
+    },
+    {
+        "id": 52,
+        "title": "Patate e cipolle in padella",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "patate","as_written": "Patate","quantity": "600 g","required_state": null},
+            {"key": "cipolla","as_written": "Cipolle","quantity": "300 g","required_state": null},
+            {"key": "burro","as_written": "Burro","quantity": "30 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine d'oliva","quantity": "30 ml","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe nero","quantity": "q.b.","required_state": null},
+            {"key": "acqua","as_written": "Acqua salata","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lessare le patate in acqua salata per circa 20 minuti dal momento del bollore.",
+            "Scolarle, raffreddarle sotto acqua corrente, pelarle e tagliarle a tocchetti.",
+            "Affettare le cipolle a veli non troppo sottili.",
+            "Appassire le cipolle nel burro e nell'olio per circa 10 minuti a fiamma moderata.",
+            "Unire le patate, salare e pepare, poi rosolarle per circa 10 minuti a fiamma vivace.",
+            "Coprire, abbassare la fiamma e cuocere per altri 10 minuti.",
+            "Spegnere il fuoco e servire subito, caldo."
+        ],
+        "prep_time": 40,
+        "difficulty": "easy",
+        "tags": ["contorno","vegetariano"]
+    },
+    {
+        "id": 53,
+        "title": "Crocchette di patate",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "patate","as_written": "Patate","quantity": "1 kg","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe","quantity": "a piacere","required_state": null},
+            {"key": "pangrattato","as_written": "Pangrattato (per l'impasto, se troppo morbido)","quantity": "500 g","required_state": null},
+            {"key": "uova","as_written": "Uova medie (per la panatura)","quantity": "4","required_state": null},
+            {"key": "olio-di-semi","as_written": "Olio di arachidi (per friggere)","quantity": "1 l","required_state": null}
+        ],
+        "instructions": [
+            "Cuocere le patate sbucciate in acqua salata per 10-15 minuti, controllando con la punta di un coltello che siano cotte.",
+            "Schiacciare le patate ancora calde e condirle con sale e pepe.",
+            "Se l'impasto risulta troppo morbido, aggiungere pangrattato, poi lasciarlo intiepidire.",
+            "Formare cilindri da circa 50 g ciascuno.",
+            "Sbattere le uova, passare ogni crocchetta nell'uovo e poi nel pangrattato, quindi ripetere la sequenza per una doppia panatura.",
+            "Friggere in olio di arachidi a 170-175 °C, 3-4 minuti per volta.",
+            "Scolare su carta assorbente e servire ben calde."
+        ],
+        "prep_time": 35,
+        "difficulty": "medium",
+        "tags": ["contorno","classico","vegetariano","uova"]
+    },
+    {
+        "id": 54,
+        "title": "Insalata mista con uova sode",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "insalata","as_written": "metà cespo di lattuga romana","quantity": "metà cespo","required_state": null},
+            {"key": "rucola","as_written": "Rucola","quantity": "1 mazzetto","required_state": null},
+            {"key": "pomodori","as_written": "4 pomodori ramati o cuore di bue","quantity": "4","required_state": null},
+            {"key": "uova","as_written": "4 uova","quantity": "4","required_state": null},
+            {"key": "cetriolo","as_written": "1 cetriolo","quantity": "1","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva q.b.","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale q.b.","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero q.b.","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Coprire le uova con acqua fredda, portare a ebollizione e cuocerle per 8-9 minuti.",
+            "Raffreddare le uova in acqua fredda, sgusciarle e tagliarle a spicchi.",
+            "Lavare e asciugare la lattuga romana e la rucola, poi strapparle a pezzi con le mani.",
+            "Tagliare a dadini il cetriolo e i pomodori.",
+            "Mettere le verdure in una ciotola, condire con olio extravergine d'oliva, sale e pepe, poi mescolare.",
+            "Aggiungere gli spicchi di uovo e far riposare in frigorifero per 30 minuti prima di servire."
+        ],
+        "prep_time": 45,
+        "difficulty": "easy",
+        "tags": ["contorno","vegetariano","uova"]
+    },
+    {
+        "id": 55,
+        "title": "Peperonata",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "peperoni","as_written": "peperoni (rossi, gialli e verdi)","quantity": "4","required_state": null},
+            {"key": "cipolla","as_written": "cipolla","quantity": "1","required_state": null},
+            {"key": "pomodori-pelati","as_written": "pomodori pelati","quantity": "300 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Far ammorbidire la cipolla tritata in abbondante olio d'oliva a fuoco medio.",
+            "Tagliare i peperoni a listarelle e farli cuocere nel soffritto per una decina di minuti.",
+            "Versare i pomodori pelati sminuzzati, coprire e lasciar sobbollire piano per circa venti minuti.",
+            "Aggiustare di sale e pepe a fine cottura.",
+            "Portare in tavola calda oppure a temperatura ambiente."
+        ],
+        "prep_time": 40,
+        "difficulty": "easy",
+        "tags": ["contorno","classico","vegetariano","estivo"]
+    },
+    {
+        "id": 56,
+        "title": "Mele al forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "mele","as_written": "Mele Renette","quantity": "4","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero grezzo di canna","quantity": "4 cucchiaini","required_state": null},
+            {"key": "acqua","as_written": "Acqua","quantity": "6 cucchiai","required_state": null}
+        ],
+        "instructions": [
+            "Lavare e asciugare le mele, lasciando buccia e picciolo.",
+            "Praticare sulla sommità di ciascuna mela un'incisione a croce, poco profonda.",
+            "Disporre le mele con il picciolo verso l'alto in una teglia foderata di carta forno.",
+            "Cospargere lo zucchero sulle mele, distribuendolo bene sulla superficie.",
+            "Versare l'acqua sul fondo della teglia, non sulle mele.",
+            "Preriscaldare il forno a 200 °C.",
+            "Cuocere in forno a 200 °C per circa 50 minuti."
+        ],
+        "prep_time": 55,
+        "difficulty": "easy",
+        "tags": ["dolce","classico","al-forno","vegetariano"]
+    },
+    {
+        "id": 57,
+        "title": "Frittelle di mele",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "mele","as_written": "2 mele (circa 350 g)","quantity": "2 mele (circa 350 g)","required_state": null},
+            {"key": "farina","as_written": "130 g di farina 00","quantity": "130 g","required_state": null},
+            {"key": "uova","as_written": "1 uovo","quantity": "1","required_state": null},
+            {"key": "latte","as_written": "130 g di latte","quantity": "130 g","required_state": null},
+            {"key": "zucchero","as_written": "20 g di zucchero semolato","quantity": "20 g","required_state": null},
+            {"key": "sale","as_written": "1 pizzico di sale","quantity": "1 pizzico","required_state": null},
+            {"key": "olio-di-semi","as_written": "Olio di semi (per friggere)","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Separare il tuorlo dall'albume e montare il tuorlo con lo zucchero fino a ottenere un composto chiaro e spumoso.",
+            "Aggiungere la farina e il latte a poco a poco, mescolando per evitare grumi.",
+            "Unire il sale, montare a neve l'albume e incorporarlo delicatamente all'impasto.",
+            "Lasciare riposare la pastella in frigorifero per circa 30 minuti.",
+            "Sbucciare le mele, togliere il torsolo e tagliarle a fette di circa 1 cm.",
+            "Immergere le fette nella pastella, facendo colare l'eccesso.",
+            "Friggere le fette in abbondante olio di semi caldo, a circa 170 °C, girandole fino a doratura.",
+            "Scolare su carta assorbente e spolverizzare con un po' di zucchero prima di servire."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["dolce","classico","veloce","vegetariano"]
+    },
+    {
+        "id": 58,
+        "title": "Fragole al limone",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fragole","as_written": "500 gr fragole","quantity": "500 g","required_state": null},
+            {"key": "zucchero","as_written": "2 cucchiai zucchero","quantity": "2 cucchiai","required_state": null},
+            {"key": "limone","as_written": "1 limone (solo il succo)","quantity": "1","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le fragole e togliere il picciolo.",
+            "Tagliare le fragole in quarti.",
+            "Spremere il limone, tenere solo il succo e unirlo alle fragole con lo zucchero, mescolando con delicatezza.",
+            "Riporre in frigo per un paio d'ore prima di servire."
+        ],
+        "prep_time": 10,
+        "difficulty": "easy",
+        "tags": ["dolce","veloce","vegetariano","estivo"]
+    },
+    {
+        "id": 59,
+        "title": "Torta di pane raffermo",
+        "cuisine": "Italian",
+        "servings": 8,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pane","as_written": "Pane secco","quantity": "400 g","required_state": "raffermo"},
+            {"key": "latte","as_written": "Latte","quantity": "1 lt","required_state": null},
+            {"key": "uova","as_written": "Uovo","quantity": "1","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero semolato","quantity": "135 g + 1 cucchiaio","required_state": null},
+            {"key": "cacao","as_written": "Cacao amaro","quantity": "2 cucchiai","required_state": null},
+            {"key": "pinoli","as_written": "Pinoli","quantity": "50 g","required_state": null},
+            {"key": "uvetta","as_written": "Uvetta sultanina","quantity": "200 g","required_state": null},
+            {"key": "amaretti","as_written": "Amaretti secchi","quantity": "100 g","required_state": null},
+            {"key": "canditi","as_written": "Canditi","quantity": "50 g","required_state": null}
+        ],
+        "instructions": [
+            "Tagliare il pane a cubetti e versarvi sopra il latte caldo.",
+            "Far raffreddare e riporre in frigo per almeno 12 ore.",
+            "Schiacciare il pane fino a ottenere una crema, poi unire l'uovo, lo zucchero, il cacao amaro, l'uvetta, gli amaretti sbriciolati e i canditi a pezzetti.",
+            "Foderare una tortiera da 24 cm, cospargerla con i pinoli e un po' di zucchero, e versarvi il composto.",
+            "Cuocere per circa 2 ore a 160 gradi in forno statico.",
+            "Sformare e far raffreddare completamente."
+        ],
+        "prep_time": 140,
+        "difficulty": "easy",
+        "tags": ["dolce","tradizionale","al-forno","anti-spreco"]
+    },
+    {
+        "id": 60,
+        "title": "Insalata di pollo",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pollo","as_written": "petto di pollo","quantity": "600 g","required_state": null},
+            {"key": "insalata","as_written": "lattuga Iceberg","quantity": "160 g","required_state": null},
+            {"key": "maionese","as_written": "Maionese","quantity": "100 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "20 g","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero macinato","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Cuocere il petto di pollo in acqua salata per circa 10 minuti se intero, o 4-5 minuti se tagliato a fettine, finché è cotto anche all'interno: non cuocerlo oltre, altrimenti diventa secco e filaccioso.",
+            "Scolare il pollo, lasciarlo intiepidire e sfilacciarlo a mano in pezzetti piuttosto piccoli.",
+            "Tagliare la lattuga Iceberg a listarelle e disporla in un'insalatiera.",
+            "Unire il pollo sfilacciato all'insalata, condire con la maionese e l'olio extravergine d'oliva, aggiustare di sale e pepe nero macinato e mescolare.",
+            "Servire subito oppure far insaporire in frigo per 2-3 ore."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["piatto-unico","classico","veloce","carne"]
     }
 ]
