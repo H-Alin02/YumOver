@@ -8,7 +8,14 @@ from fastapi import FastAPI, Header, HTTPException
 
 from app.config import get_settings
 from app.gemini import AdaptedRecipe, adapt, get_client
-from app.retrieval import Index, build_index, reach, retrieve
+from app.retrieval import (
+    MAX_MISSING,
+    Index,
+    build_index,
+    reach,
+    retrieve,
+    suggest_extras,
+)
 from app.schemas import MatchOut, SuggestRequest, SuggestResponse
 
 logger = logging.getLogger(__name__)
@@ -76,12 +83,22 @@ def suggest(
         recipes=[r.model_dump() for r in request.recipes],
         ingredients=[i.model_dump() for i in request.ingredients],
     )
-    matches = retrieve(index, request.pantry, k=request.k)
+    matches = retrieve(index, request.pantry, request.also_have, k=request.k)
+    nearly_complete = [m for m in matches if len(m.missing) <= MAX_MISSING]
+    if request.ask and not nearly_complete:
+        extras = suggest_extras(index, request.pantry, request.also_have)
+        if extras:
+            return SuggestResponse(
+                results=[],
+                question=extras
+            )
+    
+    full_pantry = request.pantry + request.also_have
     by_id = {r.id: r for r in request.recipes}
     with ThreadPoolExecutor(max_workers=max(len(matches), 1)) as pool:
         adapted = list(
             pool.map(
-                lambda m: safe_adapt(by_id[m.recipe_id].model_dump(), request.pantry),
+                lambda m: safe_adapt(by_id[m.recipe_id].model_dump(), full_pantry),
                 matches,
             )
         )
@@ -95,7 +112,7 @@ def suggest(
                 adapted=drop_unavailable_replacements(
                     a,
                     index,
-                    request.pantry,
+                    full_pantry,
                 ),
             )
             for m, a in zip(matches, adapted, strict=True)

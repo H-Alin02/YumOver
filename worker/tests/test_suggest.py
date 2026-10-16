@@ -165,3 +165,25 @@ def test_a_request_without_the_secret_is_rejected(recipes, ingredients):
         "/suggest", json=payload, headers={"X-Worker-Secret": "wrong"}
     )
     assert response.status_code == 401
+
+
+def ask_worker(pantry, recipes, ingredients, **extra):
+    """POST /suggest and return the JSON body, after checking it answered 200."""
+    response = client.post("/suggest", json=body(pantry, recipes, ingredients, **extra))
+    assert response.status_code == 200
+    return response.json()
+
+
+def test_a_thin_pantry_gets_a_question(recipes, ingredients, monkeypatch):
+    def gemini_must_not_be_called(recipe, pantry):
+        raise AssertionError("Gemini was called while the worker should only ask")
+
+    monkeypatch.setattr(app_module, "adapt", gemini_must_not_be_called)
+    data = ask_worker(["melanzane"], recipes, ingredients)
+    assert data["results"] == []
+    assert data["question"] == ["aglio", "basilico", "pomodori"]
+
+
+def test_ask_false_never_asks(recipes, ingredients):
+    data = ask_worker(["melanzane"], recipes, ingredients, ask=False)
+    assert data["question"] is None

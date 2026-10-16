@@ -1,4 +1,4 @@
-from app.retrieval import reach, retrieve
+from app.retrieval import reach, retrieve, suggest_extras
 
 MIN_RECALL = 0.97
 
@@ -16,7 +16,7 @@ def test_staples_are_dropped_from_the_pantry(index):
 
 
 def test_a_pantry_of_staples_returns_nothing(index):
-    assert retrieve(index, ["sale", "olio-di-oliva", "pepe", "acqua"]) == []
+    assert retrieve(index, ["sale", "olio-di-oliva", "pepe", "acqua"],[]) == []
 
 
 def test_staples_are_dropped_from_the_recipe_too(index):
@@ -57,3 +57,11 @@ def test_one_ingredient_skips_a_recipe_missing_too_much(index):
     found = {m.recipe_id for m in retrieve(index, ["pollo"])}
     # 15 is "Pollo alla Cacciatora", 8 ingredients are missing
     assert 15 not in found
+    
+def test_extras_are_the_ingredients_that_unlock_most_recipes(index):
+    found = suggest_extras(index, ["melanzane"], [])
+    assert found == ["aglio", "basilico", "pomodori"]
+    
+def test_staples_alone_get_no_extras(index):
+    found = suggest_extras(index, ["sale", "olio-di-oliva"], [])
+    assert found == []

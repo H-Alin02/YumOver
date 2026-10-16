@@ -9,6 +9,8 @@ from dataclasses import dataclass
 K = 3
 MIN_MATCH = 1
 MAX_MISSING = 1
+MAX_MISSING_AFTER_EXTRA = 2  # how many can still be missing once the user adds an extra
+QUESTION_SIZE = 3  # how many extras the question offers
 
 
 @dataclass(frozen=True)
@@ -70,11 +72,13 @@ def score_jaccard(matched: frozenset, needed: frozenset, have: frozenset) -> flo
 
 
 def retrieve(
-    index: Index, pantry: list[str], k: int = K, min_match: int = MIN_MATCH
+    index: Index, pantry: list[str], also_have: tuple[str, ...] = (), k: int = K, min_match: int = MIN_MATCH
 ) -> list[Match]:
     """Up to k recipes, best first."""
-    have = written(index, pantry)
-    available = reach(index, pantry)
+    pantry_with_extras = pantry + list(also_have)
+    have = written(index, pantry_with_extras)
+    available = reach(index, pantry_with_extras)
+    from_pantry = reach(index, pantry)
 
     rows = []
     for recipe_id, needed in index.recipe_keys.items():
@@ -83,6 +87,8 @@ def retrieve(
         if len(matched) < min_match:
             continue
         if len(matched) == 1 and len(missing) > MAX_MISSING:
+            continue
+        if not needed & from_pantry:
             continue
         rows.append(
             Match(
@@ -95,3 +101,23 @@ def retrieve(
 
     rows.sort(key=lambda m: (-m.score, len(m.missing), m.recipe_id))
     return rows[:k]
+
+def suggest_extras(index: Index, pantry: list[str], also_have: list[str]) -> list[str]:
+    all_keys = set()
+    for keys in index.recipe_keys.values():
+        all_keys |= keys
+    
+    candidates = all_keys - reach(index, pantry + list(also_have))
+    
+    counts = {}
+    for x in candidates:
+        found = retrieve(index, pantry, also_have + [x], k=len(index.recipe_keys))
+        unlocked_recipes = [
+            m for m in found
+            if x in m.matched and len(m.missing) <= MAX_MISSING_AFTER_EXTRA
+        ]
+        if unlocked_recipes:
+            counts[x] = len(unlocked_recipes)
+
+    ordered = sorted(counts, key=lambda ingredient: (-counts[ingredient], ingredient))
+    return ordered[:QUESTION_SIZE]

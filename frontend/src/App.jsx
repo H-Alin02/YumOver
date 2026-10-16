@@ -7,6 +7,7 @@ import RecipeList from "./components/RecipeList";
 import StatusMessage from "./components/StatusMessage";
 import RecipeSkeleton from "./components/RecipeSkeleton";
 import { callAPI } from "./api";
+import QuestionBox from "./components/QuestionBox";
 
 const MIN_INGREDIENTS = 1;
 
@@ -15,18 +16,13 @@ export default function App() {
   const [inputText, setInputText] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [vocabulary, setVocabulary] = useState([]);
-  // TEST: pre-filled pantry.
-  const [pantry, setPantry] = useState([
-    { key: "pomodori", display: "pomodori" },
-    { key: "basilico", display: "basilico" },
-    { key: "aglio", display: "aglio" },
-    { key: "mozzarella", display: "mozzarella" },
-    { key: "pane", display: "pane" },
-  ]);
+  const [pantry, setPantry] = useState([]);
   const [msg, setMsg] = useState("");
   const vocabularyMap = new Map(vocabulary.map((x) => [x.display, x.key]));
   const displayByKey = new Map(vocabulary.map((x) => [x.key, x.display]));
   const [status, setStatus] = useState("idle"); //idle, loading, success, error
+  const [question, setQuestion] = useState(null);
+  const [alsoHave, setAlsoHave] = useState([]);
 
   useEffect(() => {
     const fetchIngredients = async () => {
@@ -42,9 +38,10 @@ export default function App() {
     fetchIngredients();
   }, []);
 
-  async function handleSend() {
+  async function handleSend(extras = [], ask = true) {
     if (pantry.length < MIN_INGREDIENTS) return;
     setRecipes([]);
+    setQuestion(null);
     setStatus("loading");
     try {
       const data = await callAPI("api/recipes/suggest", {
@@ -52,10 +49,13 @@ export default function App() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           pantry: pantry.map((item) => item.key),
+          also_have: extras,
+          ask: ask
         })
       })
       setRecipes(data.results);
       setStatus("success");
+      setQuestion(data.question);
     } catch (error) {
       console.error("Errore durante la chiamata del server: ", error);
       setStatus("error");
@@ -85,14 +85,20 @@ export default function App() {
     if (pantry.some((item) => item.key === key)) return;
 
     setPantry([...pantry, { key, display }]);
+    setAlsoHave(alsoHave.filter((item) => item !== key));
+    setQuestion(null);
     setInputText("");
     setMsg("");
   }
 
   function removeFromPantry(key) {
     setPantry(pantry.filter((item) => item.key !== key));
+    setQuestion(null);
   }
 
+  function removeExtra(key) {
+    setAlsoHave(alsoHave.filter((item) => item !== key));
+  }
   return (
     <div className="mx-auto w-full max-w-xl px-4 py-6 sm:px-6 flex flex-col gap-6">
       <Header />
@@ -106,18 +112,33 @@ export default function App() {
         />
         <PantryChips
           pantry={pantry}
+          extras={alsoHave}
+          displayByKey={displayByKey}
           onRemove={removeFromPantry}
+          onRemoveExtras={removeExtra}
         />
-        <SearchButton
-          onSearch={handleSend}
+        {!question && (<SearchButton
+          onSearch={() => handleSend(alsoHave)}
           disabled={pantry.length < MIN_INGREDIENTS || status === "loading"}
           loading={status === "loading"}
           hint={pantry.length < MIN_INGREDIENTS ? `Inserisci almeno ${MIN_INGREDIENTS} ingrediente` : ""}
-        />
-        <StatusMessage
+        />)}
+        {question && (
+          <QuestionBox
+            question={question}
+            displayByKey={displayByKey}
+            onConfirm={(picked) => {
+              const extras = [...alsoHave, ...picked];
+              setAlsoHave(extras);
+              handleSend(extras, false);
+            }}
+            onSkip={() => handleSend(alsoHave, false)}
+          />
+        )}
+        {!question && (<StatusMessage
           status={status}
           count={recipes.length}
-        />
+        />)}
         {status === "loading" && <RecipeSkeleton />}
         <RecipeList
           recipes={recipes}

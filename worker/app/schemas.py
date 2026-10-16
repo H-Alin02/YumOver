@@ -28,6 +28,8 @@ class TaxonomyIn(BaseModel):
 
 class SuggestRequest(BaseModel):
     pantry: list[str] = Field(min_length=1, max_length=10)
+    also_have: list[str] = Field(min_length=0, max_length=10, default_factory=list)
+    ask: bool = True
     recipes: list[RecipeIn] = Field(min_length=1)
     ingredients: list[TaxonomyIn] = Field(min_length=1)
     k: int = Field(default=K, ge=1, le=10)
@@ -43,3 +45,4 @@ class MatchOut(BaseModel):
 
 class SuggestResponse(BaseModel):
     results: list[MatchOut]
+    question: list[str] | None = None
