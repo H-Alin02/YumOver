@@ -6,13 +6,15 @@ export const getAllRecipes = async () =>
   });
 
 
-export const buildWorkerPayload = (pantry, candidates, ingredients) => {
+export const buildWorkerPayload = (request, candidates, ingredients) => {
   // Lookup table
   const keyById = new Map(ingredients.map((i) => [i.id, i.key]));
 
   // Payload that matches SuggestRequest in worker schema
   return {
-    pantry,
+    pantry: request.pantry,
+    also_have: request.also_have,
+    ask: request.ask,
     recipes: candidates.map((r) => ({
       id: r.id,
       title: r.title,

@@ -8,7 +8,9 @@ import {
 import { z } from "zod";
 
 const suggestSchema = z.object({
-  pantry: z.array(z.string().trim().min(1).max(100)).min(1).max(10)
+  pantry: z.array(z.string().trim().min(1).max(100)).min(1).max(10),
+  also_have: z.array(z.string().trim().min(1).max(100)).max(10).default([]),
+  ask: z.boolean().default(true)
 });
 
 export const suggest = async (req, res) => {
@@ -28,7 +30,7 @@ export const suggest = async (req, res) => {
     return res.status(200).json({ results: [] });
   }
 
-  const payload = buildWorkerPayload(result.data.pantry, candidates, ingredients);
+  const payload = buildWorkerPayload(result.data, candidates, ingredients);
 
   let data;
   try {
@@ -38,5 +40,5 @@ export const suggest = async (req, res) => {
   }
 
   const results = mapSuggestions(data.results, candidates);
-  return res.status(200).json({ results });
+  return res.status(200).json({ results, question: data.question });
 };
