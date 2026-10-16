@@ -93,11 +93,12 @@ def suggest(
                 question=extras
             )
     
+    full_pantry = request.pantry + request.also_have
     by_id = {r.id: r for r in request.recipes}
     with ThreadPoolExecutor(max_workers=max(len(matches), 1)) as pool:
         adapted = list(
             pool.map(
-                lambda m: safe_adapt(by_id[m.recipe_id].model_dump(), request.pantry),
+                lambda m: safe_adapt(by_id[m.recipe_id].model_dump(), full_pantry),
                 matches,
             )
         )
@@ -111,7 +112,7 @@ def suggest(
                 adapted=drop_unavailable_replacements(
                     a,
                     index,
-                    request.pantry,
+                    full_pantry,
                 ),
             )
             for m, a in zip(matches, adapted, strict=True)

@@ -78,6 +78,7 @@ def retrieve(
     pantry_with_extras = pantry + list(also_have)
     have = written(index, pantry_with_extras)
     available = reach(index, pantry_with_extras)
+    from_pantry = reach(index, pantry)
 
     rows = []
     for recipe_id, needed in index.recipe_keys.items():
@@ -87,7 +88,7 @@ def retrieve(
             continue
         if len(matched) == 1 and len(missing) > MAX_MISSING:
             continue
-        if len(needed & set(pantry)) < 1:
+        if not needed & from_pantry:
             continue
         rows.append(
             Match(
