@@ -996,6 +996,234 @@
         "Gruviera",
         "Emmental"
       ]
+    },
+    {
+      "key": "aglio-in-polvere",
+      "display": "aglio in polvere",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Aglio in polvere"
+      ]
+    },
+    {
+      "key": "albumi",
+      "display": "albumi",
+      "category": "eggs",
+      "is_staple": false,
+      "derives_from": "uova",
+      "states": [],
+      "variants": [
+        "Albumi",
+        "Albumi d'uovo"
+      ]
+    },
+    {
+      "key": "amido-di-mais",
+      "display": "amido di mais",
+      "category": "flours",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Amido di mais",
+        "Maizena"
+      ]
+    },
+    {
+      "key": "banane",
+      "display": "banane",
+      "category": "fruit",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Banana",
+        "Banane",
+        "Banane mature"
+      ]
+    },
+    {
+      "key": "bicarbonato",
+      "display": "bicarbonato",
+      "category": "leavening-additives",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Bicarbonato"
+      ]
+    },
+    {
+      "key": "cannella",
+      "display": "cannella",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Cannella",
+        "Cannella in polvere"
+      ]
+    },
+    {
+      "key": "ceci",
+      "display": "ceci",
+      "category": "legumes",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Ceci",
+        "Ceci in scatola",
+        "Ceci lessati"
+      ]
+    },
+    {
+      "key": "cioccolato",
+      "display": "cioccolato",
+      "category": "sweeteners",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Cioccolato",
+        "Cioccolato fondente",
+        "Gocce di cioccolato"
+      ]
+    },
+    {
+      "key": "fette-biscottate",
+      "display": "fette biscottate",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Fette biscottate",
+        "Fette biscottate integrali"
+      ]
+    },
+    {
+      "key": "fiocchi-d-avena",
+      "display": "fiocchi d'avena",
+      "category": "cereals-grains",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Fiocchi d'avena",
+        "Fiocchi di avena"
+      ]
+    },
+    {
+      "key": "formaggio",
+      "display": "formaggio",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Formaggio",
+        "Fontina",
+        "Sottilette"
+      ]
+    },
+    {
+      "key": "lievito-istantaneo",
+      "display": "lievito istantaneo",
+      "category": "leavening-additives",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Lievito istantaneo",
+        "Lievito istantaneo per salati"
+      ]
+    },
+    {
+      "key": "menta",
+      "display": "menta",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Menta"
+      ]
+    },
+    {
+      "key": "nutella",
+      "display": "nutella",
+      "category": "nuts-seeds",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Nutella",
+        "Crema di nocciole"
+      ]
+    },
+    {
+      "key": "paprika",
+      "display": "paprika",
+      "category": "herbs-spices",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Paprika",
+        "Paprika dolce"
+      ]
+    },
+    {
+      "key": "pavesini",
+      "display": "pavesini",
+      "category": "bread-bakery",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Pavesini"
+      ]
+    },
+    {
+      "key": "prosciutto-cotto",
+      "display": "prosciutto cotto",
+      "category": "meat",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Prosciutto cotto"
+      ]
+    },
+    {
+      "key": "yogurt",
+      "display": "yogurt",
+      "category": "dairy",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Yogurt",
+        "Yogurt bianco",
+        "Yogurt greco",
+        "Yogurt magro"
+      ]
+    },
+    {
+      "key": "miele",
+      "display": "miele",
+      "category": "sweeteners",
+      "is_staple": false,
+      "derives_from": null,
+      "states": [],
+      "variants": [
+        "Miele"
+      ]
     }
   ]
 }
