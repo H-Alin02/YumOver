@@ -1623,5 +1623,726 @@
         "prep_time": 20,
         "difficulty": "easy",
         "tags": ["piatto-unico","classico","veloce","carne"]
+    },
+    {
+        "id": 61,
+        "title": "Mozzarella in carrozza",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pane","as_written": "pane casereccio raffermo","quantity": "12 fette","required_state": "raffermo"},
+            {"key": "mozzarella","as_written": "mozzarella fior di latte","quantity": "1","required_state": null},
+            {"key": "uova","as_written": "uova","quantity": "2","required_state": null},
+            {"key": "olio-di-semi","as_written": "olio di arachidi (per friggere)","quantity": "1 l","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Sbattere le uova in un piatto fondo con un pizzico di sale e di pepe.",
+            "Tagliare la mozzarella a fette di circa mezzo centimetro e asciugarla.",
+            "Adagiare la mozzarella su 6 fette di pane e coprire con le altre 6, premendo leggermente.",
+            "Passare i panini nell'uovo, curando bene i bordi perché il pane li assorba.",
+            "Scaldare abbondante olio a circa 170 gradi.",
+            "Friggere a fiamma media per 3-4 minuti per lato, finché la superficie è dorata.",
+            "Scolare i panini su carta assorbente e salare a piacere prima di servire."
+        ],
+        "prep_time": 18,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","anti-spreco","vegetariano"]
+    },
+    {
+        "id": 62,
+        "title": "Toast prosciutto cotto e formaggio",
+        "cuisine": "Italian",
+        "servings": 1,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pane","as_written": "Pancarrè: 2 fette","quantity": "2 fette","required_state": null},
+            {"key": "formaggio","as_written": "Fontina (sottile): 1 fetta","quantity": "1 fetta","required_state": null},
+            {"key": "prosciutto-cotto","as_written": "Prosciutto cotto: 1 fetta","quantity": "1 fetta","required_state": null}
+        ],
+        "instructions": [
+            "Disporre il formaggio su una fetta di pane.",
+            "Aggiungere il prosciutto cotto, ripiegandolo se è troppo grande.",
+            "Chiudere con la seconda fetta di pane.",
+            "Tostare in bistecchiera o nel tostapane per meno di 5 minuti."
+        ],
+        "prep_time": 10,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","veloce","salato"]
+    },
+    {
+        "id": 63,
+        "title": "Pizzette di pane raffermo",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pane","as_written": "8-10 fette pane raffermo","quantity": "8-10 fette","required_state": "raffermo"},
+            {"key": "passata-di-pomodoro","as_written": "100 g passata di pomodoro","quantity": "100 g","required_state": null},
+            {"key": "mozzarella","as_written": "150 g formaggio morbido (provola o pasta filata)","quantity": "150 g","required_state": null},
+            {"key": "origano","as_written": "origano secco","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero","quantity": "q.b.","required_state": null},
+            {"key": "acqua","as_written": "1/2 bicchiere acqua","quantity": "1/2 bicchiere","required_state": null}
+        ],
+        "instructions": [
+            "Preparare la salsa cruda mescolando la passata di pomodoro con olio extravergine d'oliva, sale, pepe e origano.",
+            "Disporre le fette di pane raffermo su una teglia foderata con carta forno.",
+            "Versare l'acqua sul fondo della teglia, agli angoli.",
+            "Condire le fette con la salsa e con il formaggio.",
+            "Cuocere in forno ventilato a 200 °C per 10-12 minuti."
+        ],
+        "prep_time": 17,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","anti-spreco","al-forno"]
+    },
+    {
+        "id": 64,
+        "title": "Crostini di pane raffermo al forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pane","as_written": "pane raffermo (di uno o due giorni)","quantity": "250 g","required_state": "raffermo"},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "rosmarino","as_written": "rosmarino","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Tagliare il pane raffermo a dadini.",
+            "Condire il pane con olio extravergine d'oliva, un pizzico di sale, pepe e rosmarino tritato, mescolando bene.",
+            "Distribuire i dadini su una teglia foderata con carta forno, in un unico strato.",
+            "Cuocere in forno statico a 180 °C per 10-15 minuti, rigirando i crostini a metà cottura, finché sono croccanti.",
+            "In alternativa, tostare i dadini in una padella antiaderente a fuoco basso per circa 15 minuti, mescolando spesso.",
+            "Lasciare raffreddare e conservare i crostini in un sacchetto ermetico."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","al-forno","anti-spreco"]
+    },
+    {
+        "id": 65,
+        "title": "Pancake classici",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "latte","as_written": "Latte","quantity": "160 ml","required_state": null},
+            {"key": "farina","as_written": "Farina 00","quantity": "140 g","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero semolato","quantity": "30 g","required_state": null},
+            {"key": "lievito-per-dolci","as_written": "Lievito in polvere per dolci","quantity": "8 g","required_state": null},
+            {"key": "uova","as_written": "uovo","quantity": "1","required_state": null},
+            {"key": "sale","as_written": "Sale","quantity": "q.b.","required_state": null},
+            {"key": "burro","as_written": "Burro per ungere la padella","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Sbattere l'uovo con lo zucchero in una ciotola.",
+            "Aggiungere il latte a filo, mescolando.",
+            "Incorporare la farina setacciata, il lievito e il sale fino a ottenere un composto liscio.",
+            "Ungere un padellino con il burro e versarvi un mestolino di impasto.",
+            "Cuocere a fuoco lento finché compaiono le bollicine in superficie.",
+            "Girare il pancake e dorare l'altro lato.",
+            "Impilare i pancake tiepidi e servire."
+        ],
+        "prep_time": 16,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","veloce","dolce"]
+    },
+    {
+        "id": 66,
+        "title": "Budino al cacao",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "latte","as_written": "latte","quantity": "500 ml","required_state": null},
+            {"key": "cacao","as_written": "cacao amaro in polvere","quantity": "30 g","required_state": null},
+            {"key": "amido-di-mais","as_written": "amido di mais","quantity": "50 g","required_state": null},
+            {"key": "zucchero","as_written": "zucchero semolato","quantity": "130 g","required_state": null}
+        ],
+        "instructions": [
+            "Mescolare in una ciotola lo zucchero con il cacao e l'amido di mais, setacciandoli per eliminare i grumi.",
+            "Versare il latte in un pentolino e incorporare gradualmente il composto secco, mescolando.",
+            "Cuocere a fuoco medio-alto, mescolando di continuo, finché la crema non si addensa.",
+            "Spegnere appena compaiono le prime bolle in superficie.",
+            "Bagnare gli stampini, riempirli con la crema calda e battere gli stampini sul piano di lavoro per eliminare le bolle d'aria.",
+            "Far raffreddare a temperatura ambiente per 15 minuti, poi riporre in frigorifero per una notte."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","veloce","dolce"]
+    },
+    {
+        "id": 67,
+        "title": "Chips di patate al forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "patate","as_written": "2 patate (di media grandezza, circa 300g)","quantity": "2 (circa 300 g)","required_state": null},
+            {"key": "olio-di-oliva","as_written": "2 cucchiai olio extravergine d'oliva","quantity": "2 cucchiai","required_state": null},
+            {"key": "sale","as_written": "q.b. sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "q.b. pepe","quantity": "q.b.","required_state": null},
+            {"key": "acqua","as_written": "acqua fredda","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le patate e affettarle a 1-2 mm, poi metterle in ammollo in acqua fredda per circa 30 minuti.",
+            "Asciugare bene le fette.",
+            "Condire le fette con olio, sale e pepe.",
+            "Disporre le fette in un solo strato su una teglia foderata con carta da forno.",
+            "Infornare a 200 °C per 15-20 minuti, girando le fette a metà cottura e passando in griglia gli ultimi 3-4 minuti."
+        ],
+        "prep_time": 25,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","al-forno","salato"]
+    },
+    {
+        "id": 68,
+        "title": "Fette biscottate con ricotta e miele",
+        "cuisine": "Italian",
+        "servings": 1,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fette-biscottate","as_written": "fette biscottate","quantity": "2","required_state": null},
+            {"key": "ricotta","as_written": "ricotta","quantity": "60 g","required_state": null},
+            {"key": "miele","as_written": "miele","quantity": "1 cucchiaino","required_state": null}
+        ],
+        "instructions": [
+            "Lavorare la ricotta con il miele fino a ottenere una crema liscia.",
+            "Spalmare la crema sulle fette biscottate e servire subito."
+        ],
+        "prep_time": 5,
+        "difficulty": "easy",
+        "tags": ["spuntino","veloce","dolce","senza-cottura"]
+    },
+    {
+        "id": 69,
+        "title": "Rotolo paradiso ai Pavesini",
+        "cuisine": "Italian",
+        "servings": 8,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pavesini","as_written": "pavesini","quantity": "150 g","required_state": null},
+            {"key": "mascarpone","as_written": "mascarpone","quantity": "250 g","required_state": null},
+            {"key": "panna","as_written": "panna da montare","quantity": "250 ml","required_state": null},
+            {"key": "zucchero","as_written": "zucchero a velo","quantity": "50 g","required_state": null},
+            {"key": "latte","as_written": "latte","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Montare il mascarpone con lo zucchero a velo fino a ottenere una crema liscia.",
+            "Aggiungere la panna da montare ben fredda e montare fino a ottenere una crema densa.",
+            "Immergere rapidamente i Pavesini nel latte freddo.",
+            "Disporre i Pavesini in file affiancate su un foglio di pellicola trasparente.",
+            "Spalmare la crema sui Pavesini e livellarla.",
+            "Arrotolare il tutto aiutandosi con la pellicola e avvolgere bene.",
+            "Riporre in frigorifero per almeno 3 ore oppure in freezer per 1 ora, poi tagliare a fette."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","senza-cottura","dolce"]
+    },
+    {
+        "id": 70,
+        "title": "Fettamisù",
+        "cuisine": "Italian",
+        "servings": 1,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fette-biscottate","as_written": "Fette biscottate integrali","quantity": "4","required_state": null},
+            {"key": "yogurt","as_written": "Yogurt bianco naturale","quantity": "125 g","required_state": null},
+            {"key": "caffe","as_written": "Caffè","quantity": "50 ml","required_state": null},
+            {"key": "cacao","as_written": "Cacao amaro in polvere","quantity": "2 cucchiaini","required_state": null}
+        ],
+        "instructions": [
+            "Preparare il caffè e lasciarlo raffreddare completamente.",
+            "Intingere ogni fetta di fette biscottate nel caffè.",
+            "Comporre gli strati sul piatto da portata: una fetta, uno strato di yogurt e una spolverata di cacao, ripetendo fino alla quarta fetta e fino a esaurire i 125 g di yogurt.",
+            "Coprire con pellicola e far riposare in frigo almeno un'ora.",
+            "Spolverare la superficie con il cacao rimasto al momento di servire."
+        ],
+        "prep_time": 5,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","veloce","senza-cottura"]
+    },
+    {
+        "id": 71,
+        "title": "Uova ripiene al tonno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "uova","as_written": "4 uova","quantity": "4","required_state": null},
+            {"key": "tonno-sottolio","as_written": "120 g tonno sott'olio","quantity": "120 g","required_state": null},
+            {"key": "maionese","as_written": "150 g maionese","quantity": "150 g","required_state": null},
+            {"key": "prezzemolo","as_written": "prezzemolo","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Cuocere le uova in acqua fredda per 9 minuti dal bollore.",
+            "Raffreddarle in acqua fredda, sgusciarle e tagliarle a metà nel senso della lunghezza.",
+            "Svuotare i tuorli e tenere da parte gli albumi.",
+            "Mescolare i tuorli con il tonno, la maionese, il prezzemolo tritato, un pizzico di sale e una macinata di pepe nero fino a ottenere una crema.",
+            "Riempire gli albumi con la crema, guarnire con prezzemolo e un filo d'olio extravergine, poi mettere in frigo per circa 30 minuti."
+        ],
+        "prep_time": 19,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","proteico"]
+    },
+    {
+        "id": 72,
+        "title": "Pancake salati alle zucchine",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "zucchine","as_written": "zucchine","quantity": "250 g","required_state": null},
+            {"key": "farina","as_written": "farina 00","quantity": "70 g","required_state": null},
+            {"key": "parmigiano","as_written": "Parmigiano Reggiano DOP","quantity": "30 g","required_state": null},
+            {"key": "uova","as_written": "uovo","quantity": "1","required_state": null},
+            {"key": "lievito-istantaneo","as_written": "lievito istantaneo per preparazioni salate","quantity": "1 cucchiaino","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio","quantity": "un po'","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le zucchine, tritarle e frullarle fino a ottenere una purea liscia.",
+            "Unire la purea, l'uovo e il parmigiano.",
+            "Aggiungere la farina setacciata e il lievito istantaneo per preparazioni salate, poi salare e pepare, e montare fino a ottenere una pastella liscia.",
+            "Ungere leggermente una padella antiaderente calda con un filo d'olio e asciugarla con carta assorbente.",
+            "Versare un mestolo di pastella per ogni pancake e cuocere circa 2 minuti, finché compaiono le bolle in superficie.",
+            "Girare i pancake e cuocere altri 2 minuti; ripetere fino a esaurire la pastella."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","vegetariano","salato"]
+    },
+    {
+        "id": 73,
+        "title": "Omelette di albumi",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "albumi","as_written": "albumi","quantity": "300 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "olio extravergine d'oliva","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "sale","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "pepe nero","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Sbattere gli albumi con due pizzichi di sale e il pepe nero finché sono spumosi e ben omogenei.",
+            "Scaldare una padella antiaderente con un filo di olio a fuoco medio.",
+            "Versare un velo sottile di albume con un mestolo e farlo roteare per coprire tutto il fondo.",
+            "Cuocere a fuoco basso finché la base è dorata, poi girare e cuocere per pochi istanti anche l'altro lato.",
+            "Ripetere con il resto dell'albume fino a ottenere sei frittate sottili, impilarle e servire calde o fredde."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","proteico","veloce"]
+    },
+    {
+        "id": 74,
+        "title": "Porridge al cacao",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fiocchi-d-avena","as_written": "fiocchi di avena","quantity": "150 g","required_state": null},
+            {"key": "latte","as_written": "latte","quantity": "200 ml","required_state": null},
+            {"key": "acqua","as_written": "acqua","quantity": "150 ml","required_state": null},
+            {"key": "cacao","as_written": "cacao amaro in polvere","quantity": "1 cucchiaio","required_state": null}
+        ],
+        "instructions": [
+            "Versare in un pentolino il latte e l'acqua, poi unire i fiocchi d'avena e il cacao amaro.",
+            "Cuocere a fuoco basso per circa 10 minuti, mescolando di continuo, finché il porridge si addensa.",
+            "Spegnere il fuoco e lasciar riposare 5 minuti.",
+            "Distribuire nelle ciotole e servire caldo."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","veloce","dolce"]
+    },
+    {
+        "id": 75,
+        "title": "Overnight oats al cacao",
+        "cuisine": "Italian",
+        "servings": 2,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fiocchi-d-avena","as_written": "fiocchi di avena","quantity": "50 g","required_state": null},
+            {"key": "acqua","as_written": "acqua (o bevanda vegetale o latte vaccino)","quantity": "100 ml","required_state": null},
+            {"key": "yogurt","as_written": "yogurt greco 0% (120 g per la base, 70 g al cacao, 70 g alla vaniglia)","quantity": "260 g","required_state": null},
+            {"key": "cacao","as_written": "cacao amaro in polvere (1 cucchiaio nello strato, il resto per decorare)","quantity": "1 cucchiaio + q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Mescolare in un contenitore i fiocchi di avena, 100 ml di acqua e 120 g di yogurt greco, poi coprire e riporre in frigo per almeno 4 ore.",
+            "Mescolare 70 g di yogurt greco con un cucchiaio di cacao amaro e stendere questo strato sulla base di avena.",
+            "Aggiungere lo strato di 70 g di yogurt alla vaniglia e livellare la superficie.",
+            "Spolverizzare con cacao amaro e servire."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","senza-cottura","veloce"]
+    },
+    {
+        "id": 76,
+        "title": "Focaccine allo yogurt in padella",
+        "cuisine": "Italian",
+        "servings": 8,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "farina","as_written": "300 g farina tipo 1","quantity": "300 g","required_state": null},
+            {"key": "yogurt","as_written": "200 g yogurt greco (bianco, non zuccherato)","quantity": "200 g","required_state": null},
+            {"key": "bicarbonato","as_written": "1 cucchiaino bicarbonato (raso)","quantity": "1 cucchiaino raso","required_state": null},
+            {"key": "sale","as_written": "1 cucchiaino sale fino (raso)","quantity": "1 cucchiaino raso","required_state": null}
+        ],
+        "instructions": [
+            "Mescolare la farina con il bicarbonato in una ciotola.",
+            "Aggiungere lo yogurt e il sale e impastare fino a ottenere un impasto morbido; se appiccica, aggiungere poca farina.",
+            "Dividere l'impasto in 8 pezzi.",
+            "Schiacciare ogni pezzo con le mani fino a ottenere un disco di circa 7 cm di diametro.",
+            "Cuocere le focaccine in una padella antiaderente calda a fuoco basso, senza grassi e coperte, per circa 3 minuti per lato, fino a doratura."
+        ],
+        "prep_time": 6,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","veloce","salato"]
+    },
+    {
+        "id": 77,
+        "title": "Ceci croccanti al forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "ceci","as_written": "Ceci in scatola sgocciolati","quantity": "240 g","required_state": null},
+            {"key": "olio-di-oliva","as_written": "Olio extravergine di oliva","quantity": "2 cucchiai","required_state": null},
+            {"key": "sale","as_written": "Sale fino","quantity": "1/2 cucchiaino","required_state": null},
+            {"key": "paprika","as_written": "Paprika dolce","quantity": "1 cucchiaino","required_state": null},
+            {"key": "aglio-in-polvere","as_written": "Aglio in polvere","quantity": "1 pizzico","required_state": null},
+            {"key": "pepe","as_written": "Pepe nero","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Scolare i ceci, sciacquarli e asciugarli bene su un canovaccio.",
+            "Mescolare in una ciotola paprika, aglio in polvere, sale e pepe.",
+            "Condire i ceci con l'olio e la miscela di spezie, mescolando perché si distribuiscano in modo uniforme.",
+            "Stendere i ceci in teglia in un solo strato, senza sovrapporli.",
+            "Infornare a 200 °C, modalità ventilata, per 25 minuti, mescolando i ceci ogni 10 minuti per dorarli in modo uniforme."
+        ],
+        "prep_time": 35,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","al-forno","vegetariano"]
+    },
+    {
+        "id": 78,
+        "title": "Crudità di verdure con salsa allo yogurt",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "yogurt","as_written": "400 gr di yogurt greco bianco magro","quantity": "400 gr","required_state": null},
+            {"key": "carote","as_written": "carote (parte dei 400 gr di verdura cruda mista)","quantity": "q.b.","required_state": null},
+            {"key": "cetriolo","as_written": "cetriolo (parte dei 400 gr di verdura cruda mista)","quantity": "q.b.","required_state": null},
+            {"key": "olio-di-oliva","as_written": "1 cucchiaio di olio extra vergine di oliva","quantity": "1 cucchiaio","required_state": null},
+            {"key": "sale","as_written": "Sale q.b.","quantity": "q.b.","required_state": null},
+            {"key": "pepe","as_written": "Pepe nero q.b.","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le verdure e tagliarle a julienne.",
+            "Frullare lo yogurt con l'olio extravergine, sale e pepe.",
+            "Servire le verdure in un'insalatiera o in una coppa, accompagnate con la salsa."
+        ],
+        "prep_time": 5,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","veloce","senza-cottura"]
+    },
+    {
+        "id": 79,
+        "title": "Banana bread",
+        "cuisine": "Italian",
+        "servings": 12,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "banane","as_written": "2 banane mature (220 g)","quantity": "220 g","required_state": null},
+            {"key": "farina","as_written": "200 g farina 0","quantity": "200 g","required_state": null},
+            {"key": "zucchero","as_written": "50 g zucchero","quantity": "50 g","required_state": null},
+            {"key": "olio-di-semi","as_written": "50 g olio di semi di mais","quantity": "50 g","required_state": null},
+            {"key": "uova","as_written": "1 uovo","quantity": "1","required_state": null},
+            {"key": "lievito-per-dolci","as_written": "7 g lievito in polvere per dolci","quantity": "7 g","required_state": null},
+            {"key": "sale","as_written": "sale q.b.","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Scaldare il forno a 180 °C e foderare uno stampo da plumcake con carta da forno.",
+            "Schiacciare le banane con lo zucchero fino a ottenere una purea omogenea.",
+            "Aggiungere l'olio e l'uovo e mescolare finché il composto è liscio.",
+            "Incorporare farina, lievito e sale mescolando solo quanto basta, per non lavorare troppo l'impasto.",
+            "Versare il composto nello stampo e infornare a 180 °C per 40-45 minuti.",
+            "Coprire con un foglio di carta stagnola se la superficie scurisce troppo e controllare la cottura con uno stecchino prima di sfornare."
+        ],
+        "prep_time": 55,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","frutta","al-forno"]
+    },
+    {
+        "id": 80,
+        "title": "Pancake alla banana",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "farina","as_written": "Farina 00","quantity": "300 g","required_state": null},
+            {"key": "latte","as_written": "Latte","quantity": "250 ml","required_state": null},
+            {"key": "banane","as_written": "Banane mature","quantity": "2","required_state": null},
+            {"key": "uova","as_written": "Uova","quantity": "2","required_state": null},
+            {"key": "zucchero","as_written": "Zucchero","quantity": "25 g","required_state": null},
+            {"key": "lievito-per-dolci","as_written": "Lievito in polvere per dolci","quantity": "8 g","required_state": null}
+        ],
+        "instructions": [
+            "Schiacciare le banane mature in una ciotola fino a ottenere una purea.",
+            "In una ciotola mescolare farina, zucchero e lievito per dolci.",
+            "In un'altra ciotola sbattere le uova con il latte fino a ottenere un composto spumoso.",
+            "Unire la purea di banana e il composto secco al composto liquido, amalgamando.",
+            "Lasciare riposare l'impasto in frigorifero per 15 minuti.",
+            "Scaldare una padella antiaderente e ungerla leggermente, poi versarvi due cucchiai di impasto per ogni pancake.",
+            "Cuocere 2-3 minuti per lato, finché il pancake non è dorato.",
+            "Servire caldi, appena cotti."
+        ],
+        "prep_time": 13,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","frutta","dolce"]
+    },
+    {
+        "id": 81,
+        "title": "Plumcake allo yogurt",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "farina","as_written": "200 g farina 00","quantity": "200 g","required_state": null},
+            {"key": "yogurt","as_written": "200 g yogurt bianco naturale","quantity": "200 g","required_state": null},
+            {"key": "zucchero","as_written": "150 g zucchero","quantity": "150 g","required_state": null},
+            {"key": "uova","as_written": "3 uova","quantity": "3","required_state": null},
+            {"key": "olio-di-semi","as_written": "100 ml olio di semi","quantity": "100 ml","required_state": null},
+            {"key": "scorza-di-limone","as_written": "1 scorza di limone","quantity": "1 scorza","required_state": null},
+            {"key": "sale","as_written": "1 pizzico sale","quantity": "1 pizzico","required_state": null},
+            {"key": "lievito-per-dolci","as_written": "1 bustina lievito in polvere per dolci","quantity": "1 bustina","required_state": null}
+        ],
+        "instructions": [
+            "Sbattere le uova con lo zucchero finché il composto non risulta chiaro e gonfio.",
+            "Aggiungere l'olio di semi a filo, poi lo yogurt e la scorza di limone grattugiata.",
+            "Setacciare la farina con il lievito per dolci e il sale, quindi incorporarla al composto con movimenti dal basso verso l'alto, senza smontarlo.",
+            "Foderare con carta forno uno stampo da plumcake e riempirlo per tre quarti con l'impasto.",
+            "Cuocere in forno a 180 °C per circa 50 minuti, controllando con uno stecchino: se esce asciutto è pronto.",
+            "Lasciare raffreddare completamente il plumcake prima di sformarlo."
+        ],
+        "prep_time": 60,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","al-forno","dolce"]
+    },
+    {
+        "id": 82,
+        "title": "Muffin alle mele",
+        "cuisine": "Italian",
+        "servings": 10,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "farina","as_written": "250 gr di farina 00","quantity": "250 g","required_state": null},
+            {"key": "zucchero","as_written": "70 gr di zucchero di canna","quantity": "70 g","required_state": null},
+            {"key": "uova","as_written": "2 uova (intere)","quantity": "2","required_state": null},
+            {"key": "latte","as_written": "160 ml di latte","quantity": "160 ml","required_state": null},
+            {"key": "burro","as_written": "120 gr di burro (fuso)","quantity": "120 g","required_state": null},
+            {"key": "cannella","as_written": "1 cucchiaino di cannella (in polvere)","quantity": "1 cucchiaino","required_state": null},
+            {"key": "mele","as_written": "1-2 mele rosse poco dolci","quantity": "1-2","required_state": null},
+            {"key": "lievito-per-dolci","as_written": "10 gr di lievito per dolci","quantity": "10 g","required_state": null},
+            {"key": "sale","as_written": "1 pizzico di sale","quantity": "1 pizzico","required_state": null}
+        ],
+        "instructions": [
+            "Sciogliere il burro e lasciarlo intiepidire.",
+            "Sbattere a mano le uova con lo zucchero, poi unire il latte e il burro fuso.",
+            "Aggiungere farina, lievito, cannella e sale, mescolando solo fino a ottenere un impasto omogeneo.",
+            "Sbucciare le mele, tagliarne metà a cubetti e incorporarli nell'impasto, tenendo da parte l'altra metà.",
+            "Riempire i pirottini senza colmarli e coprire con fettine sottili di mela.",
+            "Cuocere a 180 °C per 25 minuti, poi lasciar raffreddare prima di servire."
+        ],
+        "prep_time": 40,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","al-forno","frutta"]
+    },
+    {
+        "id": 83,
+        "title": "Mattonella di Pavesini alla Nutella",
+        "cuisine": "Italian",
+        "servings": 6,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "pavesini","as_written": "pavesini","quantity": "40","required_state": null},
+            {"key": "panna","as_written": "panna da montare","quantity": "500 ml","required_state": null},
+            {"key": "nutella","as_written": "Nutella","quantity": "100 g","required_state": null},
+            {"key": "cacao","as_written": "cacao amaro","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Montare la panna con metà della Nutella usando le fruste elettriche, fino a ottenere una crema ben consistente.",
+            "Disporre a strato sul fondo di un piatto circa 10 pavesini.",
+            "Coprire con uno strato di crema e spalmare sopra la Nutella rimasta con una forchetta.",
+            "Disporre altri pavesini sulla crema e ripetere gli strati.",
+            "Spolverare con cacao amaro e riporre in frigorifero per almeno 30 minuti, oppure in freezer, prima di servire."
+        ],
+        "prep_time": 15,
+        "difficulty": "easy",
+        "tags": ["spuntino","goloso","senza-cottura","dolce"]
+    },
+    {
+        "id": 84,
+        "title": "Frullato di banana e latte",
+        "cuisine": "Italian",
+        "servings": 1,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "banane","as_written": "banana","quantity": "100 g","required_state": null},
+            {"key": "latte","as_written": "latte","quantity": "70 g","required_state": null}
+        ],
+        "instructions": [
+            "Collocare la banana in un recipiente alto.",
+            "Unire il latte e azionare il mixer a immersione finché il composto non risulta liscio."
+        ],
+        "prep_time": 5,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","veloce","frutta"]
+    },
+    {
+        "id": 85,
+        "title": "Biscotti banana e avena",
+        "cuisine": "Italian",
+        "servings": 8,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "banane","as_written": "2 Banane","quantity": "2","required_state": null},
+            {"key": "fiocchi-d-avena","as_written": "100 g Fiocchi di Avena","quantity": "100 g","required_state": null},
+            {"key": "cioccolato","as_written": "Gocce di cioccolato q.b.","quantity": "q.b.","required_state": null},
+            {"key": "sale","as_written": "Un pizzico di sale","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Schiacciare le banane in una ciotola con una forchetta fino a ottenere una purea.",
+            "Aggiungere i fiocchi d'avena, le gocce di cioccolato e un pizzico di sale, quindi mescolare fino a impasto omogeneo.",
+            "Lasciare riposare l'impasto per circa 15 minuti a temperatura ambiente.",
+            "Formare delle palline con due cucchiai e disporle su una teglia foderata di carta forno.",
+            "Infornare a 180 °C in forno statico per 18-20 minuti.",
+            "Lasciare raffreddare prima di staccare i biscotti dalla carta."
+        ],
+        "prep_time": 30,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","frutta","al-forno"]
+    },
+    {
+        "id": 86,
+        "title": "Yogurt con mela e cannella",
+        "cuisine": "Italian",
+        "servings": 1,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "yogurt","as_written": "yogurt di soia non zuccherato","quantity": "125 g","required_state": null},
+            {"key": "mele","as_written": "mela grande","quantity": "1","required_state": null},
+            {"key": "cannella","as_written": "cannella in polvere","quantity": "1 o 2 cucchiaini","required_state": null}
+        ],
+        "instructions": [
+            "Pesare lo yogurt, 125 g, e metterlo in una ciotola.",
+            "Lavare la mela, togliere il torsolo e tagliarla a fettine o a dadini.",
+            "Cospargere la mela di cannella, mescolare e versarla nello yogurt.",
+            "Spolverare con altra cannella prima di servire."
+        ],
+        "prep_time": 5,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","frutta","senza-cottura"]
+    },
+    {
+        "id": 87,
+        "title": "Chips di mele al forno",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "mele","as_written": "mele","quantity": "2","required_state": null},
+            {"key": "cannella","as_written": "cannella in polvere","quantity": "q.b.","required_state": null},
+            {"key": "acqua","as_written": "acqua","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare le mele, togliere il torsolo e affettarle sottili, circa 2 mm, con una mandolina o un coltello.",
+            "Ammollare le fettine in acqua per circa 2 minuti.",
+            "Scolare e asciugare bene le fette, poi disporle sciolte su una teglia foderata con carta forno.",
+            "Spolverizzare le fette di cannella.",
+            "Cuocere in forno statico a 100 gradi per circa 60 minuti, controllare e, se serve, aggiungere 10 minuti.",
+            "Far raffreddare le chips su una gratella."
+        ],
+        "prep_time": 70,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","al-forno","frutta"]
+    },
+    {
+        "id": 88,
+        "title": "Frullato di fragole e yogurt",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fragole","as_written": "fragole","quantity": "250 g","required_state": null},
+            {"key": "latte","as_written": "latte","quantity": "400 ml","required_state": null},
+            {"key": "yogurt","as_written": "yogurt al naturale","quantity": "180 g","required_state": null}
+        ],
+        "instructions": [
+            "Tagliare le fragole in quarti.",
+            "Frullare le fragole con il latte e lo yogurt con un frullatore a immersione fino a ottenere un composto liscio.",
+            "Refrigerare il frullato per almeno 30 minuti.",
+            "Frullare di nuovo poco prima di servire e versare nei bicchieri."
+        ],
+        "prep_time": 20,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","veloce","frutta"]
+    },
+    {
+        "id": 89,
+        "title": "Macedonia di frutta",
+        "cuisine": "Italian",
+        "servings": 4,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fragole","as_written": "150 g di Fragole","quantity": "150 g","required_state": null},
+            {"key": "mele","as_written": "1 Mela","quantity": "1","required_state": null},
+            {"key": "banane","as_written": "1 Banana","quantity": "1","required_state": null},
+            {"key": "menta","as_written": "q.b. di Menta","quantity": "q.b.","required_state": null}
+        ],
+        "instructions": [
+            "Lavare la frutta, togliere i piccioli alle fragole e tagliarle a metà.",
+            "Sbucciare la mela e la banana, poi tagliarle a cubetti.",
+            "Mettere la frutta in una ciotola e farla riposare in frigorifero per 1 ora.",
+            "Mescolare, aggiungere le foglioline di menta e servire."
+        ],
+        "prep_time": 10,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","frutta","senza-cottura"]
+    },
+    {
+        "id": 90,
+        "title": "Overnight oats alla banana",
+        "cuisine": "Italian",
+        "servings": 2,
+        "reviewed": true,
+        "ingredients": [
+            {"key": "fiocchi-d-avena","as_written": "4 cucchiai di fiocchi d'avena","quantity": "4 cucchiai","required_state": null},
+            {"key": "yogurt","as_written": "250 g di yogurt magro","quantity": "250 g","required_state": null},
+            {"key": "banane","as_written": "1 banana","quantity": "1","required_state": null}
+        ],
+        "instructions": [
+            "Mescolare i fiocchi d'avena con lo yogurt in una ciotola o in un barattolo.",
+            "Coprire e riporre in frigorifero per tutta la notte, almeno 4-6 ore.",
+            "Al mattino dividere il composto in due ciotole.",
+            "Tagliare la banana a fette, distribuirla sopra e mescolare appena."
+        ],
+        "prep_time": 5,
+        "difficulty": "easy",
+        "tags": ["spuntino","fit","senza-cottura","frutta"]
     }
 ]

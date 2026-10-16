@@ -4,7 +4,7 @@ MIN_RECALL = 0.97
 
 
 def test_eggs_supply_yolks(index):
-    assert reach(index, ["uova"]) == {"uova", "tuorli"}
+    assert reach(index, ["uova"]) == {"uova", "tuorli", "albumi"}
 
 
 def test_yolks_do_not_supply_eggs(index):
